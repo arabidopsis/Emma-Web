@@ -1,0 +1,138 @@
+body {
+    font-family: Helvetica;
+    color: #080510;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    margin: 0;
+    padding: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+.green-banner {
+    background-color: rgb(136, 250, 136);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.content {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 900;
+    background-color: #fff;
+}
+
+.card-header {
+    text-decoration: none;
+    display: flex;
+    margin: 0;
+    background-color: #ecebeb;
+    color: rgb(0, 0, 0);
+    border-radius: 3px 3px 0 0;
+    padding: 20px;
+}
+
+.card-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.file-input {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.submit-button {
+    background-color: rgb(126, 255, 126);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+h1, h3 {
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+
+
+label {
+    font-size: 14px; /* Adjust this value to your preference */
+}
+
+.tab-container {
+    display: flex;
+    background-color: #d7d6d6;
+    /*justify-content: space-between; /* Spread out tabs */
+    border: 1px solid rgb(0, 0, 0); /* Add border around the tab container */
+}
+
+.first-tab{
+    font-size: 11px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #ecebeb;
+    cursor: pointer;
+    text-align: center;
+    border-right: 1px solid rgb(0, 0, 0); /* Add right border to each tab */ 
+}
+
+.tab {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+    padding: 10px 20px;
+    padding-left: 5px;
+    background-color: #ecebeb;
+    cursor: pointer;
+    text-align: center;
+    border-right: 1px solid rgb(0, 0, 0); /* Add right border to each tab */
+    
+}
+
+.tab-icon {
+    background-color: #ecebeb;
+    align-items: center;
+    width: 15px;
+    height: 15px; 
+    padding: 10px 5px;
+    padding-left: 10px;
+  }
+
+
+
+.info {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.genome {
+    align-items: center;
+}

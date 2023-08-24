@@ -1,0 +1,37 @@
+ND1	NADH dehydrogenase subunit 1
+ND2	NADH dehydrogenase subunit 2
+ND3	NADH dehydrogenase subunit 3
+ND4	NADH dehydrogenase subunit 4
+ND5	NADH dehydrogenase subunit 5
+ND6	NADH dehydrogenase subunit 6
+ND4L	NADH dehydrogenase subunit 4L
+COX1	cytochrome c oxidase subunit I
+COX2	cytochrome c oxidase subunit II
+COX3	cytochrome c oxidase subunit III
+ATP8	ATP synthase F0 subunit 8
+ATP6	ATP synthase F0 subunit 6
+CYTB	cytochrome b
+trnA	tRNA-Ala
+trnR	tRNA-Arg
+trnN	tRNA-Asn
+trnD	tRNA-Asp
+trnC	tRNA-Cys
+trnQ	tRNA-Gln
+trnE	tRNA-Glu
+trnG	tRNA-Gly
+trnH	tRNA-His
+trnI	tRNA-Ile
+trnK	tRNA-Lys
+trnM	tRNA-Met
+trnF	tRNA-Phe
+trnP	tRNA-Pro
+trnT	tRNA-Thr
+trnW	tRNA-Trp
+trnY	tRNA-Tyr
+trnV	tRNA-Val
+trnS1	tRNA-Ser
+trnS2	tRNA-Ser
+trnL1	tRNA-Leu
+trnL2	tRNA-Leu
+12srna	12S rRNA
+16srna	16S rRNA

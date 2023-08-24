@@ -1,0 +1,15 @@
+# target name        accession  query name           accession  hmmfrom hmm to alifrom  ali to envfrom  env to  sq len strand   E-value  score  bias  description of target
+#------------------- ---------- -------------------- ---------- ------- ------- ------- ------- ------- ------- ------- ------ --------- ------ ----- ---------------------
+NC_002785.1          -          12srna               -              202    1153      66    1038      42    1058   16695    +    3.6e-294  968.8  33.5  -
+NC_002785.1          -          12srna               -              198     234   16658   16694   16632   16695   16695    +       3e-05   11.6   3.1  -
+NC_002785.1          -          16srna               -               13    1603    1110    2683    1102    2696   16695    +           0 1353.5  62.8  -
+#
+# Program:         nhmmer
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      lib/Emma/emma_vertebrate_models/rrn/all_rrn.hmm
+# Target file:     tmp.extended.fa
+# Option settings: nhmmer --tblout tmp.tbl lib/Emma/emma_vertebrate_models/rrn/all_rrn.hmm tmp.extended.fa 
+# Current dir:     /home/pavel/EmmaWeb
+# Date:            Tue Aug 22 15:48:30 2023
+# [ok]

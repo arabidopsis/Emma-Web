@@ -1,0 +1,223 @@
+# nhmmer :: search a DNA model, alignment, or sequence against a DNA database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query file:                      lib/Emma/emma_vertebrate_models/rrn/all_rrn.hmm
+# target sequence database:        tmp.extended.fa
+# hits tabular output:             tmp.tbl
+# number of worker threads:        2
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       12srna  [M=1299]
+Scores for complete hits:
+    E-value  score  bias  Sequence     start    end  Description
+    ------- ------ -----  --------     -----  -----  -----------
+   3.6e-294  968.8  33.5  NC_002785.1     66   1038 
+      3e-05   11.6   3.1  NC_002785.1  16658  16694 
+
+
+Annotation for each hit  (and alignments):
+>> NC_002785.1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !  968.8  33.5  3.6e-294       202      1153 ..        66      1038 ..        42      1058 ..     16695    0.95
+
+  Alignment:
+  score: 968.8 bits
+       12srna  202 ttc.AaaggctTggtcctaaccttactattagcTttaactaaacttAcacATgcaagtatCcgcacccCaGTGagaatgCCctcaatcccc..tac 294 
+                     c Aaag ctT gtcctaaccttact+tta +Ttt +cta+ac tA+acATgcaagtatCcgcacccCaGTG +aatgCCct+aat +c+  +  
+  NC_002785.1   66 GACaAAAGACTTAGTCCTAACCTTACTGTTAATTTTCGCTAGACATATACATGCAAGTATCCGCACCCCAGTGTAAATGCCCTTAATGTCTccCCA 161 
+                   334499*****************************************************************************9986554411457 PP
+
+       12srna  295 cagggaaaaaggagcaggtatcAggcacactc..attgtagCccAagACgcCttgcttagCcAcacCCcCAcgggtattCagCagtgataaAcatT 388 
+                   +++g  aaaaggagcaggtatcAggcacact   + tgtagCccAa+ACgcCttgcttagCcAcacCCcCAcgggta+tCagCagt+at+aAcatT
+  NC_002785.1  162 TTAGACAAAAGGAGCAGGTATCAGGCACACTAtcTATGTAGCCCAAAACGCCTTGCTTAGCCACACCCCCACGGGTACTCAGCAGTAATTAACATT 257 
+                   77999*************************9888899*********************************************************** PP
+
+       12srna  389 aagcaATaagcgaaagcttGActtagttatagtta....ataggGccgGtaAAtctcgtGccaGCcaCCGCgGttAtacgagaggCccaagttaat 480 
+                   aagcaATaag+g+aa+cttGActtag+ at+g+ a      aggG++gGtaAAtct gtGccaGCcaCCGCgGt+A ac agag+Cccaa+ taa+
+  NC_002785.1  258 AAGCAATAAGTGTAAACTTGACTTAGCCATGGCGAccccCAAGGGTTGGTAAATCTTGTGCCAGCCACCGCGGTCACACAAGAGACCCAAACTAAC 353 
+                   **********************************9766557******************************************************* PP
+
+       12srna  481 agttcaCGgcgTAaAgcgtGgttaaggaaa...caaaaaaacTaaagccaAatcccaactaagctgTaataagctctagataacaagAagcccaac 573 
+                   agt   CGgcgTAaAg gtGgt a + +++   caa  aaa+Taa+ cc Aa c ca ctaagctgT+a aagc+c agat+ ++++Aa+ +ca c
+  NC_002785.1  354 AGTAGCCGGCGTAAAGAGTGGTAATATGTTatcCAACCAAATTAAGACCCAAACACAGCTAAGCTGTCACAAGCCCAAGATGTTCCTAAAATCACC 449 
+                   ****9*****************87775555555566678889***************************************************876 PP
+
+       12srna  574 cacgaaagtaactttAat........acaacttgaacccacgaaagctaagaaaCAaAcTggGaTtagatAcCCcAcTaTGcttagcccTaaactt 661 
+                    a  aaa t+++ ttAa+        +caa+tt a+cccacgaaagctaag++aCAaAcTggGaTtagatAcCCcAcTaTGcttagcc Taaa++ 
+  NC_002785.1  450 -ATAAAAATGGTCTTAACacccacgaTCAATTTCACCCCACGAAAGCTAAGGCACAAACTGGGATTAGATACCCCACTATGCTTAGCCTTAAATCA 544 
+                   .999************988999999888999999************************************************************** PP
+
+       12srna  662 agataattaattaACaaaattatccgccagagaAcTACgagc..aaaagcttaaaaCtcaaAggacttggcggtgcttcAgacCcacCTAGAGGag 755 
+                   +gata tta ++ AC++aa tatccgcc gagaAcTACgagc  aaa gcttaaaaCtc+aAggacttggcggtgc+++A acCcacCTAGAGGag
+  NC_002785.1  545 TGATACTTACCCCACCTAAGTATCCGCCCGAGAACTACGAGCacAAACGCTTAAAACTCTAAGGACTTGGCGGTGCCCTAAACCCACCTAGAGGAG 640 
+                   *********9999*****************************9999************************************************** PP
+
+       12srna  756 CCTGTtctatAAtCGAtaacCCcCGtTaaaCctcAccacttcTtgctaattCagccTatAtaCCgccgTcgtcaGcttacCctatgaagGaataaa 851 
+                   CCTGTtctatAAtCGAtaa+CC CG+T  aCc  Accac++cTtgc+a+  CagccTa AtaCCgccgTcg+caGc   cC+ atga+ Gaa+aa+
+  NC_002785.1  641 CCTGTTCTATAATCGATAATCCACGATTCACCCAACCACCCCTTGCCAT-GCAGCCTACATACCGCCGTCGCCAGCCCGCCTCATGAGAGAACAAT 735 
+                   ***********************************************96.********************************************** PP
+
+       12srna  852 aGtaagCacaAtagtc.acacactaaaacgtcagGTCaAGgTgtagcttAtgaggtGGgaagaaATgggCTAcAttttctaatatAgaaaa.ccAC 945 
+                   aG +agCacaAtag c ac+c ctaa a g cagGTCaAGgT tagc tAtg++gt GgaagaaATgggCTAcAttttctaa+atAgaa+a  cAC
+  NC_002785.1  736 AGCGAGCACAATAGCCcACCCGCTAACAAGACAGGTCAAGGTATAGCATATGGAGT-GGAAGAAATGGGCTACATTTTCTAACATAGAATAcACAC 830 
+                   **************7659**************************************.*******************************98866799 PP
+
+       12srna  946 gaaaagtactaTGaAacaaatacttgaAggaGgaTTtagcagtaaaatgggaatagagtgctcttttgAAaccggcccTgaagcgcgtaCacACcG 1041
+                   gaaa+  + taTGaAa+ a + ++ gaAgg+GgaTTtagcagtaaaat g+a  agag+g+++ ttt+AA +cggc+cT ++ c cgtaCa ACcG
+  NC_002785.1  831 GAAAGAGGATATGAAATCATCCTCAGAAGGCGGATTTAGCAGTAAAATAGAATAAGAGAGTCTATTTTAAGTCGGCTCTAGGACACGTACATACCG 926 
+                   ****************9999999************************************************************************* PP
+
+       12srna 1042 CccGTCAccCtCctcaaaaacaaaaacaaaaaataaaTAatacaataacaaacaaaAgaggaGgcaAgTcgTAacAagGtaAGtgtACcggAAgGT 1137
+                   CccGTCAccCtCctcaaaa+c+a+aaca ++ ata+aTAata+ +t    a+c+ aAga gaGg+aAgTcgTAacAagGtaAGtgtACcggAAgGT
+  NC_002785.1  927 CCCGTCACCCTCCTCAAAAGCTATAACACCCCATACATAATAAGCTCCGCAGCTGAAGATGAGGTAAGTCGTAACAAGGTAAGTGTACCGGAAGGT 1022
+                   ************************99889999*********99999888899******************************************** PP
+
+       12srna 1138 GcaCTTgGaatAacaa 1153
+                   GcaCTT G atA caa
+  NC_002785.1 1023 GCACTTAGCATATCAA 1038
+                   ********99987654 PP
+
+>> NC_002785.1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ !   11.6   3.1     3e-05       198       234 ..     16658     16694 ..     16632     16695 .]     16695    0.74
+
+  Alignment:
+  score: 11.6 bits
+       12srna   198 gttattc.AaaggctTggtcctaaccttactattagcT 234  
+                          c Aaag ctT gtcctaaccttact+tta +T
+  NC_002785.1 16658 AAG-GACaAAAGACTTAGTCCTAACCTTACTGTTAATT 16694
+                    333.345499************************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (1299 nodes)
+Target sequences:                          1  (33390 residues searched)
+Residues passing SSV filter:            2303  (0.069); expected (0.02)
+Residues passing bias filter:           2303  (0.069); expected (0.02)
+Residues passing Vit filter:            2303  (0.069); expected (0.003)
+Residues passing Fwd filter:            2303  (0.069); expected (3e-05)
+Total number of hits:                      2  (0.0302)
+# CPU time: 0.04u 0.02s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 760.21
+//
+Query:       16srna  [M=1613]
+Scores for complete hits:
+    E-value  score  bias  Sequence     start    end  Description
+    ------- ------ -----  --------     -----  -----  -----------
+          0 1353.5  62.8  NC_002785.1   1110   2683 
+
+
+Annotation for each hit  (and alignments):
+>> NC_002785.1  
+    score  bias    Evalue   hmmfrom    hmm to     alifrom    ali to      envfrom    env to       sq len      acc
+   ------ ----- ---------   -------   -------    --------- ---------    --------- ---------    ---------    ----
+ ! 1353.5  62.8         0        13      1603 ..      1110      2683 ..      1102      2696 ..     16695    0.91
+
+  Alignment:
+  score: 1353.5 bits
+       16srna   13 atctagcccaaccaactacatt.atacccaaattacactaaaacaataaactaaaacatttttccatcttaGTAtaggaGAtagAAaaggaacttt 107 
+                    tctagc+ca cca c+ac tt a a  c aa+  cactaaa+++a aaactaaaacatttt+cc  cttaGTAtagg+GAtagAAaag++ac tt
+  NC_002785.1 1110 CTCTAGCTCATCCACCCAC-TTgA-A--C-AAC-CCACTAAACTCAAAAACTAAAACATTTTCCCTACTTAGTATAGGCGATAGAAAAGTTAC-TT 1198
+                   5799999999988855432.2222.1..2.332.24567778888899*****************************************9987.9* PP
+
+       16srna  108 ggagcaatAgaga.....aaGTACcgcaAgGgAaagatgAAagAgaaatgaaaaattaaagcaaaaaaaagcAaaGattaaccCttgTACCTtttg 198 
+                   g +gcaatAgaga       GTACcgcaAgGgAaagatgAAa+A +aatgaaa a  aaagcaaaaaa+agcAaaGat aaccCttgTACCTtttg
+  NC_002785.1 1199 GACGCAATAGAGAtatccTTGTACCGCAAGGGAAAGATGAAATAATAATGAAA-ACCAAAGCAAAAAACAGCAAAGATCAACCCTTGTACCTTTTG 1293
+                   **********9985554345********************************9.5799************************************** PP
+
+       16srna  199 CATcatgatttAgcaAgaaaaaccaagcaaagagaactttagtttgacacCcCgaAa.ccaggtGaGCTactccaaggcagcctatatagggcaaa 293 
+                   CATcatgatttAgcaAgaa+aaccaagcaaa  gaa+tt+ag+ttg ca+CcCgaAa cca+g+GaGCTact+  a+gcagc+ +tat+g gcaaa
+  NC_002785.1 1294 CATCATGATTTAGCAAGAACAACCAAGCAAAACGAATTTAAGCTTGCCATCCCGAAAcCCAAGCGAGCTACTTACAAGCAGCTATTATTGAGCAAA 1389
+                   *********************************************************78889**********************99********** PP
+
+       16srna  294 cccgtctctgtggcaaaagagtgggaagatctttgagtagaggtgAaAagcctAccGAgcttggtgatagctggttgcctaagaaatGaatataag 389 
+                   cccgtctctgtggcaaaagagtgggaaga++t+t agtagaggtgAaAagcc AccGAgct ggtgatagctggttgcct+ gaaa Gaat taag
+  NC_002785.1 1390 CCCGTCTCTGTGGCAAAAGAGTGGGAAGACTTGTCAGTAGAGGTGAAAAGCCAACCGAGCTGGGTGATAGCTGGTTGCCTGTGAAAAGAATCTAAG 1485
+                   ************************************************************************************************ PP
+
+       16srna  390 ttcagccttaagtcttcccaaatcacaa..aaaaa..ttaaaaagaaaacttaagagttAgtcaaagggggtacagctcctttgaaaaaggatacA 481 
+                   ttca  c+taa t+  ccc+     ca+  a +aa  ttaa++ag aaa  ta ga  tA+t+aaagg+ggtacagctccttt aaaaag a acA
+  NC_002785.1 1486 TTCACTCCTAACTTACCCCTCCCGGCATccACTAAccTTAATGAGGAAAGCTAGGAACTATTTAAAGGAGGTACAGCTCCTTTAAAAAAGAACACA 1581
+                   ****999999888776666554443333333333335778889999999*********************************************** PP
+
+       16srna  482 accttaactggaggataaagatcataat..aaaatatcatagTgggcctaaaAgCagCcAccaataaagaaagcgttaaAgctcaaacataaaaac 575 
+                   acct  a+t+gagg+taa    c         +   +c+  gT ggcc +aaAgCagCcA+caa aaaga +gcgt aaAgctcaa+ca a aa  
+  NC_002785.1 1582 ACCTCCATTAGAGGGTAACCCCCCCCCCccCCTCCTCCCACGTTGGCCCTAAAGCAGCCATCAACAAAGAGTGCGTCAAAGCTCAACCAAATAA-- 1675
+                   ******************98876554435666777789999*********************************************99887654.. PP
+
+       16srna  576 ctataatcccaataatcaatctaaacccct.taataatactaggccattctAtgcaaacaTagaagaaataaTgcTaaaAtgAgTAAcaagagaac 670 
+                       aat +caata  ca t t+a+cccct  a++a+ta +aggcca tctAtg  a+caTagaagaa t+aTgcTaaaAtgAgTAA+ aga+a+ 
+  NC_002785.1 1676 ---AAAT-TCAATA-ACACTATGACCCCCTaCACCACTAACAGGCCAATCTATG--ACCATAGAAGAACTTATGCTAAAATGAGTAATTAGAAAT- 1763
+                   ...4777.555555.5667899*******977999*******************..999*********************************995. PP
+
+       16srna  671 tgaccttctcc.cagcacaagtgtaaatcagaacggAcaaaccactgataattaacgaacccaata.ataatgcataa.acaacaagaaaaccata 763 
+                      +cttctc+  agc+caag++ta+at+a a+              at+attaac+++c  aa++ ata+t +a+a   c ac+agaa    ata
+  NC_002785.1 1764 ---TCTTCTCTaAAGCGCAAGCTTACATTATAT--------------ATTATTAACAGCCT-AACTtATATT-TACACtCCTACTAGAAC-AAATA 1839
+                   ...79*****9569****************877..............9********98887.5543354444.23333345788899743.23577 PP
+
+       16srna  764 caa.aacaaaccgTtaacccaACacaggagtgcctacaaggaaagactaaaagaagtagaAgGaacTcggcaAacacaagccccgcctgTTTacCa 858 
+                   +aa a ca  c+gTtaacccaAC caggag gcct     gaaaga+taaaa  +g a+aAgGaacT ggcaAac caag+cccg ctgTTTacCa
+  NC_002785.1 1840 TAAaACCACTCTGTTAACCCAACTCAGGAGCGCCT-ATTAGAAAGATTAAAATCTGCAAAAGGAACTAGGCAAACCCAAGGCCCGACTGTTTACCA 1934
+                   766688899************************96.56789******************************************************* PP
+
+       16srna  859 AaaaCatcgcctctagcaaa..acaagtattagaggtcctgcctgcccagtgactatatgtttAacGgccgcggtatcctgaccgtgcaaAggtag 952 
+                   AaaaCat gcct++agc+aa  acaagtatt+ aggt  tgcctgcccagtgact  atgtttAacGgccgcggtatcct accgtgc+aAggtag
+  NC_002785.1 1935 AAAACATAGCCTTCAGCCAAtaACAAGTATTGAAGGTGATGCCTGCCCAGTGACT-AATGTTTAACGGCCGCGGTATCCTAACCGTGCGAAGGTAG 2029
+                   ****************97644599******************************9.699************************************* PP
+
+       16srna  953 cgtaatcActtgtcttttaAatagaGacttgtATgaatggctaaacgagggcttaactgtctcttatttccaatcagtgaaattgatctccccGTg 1048
+                   cg+aatcA ttgtc++ taAat g+GacttgtATgaatggctaaacgagg ct aactgtctctt + + +aatca tgaaattgatct+cc GTg
+  NC_002785.1 2030 CGCAATCAATTGTCCCATAAATCGGGACTTGTATGAATGGCTAAACGAGGTCTCAACTGTCTCTTGCAGATAATCAATGAAATTGATCTTCCTGTG 2125
+                   ************************************************************************************************ PP
+
+       16srna 1049 cAgaagcggggataaaaacataAGACgAgAAGACCCtatggAgCTttaaacacaaaggccaactatgttaaacaac....cc...taaggaataa. 1136
+                   cA aagc gg ata+aaacataAGACgAgAAGACCCt+tggA CTt aaa  caa+g +caa+    t+  ac  c    cc   taagg+++a  
+  NC_002785.1 2126 CAAAAGCAGGAATATAAACATAAGACGAGAAGACCCTGTGGAACTTAAAAACCAAGGATCAATGCACTCCCAC--CcaaaCCtacTAAGGCTCACc 2219
+                   *************************************************999999998887554322222111..112334433234587776445 PP
+
+       16srna 1137 act...aatgaaaactgacttaatattTttgGtTggGgcgACctcggagaaaaaaaaaacctccaagtggatgggactattcctttaaaccaagag 1229
+                   act         aactga++ +   ttTttgGtTggGgcgACct+ggagaaaaaa aa+cctccaa        gac+a+  ct+t+aac+aagag
+  NC_002785.1 2220 ACTcctGCAACCAACTGATCCTCGTTTTTTGGTTGGGGCGACCTTGGAGAAAAAAGAATCCTCCAAAAA--CAAGACCACAACTCTTAACTAAGAG 2313
+                   333222344567789*************************************************99976..78999999999************** PP
+
+       16srna 1230 caaCaactctaagtaacagaatctgccaaaaatgacccagtatagctgatcaacggaccaagttaccctagGgatAacagcgcaatcctcttcaag 1325
+                   c aC  ctc+aagt+ ca  a   gc   a+  gaccca+tata +tgat aa+ggaccaag taccc+agGgatAacagcgcaatc++cttcaag
+  NC_002785.1 2314 CCACTCCTCAAAGTGCCAACA---GC--GACCAGACCCAATATAATTGATTAATGGACCAAGCTACCCCAGGGATAACAGCGCAATCTCCTTCAAG 2404
+                   ***************998656...67..67889*************************************************************** PP
+
+       16srna 1326 AgtccatATcgacaaggggGttTacgACCTCgAtgttggatcAggacatCctaatggtGcagccgctattAaggGttcGtttgttcaaCGattaa. 1420
+                   Ag+cc+tATcgacaagg gGttTacgACCTCgAtgttggatcAggacatCctaatggtGcagccgctattAaggGttcGtttgttcaaCGattaa 
+  NC_002785.1 2405 AGCCCCTATCGACAAGGAGGTTTACGACCTCGATGTTGGATCAGGACATCCTAATGGTGCAGCCGCTATTAAGGGTTCGTTTGTTCAACGATTAAc 2500
+                   ************************************************************************************************ PP
+
+       16srna 1421 agtcCtacgtGaTctGagttcagACcggAgtaATCCAGGTCgGtttctATcTatgaagtaatttttcctagTaCgAAAGGaccggaaaaatggggc 1516
+                   agtcCtacgtGaTctGagttcagACcggAg aATCCAGGTCgGtttctATcTatg +  +a+ttttc +agTaCgAAAGGacc gaaaa+tg+ggc
+  NC_002785.1 2501 AGTCCTACGTGATCTGAGTTCAGACCGGAGAAATCCAGGTCGGTTTCTATCTATGCT-ATACTTTTCTCAGTACGAAAGGACCAGAAAAGTGAGGC 2595
+                   ********************************************************9.8999********************************** PP
+
+       16srna 1517 Caatgctacaagcacgccctac.ccttaattaatgaaaacaactaAattagataaagggatataacacttaaccctAgataagggctt 1603
+                   Caat c a aagcacgcc+++c  c+taatta tgaaaaca+ct Aa ta   a +    +a++ac+c++ accctAga aagggct 
+  NC_002785.1 2596 CAATACCAAAAGCACGCCTCCCcGCCTAATTAGTGAAAACATCTCAACTAACAAGGAAACCACCACCCCCGACCCTAGAAAAGGGCTA 2683
+                   ****************99888538999********************9977776666666667777788999*************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (1613 nodes)
+Target sequences:                          1  (33390 residues searched)
+Residues passing SSV filter:            2698  (0.0808); expected (0.02)
+Residues passing bias filter:           2698  (0.0808); expected (0.02)
+Residues passing Vit filter:            2689  (0.0805); expected (0.003)
+Residues passing Fwd filter:            2689  (0.0805); expected (3e-05)
+Total number of hits:                      1  (0.0471)
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 810.09
+//
+[ok]

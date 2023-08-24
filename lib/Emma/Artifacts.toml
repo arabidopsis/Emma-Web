@@ -1,0 +1,6 @@
+[Emma-models]
+git-tree-sha1 = "9a5922a3c72dc2e84be44e8f2eecfe73c9c2b3ec"
+
+    [[Emma-models.download]]
+    sha256 = "3678e8c020a7c3a13aa727db8e8f9fefce1d3fec81707229b8d1e733a3263bb1"
+    url = "https://github.com/ian-small/emma-models/archive/refs/tags/v0.1.5-alpha.tar.gz"

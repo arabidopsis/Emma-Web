@@ -1,0 +1,40 @@
+<head>
+  <title>Emma</title>
+  <link rel="stylesheet" type="text/css" href="css/genie/style.css">
+  </head>
+  <body>
+  <div class="green-banner">
+    <h1 class="centered">Emma</h1>
+    <h3 class="centered">Vertebrate mitogenome annotator</h3>
+  </div>
+  <div class="tab-container">
+    <div class="first-tab">Emma</div>
+    <img class="tab-icon"src="img/pen.png">
+    <a class="tab" href="annotate.html">Annotate</a>
+    <img class="tab-icon"src="img/book.png">
+    <a class="tab" href="info.html">Info</a>
+    <img class="tab-icon"src="img/phone.png">
+    <a class="tab" id="contact.html">Contact</a>
+  </div>
+  <div class="card-container">
+  <div class="card">
+    <div class="card-header">Annotate your mitochondrial genomes</div>
+    <p class="card-content">
+      Input a single file or a directory of sequence files to annotate. These should be
+      in Fasta format and contain a single genome sequence each. Once a query has been selected,
+      submit it for annotation. If you would like to have
+      annotations shifted to begin with tRNA-Phe, please tick the circular sequence box below. 
+    </p>
+    <div class="card-content">
+    <form action="/" method="POST" enctype="multipart/form-data">
+      <label for="file">Upload Fasta File:</label>
+      <div class="file-input">
+        <input type="checkbox" name="myCheckbox" id="myCheckbox"> circular
+        <input type="file" accept=".fa,.fasta,.fas,.zip" name="yourfile" >
+      </div>
+        <input type="submit" value="Submit and annotate" class="submit-button">
+    </form>
+    </div>
+  </div>
+  </div>
+  </body>

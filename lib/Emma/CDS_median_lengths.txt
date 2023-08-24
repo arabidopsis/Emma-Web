@@ -1,0 +1,13 @@
+ND1.protein	974
+ND2.protein	1043
+ND3.protein	348
+ND4.protein	1380
+ND5.protein	1823
+ND6.protein	521
+ND4L.protein	296
+COX1.protein	1550
+COX2.protein	687
+COX3.protein	783
+ATP8.protein	167
+ATP6.protein	683
+CYTB.protein	1140
