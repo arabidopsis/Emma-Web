@@ -18,7 +18,6 @@ include("rRNAs.jl")
 include("gff.jl")
 include("gb.jl")
 include("visuals.jl")
-include("gb.jl")
 
 const minORF = 150
 
