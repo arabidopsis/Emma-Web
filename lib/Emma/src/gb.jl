@@ -1,6 +1,6 @@
 
 products = Dict{String, String}()
-open("/home/pavel/Emma/gene2product.txt", "r") do infile
+open("lib/Emma/gene2product.txt", "r") do infile
     for line in readlines(infile)
         names = split(line, "\t")
         products[first(names)] = last(names)
