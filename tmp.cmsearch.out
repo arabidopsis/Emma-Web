@@ -3,49 +3,2527 @@
 # Copyright (C) 2020 Howard Hughes Medical Institute.
 # Freely distributed under the BSD open source license.
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# query CM file:                         lib/Emma/emma_vertebrate_models/trn/trnY_fish.cm
-# target sequence database:              tmp.fa
+# query CM file:                         lib/Emma/emma_vertebrate_models/trn/all_trn.cm
+# target sequence database:              tmp.extended.fa
 # number of worker threads:              8
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-Query:       trnY_fish  [CLEN=70]
+Query:       trnA_fish  [CLEN=69]
 Hit scores:
- rank     E-value  score  bias  sequence  start    end   mdl trunc   gc  description
- ----   --------- ------ -----  -------- ------ ------   --- ----- ----  -----------
-  (1) !   1.4e-24   79.8   0.0  trnY          1     71 +  cm    no 0.42  -
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   1.3e-19   90.8   0.0  NC_002081.1   5201   5133 -  cm    no 0.36  -
+  (2) !   5.5e-08   41.7   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (3) !   6.1e-08   41.5   0.0  NC_002081.1   9962  10030 +  cm    no 0.38  -
+  (4) !   8.7e-07   36.6   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (5) !   1.4e-05   31.5   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (6) !   6.8e-05   28.7   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (7) !   0.00017   27.0   0.0  NC_002081.1   3808   3878 +  cm    no 0.45  -
+  (8) !   0.00046   25.2   0.0  NC_002081.1      1     68 +  cm    no 0.37  -
+  (9) !   0.00046   25.2   0.0  NC_002081.1  16697  16764 +  cm    no 0.37  -
+ ------ inclusion threshold ------
+ (10) ?      0.47   12.4   0.0  NC_002081.1   3951   4013 +  cm    no 0.43  -
 
 
 Hit alignments:
->> trnY  
+>> NC_002081.1  
  rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
  ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
-  (1) !   1.4e-24   79.8   0.0  cm        1       70 []           1          71 + [. 1.00    no 0.42
+  (1) !   1.3e-19   90.8   0.0  cm        1       69 []        5201        5133 - .. 1.00    no 0.36
 
-                                        vv             vv                              NC
-               (((((((,,<<<<______.>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
-  trnY_fish  1 GguAgggUGGCugAGugUU.aaGCGguGGgUUGUAGccCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70
-               G:UA:G:UGGCUGAGUGUU AAGCG  :GG UGUAG CC:   UACAGAGGUU AA UCCUCU:C:UA:CA
-       trnY  1 GGUAAGAUGGCUGAGUGUUcAAGCGUUAGGCUGUAGUCCUUUUUACAGAGGUUCAAUUCCUCUUCUUAUCA 71
-               *********************************************************************** PP
+                                                                                         NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish    1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUUUGCAUgCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69  
+                   AAGG::UUA:CUUAAUUAAAG:+U:UG:UUUGCAU:CA:AAGAUGU:GG UA+UGUCC:GCA::UCUUA
+  NC_002081.1 5201 AAGGUCUUAGCUUAAUUAAAGUAUUUGUUUUGCAUACAGAAGAUGUGGGGUAGUGUCCUGCAGAUCUUA 5133
+                   ********************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   5.5e-08   41.7   0.0  cm        1       69 []       15699       15630 - .. 0.96    no 0.41
+
+                                                                                           NC
+                    (((((((,,<<<<___.__>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish     1 AAGgCuUUAgcUUAAU.UAAAgcgucUGcUUUGCAUgCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69   
+                     AG::::UA::U AAU UA A:: :: GCUUUG   GC :: G U: G:G+UAA++UC:C :::::CU A
+  NC_002081.1 15699 CAGAGGGUAGUUUAAUuUAGAAUUCUAGCUUUGGGAGCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    *************8862678*************999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   6.1e-08   41.5   0.0  cm        1       69 []        9962       10030 + .. 0.97    no 0.38
+
+                               v       v                                                   NC
+                    (((((((,,<<<<_____>>>>,<<<<<___~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish     1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUUU*[4]*gCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69   
+                    A:G  :UUA:: UAA UAA ::+::UG:UUU     :CA::AG   ::GG+UAA+GUCC:: A:  C:UA
+  NC_002081.1  9962 AGGUGAUUAGUCUAAGUAAAAUACUUGAUUU*[4]*UCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUA 10030
+                    *****************************98..5..********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   8.7e-07   36.6   0.0  cm        1       69 []       11702       11770 + .. 0.99    no 0.33
+
+                      v                                                              v    NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish     1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUUUGCAUgCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69   
+                    :  ::UUUAG: UAA  AA :C+U: G:UU   AU:C :AA AU:::GG+UAA+  CC:::AA::  : 
+  NC_002081.1 11702 GUAGAUUUAGUUUAACCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    *****************************988899********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   1.4e-05   31.5   0.0  cm        1       69 []        7070        7137 + .. 0.98    no 0.50
+
+                                                                                         NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish    1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUUUGCAUgCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69  
+                   ::G::::U G:  AAU A  :C+:: :CUU  CA G: ::A  UGUGGG+UAA++ CCCGC::::C:: 
+  NC_002081.1 7070 GGGCUACUGGUGAAAU-AUCACACUGCCUUGUCAAGGCAGAAUUGUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   ************9886.69************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   6.8e-05   28.7   0.0  cm        1       69 []        7066        6996 - .. 0.97    no 0.48
+
+                   v                                                               v  NC
+                   (((((((,,<<~~~~~~>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish    1 AAGgCuUUAgc*[ 9]*gcgucUGcUUUGCAUgCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69  
+                    AG::::U :C      G:G::UG: UUG A :CA::AGAUG GGG+U ++ UCCC C::::CU  
+  NC_002081.1 7066 AAGAAAGUGAC*[11]*GUGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   **********9...8..9************************************************ PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   0.00017   27.0   0.0  cm        1       69 []        3808        3878 + .. 0.98    no 0.45
+
+                               v     v    vv               vv                              NC
+                   (((((((,,<<<<_____>>>>,<<<<<____~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish    1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUUUG*[3]*gCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69  
+                   :::::U:U :CU AA UA AG:G  ::CUUUG     G::    AU::GGG+UAA+GUCCC:::A::::: 
+  NC_002081.1 3808 GGAGUUGUGCCUGAAGUAAAGGGACCACUUUG*[5]*GUGAAUCAUAAGGGUUAAAGUCCCUUCAACUCCU 3878
+                   ******************************98..9..99999***************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   0.00046   25.2   0.0  cm        1       69 []           1          68 + [. 0.92    no 0.37
+
+                    v                                            v       v       v     NC
+                 (((((((,,<<<<_____>>>>,<<<<<__~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish  1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUU*[5]*gCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69
+                 :   :::UA:CUUAAUUAAAG: U:  : U     :  :A GAUG:::  UA+++  :::C:::   :A
+  NC_002081.1  1 GCUAUCGUAGCUUAAUUAAAGUUUAAUACU*[5]*UAUUAGGAUGGACCCUAGAAA-GUCCCGAAAGCA 68
+                 ************************988765..6..7899*********9***9887.8*********** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   0.00046   25.2   0.0  cm        1       69 []       16697       16764 + .. 0.92    no 0.37
+
+                       v                                            v       v       v     NC
+                    (((((((,,<<<<_____>>>>,<<<<<__~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish     1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUU*[5]*gCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69   
+                    :   :::UA:CUUAAUUAAAG: U:  : U     :  :A GAUG:::  UA+++  :::C:::   :A
+  NC_002081.1 16697 GCUAUCGUAGCUUAAUUAAAGUUUAAUACU*[5]*UAUUAGGAUGGACCCUAGAAA-GUCCCGAAAGCA 16764
+                    ************************988765..6..7899*********9***9887.8*********** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) ?      0.47   12.4   0.0  cm        1       69 []        3951        4013 + .. 0.95    no 0.43
+
+                                                                vv           vv          NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnA_fish    1 AAGgCuUUAgcUUAAUUAAAgcgucUGcUUUGCAUgCAgaAGAUGuggGaUAaugUCccgCAaGuCUUA 69  
+                   AA::   U :::UAA   A::: U: G:     A :C :AA AUG  GG+UAA+ UCC  C   ::UU 
+  NC_002081.1 3951 AAAG---UCAGCUAAAAUAGCUCUUGGGCCCAUACCCCGAACAUGUUGGUUAAAUUCCUUC---CUUUG 4013
+                   ***9...77*******99*********988877889*************************...9**** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (69 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (344 residues re-searched)
+Windows   passing  local HMM SSV           filter:             194  (0.5977); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              36  (0.1268); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              25  (0.09147); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              19  (0.08239); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              17  (0.06704); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              17  (0.03984); expected (0.02)
+Envelopes passing  local CM  CYK           filter:              11  (0.02334); expected (0.0001)
+Total CM hits reported:                                         10  (0.02021); includes 0 truncated hit(s)
+
+# CPU time: 0.28u 0.00s 00:00:00.28 Elapsed: 00:00:00.27
+//
+Query:       trnC_fish  [CLEN=66]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   4.3e-17   66.8   0.0  NC_002081.1   5374   5309 -  cm    no 0.45  -
+  (2) !     1e-10   44.3   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (3) !    0.0048   17.2   0.0  NC_002081.1  11709  11762 +  cm    no 0.31  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.3e-17   66.8   0.0  cm        1       66 []        5374        5309 - .. 1.00    no 0.45
+
+                               v   v                                                   NC
+                   (((((((,,<<<<___>>>>,<<<<<_______>>>>>,,,,<<<<<_._____>>>>>))))))): CS
+    trnC_fish    1 AGCCCuGuGgUGaAuuuCAuguuggaUUGCAAAuccaaAGAaGcaGaU.uAaaguCugCCgGGGCUU 66  
+                   AG::CUG +:UG  U+ CA:GU::GAUUGCAAAUC::AAGAAGCA A  UA AGU UGCCGG::CUU
+  NC_002081.1 5374 AGUUCUGGAGUGU-UACCACGUCAGAUUGCAAAUCUGAAGAAGCAGACuUACAGUUUGCCGGGACUU 5309
+                   *************.99*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !     1e-10   44.3   0.0  cm        1       66 []        7070        7137 + .. 0.99    no 0.50
+
+                                                                                        NC
+                   (((((((,,<<<<_.__>>>>,<<<<<_______>>>>>,,,,<<<<<_._____>>>>>))))))): CS
+    trnC_fish    1 AGCCCuGuGgUGaA.uuuCAuguuggaUUGCAAAuccaaAGAaGcaGaU.uAaaguCugCCgGGGCUU 66  
+                   :G:C:: UG:UGAA U+UCA:+:UG  UUG  AA  CA:A  +G::G:U +AAA :C::C ::G:C:U
+  NC_002081.1 7070 GGGCUACUGGUGAAaUAUCACACUGCCUUGUCAAGGCAGAAUUGUGGGUuAAAACCCCGCGUAGCCUU 7137
+                   ******************************9999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !    0.0048   17.2   0.0  cm        8       58 ..       11709       11762 + .. 0.95    no 0.31
+
+                                                                           NC
+                    ,,<<<<_..__>>>>,<<<<<_______>>>>>,,,,<<<<<_._____>>>>> CS
+    trnC_fish     8 uGgUGaA..uuuCAuguuggaUUGCAAAuccaaAGAaGcaGaU.uAaaguCugC 58   
+                    U+:U :A   +: A:+UU:GAUUG  A UC:AAA A+::AG:U +AA  :CU::
+  NC_002081.1 11709 UAGUUUAacCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUuAAACCCCUCU 11762
+                    *******9999************95555************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (66 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (328 residues re-searched)
+Windows   passing  local HMM SSV           filter:             160  (0.4908); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              20  (0.06742); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              16  (0.05675); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               8  (0.03379); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               8  (0.03379); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               9  (0.01733); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               3  (0.005837); expected (0.0001)
+Total CM hits reported:                                          3  (0.005542); includes 0 truncated hit(s)
+
+# CPU time: 0.05u 0.02s 00:00:00.07 Elapsed: 00:00:00.06
+//
+Query:       trnD_fish  [CLEN=71]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !     7e-17   77.6   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (2) !   9.8e-09   44.0   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (3) !   1.6e-05   30.7   0.0  NC_002081.1   5201   5133 -  cm    no 0.36  -
+ ------ inclusion threshold ------
+  (4) ?      0.12   14.7   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (5) ?      0.26   13.3   0.0  NC_002081.1   3948   4016 +  cm    no 0.42  -
+  (6) ?       1.1   10.7   0.0  NC_002081.1   6671   6721 +  cm    no 0.29  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !     7e-17   77.6   0.0  cm        1       71 []        7070        7137 + .. 0.97    no 0.50
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnD_fish    1 aAGacaCUAGUaAaAauaaAUuACAcugCcUUGUCAAgGcagAAUUGcgGGUUAAAcCCCcgCGuguCUua 71  
+                   ::G::ACU GU:A AA  +AU:ACACUGCCUUGUCAAGGCAGAAUUG:GGGUUAAA+CCCC:CGU::C:: 
+  NC_002081.1 7070 GGGCUACUGGUGA-AA--UAUCACACUGCCUUGUCAAGGCAGAAUUGUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   *************.55..56*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   9.8e-09   44.0   0.0  cm        1       71 []       11702       11770 + .. 0.96    no 0.33
+
+                      v                                                                v    NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnD_fish     1 aAGacaCUAGUaAaAauaaAUuACAcugCcUUGUCAAgGcagAAUUGcgGGUUAAAcCCCcgCGuguCUua 71   
+                    :  ::::UAGU : AA   A: ACA:U:::UUGU A :::A:AA U:::GGUUAAACCCC:::::::  : 
+  NC_002081.1 11702 GUAGAUUUAGUUU-AAC-CAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    ************9.555.559************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.6e-05   30.7   0.0  cm        1       71 []        5201        5133 - .. 0.95    no 0.36
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnD_fish    1 aAGacaCUAGUaAaAauaaAUuACAcugCcUUGUCAAgGcagAAUUGcgGGUUAAAcCCCcgCGuguCUua 71  
+                   AAG :::UA  :: AAU +A::  A: :::UU  CA ::: :A  UG: GG UA   +CC :C::: CUUA
+  NC_002081.1 5201 AAGGUCUUAGCUU-AAU-UAAAGUAUUUGUUUUGCAUACAGAAGAUGUGGGGUAGUGUCCUGCAGAUCUUA 5133
+                   ************9.554.5599**********99999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?      0.12   14.7   0.0  cm        1       71 []        7066        6996 - .. 0.74    no 0.48
+
+                   v                                                         v  NC
+                   (((((((,,<<<~~~~~>>>,<<~~~~~~>>,,,,<<<<<_______>>>>>))))))): CS
+    trnD_fish    1 aAGacaCUAGUa*[9]*uACAcu*[13]*agAAUUGcgGGUUAAAcCCCcgCGuguCUua 71  
+                    AGA:A:U : A     U : :        :A  UG GGGUU  A++CCC C:U:UCU  
+  NC_002081.1 7066 AAGAAAGUGACA*[9]*UGUGAU*[13]*GUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   ********9544..5..444444...5..4599*************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) ?      0.26   13.3   0.0  cm        1       71 []        3948        4016 + .. 0.88    no 0.42
+
+                                                              vv           vv          NC
+                   (((((((,,<<<<_______>>>>,<<<<~~~~~>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnD_fish    1 aAGacaCUAGUaAaAauaaAUuACAcugC*[9]*GcagAAUUGcgGGUUAAAcCCCcgCGuguCUua 71  
+                   A: A:A:U : :: AA+A+ :: : : G:     :C :A  UG  GGUUAAA++CC  C:U:U :UA
+  NC_002081.1 3948 AGUAAAGUCAGCU-AAAAU-AGCUCUUGG*[9]*CCGAACAUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   ********98777.55555.777888886..8..7889***************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?       1.1   10.7   0.0  cm        1       71 []        6671        6721 + .. 0.96    no 0.29
+
+                   v                                               v  NC
+                   (((((((,,~~~~~~~~~~~~,,,,<<<<<_______>>>>>))))))): CS
+    trnD_fish    1 aAGacaCUA*[15]**[18]*AAUUGcgGGUUAAAcCCCcgCGuguCUua 71  
+                    A:A:A:U             A UUG:: GU  AA++C ::C:U:U:U  
+  NC_002081.1 6671 CAAAAAUUC*[ 7]**[ 6]*AUUUGUAGGUGUAAAUCUUACAUUUUUCC 6721
+                   ********9...9.....8..***************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (416 residues re-searched)
+Windows   passing  local HMM SSV           filter:             168  (0.6034); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              21  (0.09418); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              16  (0.07416); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              10  (0.05887); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              10  (0.05887); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              10  (0.02364); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               6  (0.01173); expected (0.0001)
+Total CM hits reported:                                          6  (0.01167); includes 0 truncated hit(s)
+
+# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.15
+//
+Query:       trnE_fish  [CLEN=69]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   3.2e-23   88.1   0.0  NC_002081.1  14339  14271 -  cm    no 0.39  -
+  (2) !   1.2e-12   51.2   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (3) !   3.7e-11   46.0   0.0  NC_002081.1   9543   9612 +  cm    no 0.41  -
+  (4) !   1.7e-09   40.2   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (5) !   2.9e-09   39.3   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (6) !     8e-07   30.8   0.0  NC_002081.1   9962  10030 +  cm    no 0.38  -
+  (7) !   1.3e-06   30.0   0.0  NC_002081.1   5062   5131 +  cm    no 0.56  -
+ ------ inclusion threshold ------
+  (8) ?     0.016   15.8   0.0  NC_002081.1   3940   3884 -  cm    no 0.53  -
+  (9) ?      0.47   10.7   0.0  NC_002081.1   3814   3875 +  cm    no 0.44  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   3.2e-23   88.1   0.0  cm        1       69 []       14339       14271 - .. 1.00    no 0.39
+
+                                                                                          NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish     1 gUUccugUAGUUGAAUaACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69   
+                    GUUC:UGUAGUUGAAUAACAACG:UG::UUUUCA ::CA:U+GUCC:GGUUAA +UCC:GGCA:GAAUU
+  NC_002081.1 14339 GUUCUUGUAGUUGAAUAACAACGGUGGUUUUUCAUAUCAUUAGUCCUGGUUAAGAUCCGGGCAGGAAUU 14271
+                    ********************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.2e-12   51.2   0.0  cm        1       69 []        7070        7137 + .. 1.00    no 0.50
+
+                                                                                         NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish    1 gUUccugUAGUUGAAUaACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69  
+                   G::C:::U GU::AAU A::AC :UG :UU UCAA: CA: + U:::GGUUAAA+ CC::::::G::UU
+  NC_002081.1 7070 GGGCUACUGGUGAAAU-AUCACACUGCCUUGUCAAGGCAGAAUUGUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   ****************.**************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   3.7e-11   46.0   0.0  cm        1       69 []        9543        9612 + .. 0.99    no 0.41
+
+                                           v               v                              NC
+                   (((((((,,<<<<._____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish    1 gUUccugUAGUUG.AAUaACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69  
+                   :U:::U:UA U:: AA  A::A   : G: UU CAA:C :  GGUC::GGUUA+AGUCC::G:A:::A:+
+  NC_002081.1 9543 AUCUUUCUAGUACuAAGGAGUAUAAGUGGCUUCCAACCACACGGUCUUGGUUAGAGUCCAAGGAAAGAUA 9612
+                   *************9999***************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   1.7e-09   40.2   0.0  cm        1       69 []       15699       15630 - .. 0.98    no 0.41
+
+                                                                                           NC
+                    (((((((,,<<<<___.__>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish     1 gUUccugUAGUUGAAU.aACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69   
+                    ::::::GUA UU AAU +A AA  :U:G:UUU   A:C:A:UGGU  ::GUUAAA+UC::  C::::::+
+  NC_002081.1 15699 CAGAGGGUAGUUUAAUuUAGAAUUCUAGCUUUGGGAGCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    *************88879**************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   2.9e-09   39.3   0.0  cm        1       69 []       11702       11770 + .. 1.00    no 0.33
+
+                      v                                                              v    NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish     1 gUUccugUAGUUGAAUaACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69   
+                    :U ::U:UAGU :AA  A: AC :U:G:UU U A :C:A: + U:::GGUUAAA  CC::::A:: A: 
+  NC_002081.1 11702 GUAGAUUUAGUUUAACCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    ********************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !     8e-07   30.8   0.0  cm        1       69 []        9962       10030 + .. 0.99    no 0.38
+
+                               v       v                                                  NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish     1 gUUccugUAGUUGAAUaACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69   
+                    :::: ::UA U :AA +A: A  :U G:UUU    :C A: G  :::GGUUAAAGUCC::::: ::::+
+  NC_002081.1  9962 AGGUGAUUAGUCUAAGUAAAAUACUUGAUUUCGGCUCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUA 10030
+                    *******************************9999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   1.3e-06   30.0   0.0  cm        1       69 []        5062        5131 + .. 0.96    no 0.56
+
+                              v        v                                                  NC
+                   (((((((,,<<<<._____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish    1 gUUccugUAGUUG.AAUaACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69  
+                   :::::::UAG    AA +A   C ::GG: UU  AA:CC:: +G :::GGU AAA+UCC:::::::::: 
+  NC_002081.1 5062 AGGGGCUUAGGAUaAACUAGACCAAGGGCCUUCAAAGCCCUCAGCGGAGGUGAAAAUCCUCCAGCCCCUG 5131
+                   **********988455599*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?     0.016   15.8   0.0  cm        1       69 []        3940        3884 - .. 0.98    no 0.53
+
+                                                                  v             v          NC
+                   (((((((,,<<<<___..__>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish    1 gUUccugUAGUUGAAU..aACAACGguGguUUUUCAagcCacUgGUCccGGUUAAAgUCCggGcaggAAuu 69  
+                   G        GU: A U  AA :AC ::G::UUUU A ::C::  G : :GGUU +AG CC: :      UU
+  NC_002081.1 3940 G--------GUGUAGUggAAGCACUAGGAGUUUUGAUCUCCUGUGGAUGGGUUCGAGCCCCCU------UU 3884
+                   *........99999998899*******************************************......** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) ?      0.47   10.7   0.0  cm        1       69 []        3814        3875 + .. 0.90    no 0.44
+
+                     vvv      vv     vv                                    vvv    NC
+                   (((((((,,<<<<_____>>>>,<<~~~~~~>>,,,,<<<<<_______>>>>>))))))): CS
+    trnE_fish    1 gUUccugUAGUUGAAUaACAACGgu*[13]*acUgGUCccGGUUAAAgUCCggGcaggAAuu 69  
+                   :U CCUG AGU  A   A  AC :U      A:U  U:::GGUUAAAGUCC:::CA   A:U
+  NC_002081.1 3814 GUGCCUGAAGUAAAGGGACCACUUU*[ 9]*AAUCAUAAGGGUUAAAGUCCCUUCA---ACU 3875
+                   ***99**999999999999999887...6..88***********************...*** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (69 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (344 residues re-searched)
+Windows   passing  local HMM SSV           filter:             122  (0.3922); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              28  (0.09486); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              26  (0.08675); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              16  (0.08018); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              16  (0.08018); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              16  (0.03645); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               9  (0.02007); expected (0.0001)
+Total CM hits reported:                                          9  (0.0178); includes 0 truncated hit(s)
+
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.23
+//
+Query:       trnF_fish  [CLEN=69]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   2.4e-17   78.4   0.0  NC_002081.1      1     68 +  cm    no 0.37  -
+  (2) !   2.4e-17   78.4   0.0  NC_002081.1  16697  16764 +  cm    no 0.37  -
+  (3) !   0.00024   24.9   0.0  NC_002081.1   5201   5133 -  cm    no 0.36  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.4e-17   78.4   0.0  cm        1       69 []           1          68 + [. 1.00    no 0.37
+
+                                                                                       NC
+                 (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,<<<<<______>>>>>))))))): CS
+    trnF_fish  1 GcucgcGUAGCUUAAuauAAAGCAuagCACUGAAGAUGcuaAGAUGggcccUAaAAggccCCgcgagCA 69
+                 GCU::CGUA:CUUAAU UAAAG: UA::ACUGAAGAU::UA GAUGG:C:CUA+AA:G:CCCG::AGCA
+  NC_002081.1  1 GCUAUCGUAGCUUAAU-UAAAGUUUAAUACUGAAGAUAUUAGGAUGGACCCUAGAAAGUCCCGAAAGCA 68
+                 ****************.**************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   2.4e-17   78.4   0.0  cm        1       69 []       16697       16764 + .. 1.00    no 0.37
+
+                                                                                          NC
+                    (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,<<<<<______>>>>>))))))): CS
+    trnF_fish     1 GcucgcGUAGCUUAAuauAAAGCAuagCACUGAAGAUGcuaAGAUGggcccUAaAAggccCCgcgagCA 69   
+                    GCU::CGUA:CUUAAU UAAAG: UA::ACUGAAGAU::UA GAUGG:C:CUA+AA:G:CCCG::AGCA
+  NC_002081.1 16697 GCUAUCGUAGCUUAAU-UAAAGUUUAAUACUGAAGAUAUUAGGAUGGACCCUAGAAAGUCCCGAAAGCA 16764
+                    ****************.**************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   0.00024   24.9   0.0  cm        1       69 []        5201        5133 - .. 0.89    no 0.36
+
+                                                                                      NC
+                   (((((((,,<<<<______>>>>,<<<<~~~~~>>>>,,,,<<<<<______.>>>>>))))))): CS
+    trnF_fish    1 GcucgcGUAGCUUAAuauAAAGCAuagC*[9]*GcuaAGAUGggcccUAaAA.ggccCCgcgagCA 69  
+                   ::: :C UA:CUUAAU UAAAG:AU :       : AAGAUG  :: UA+   ::  C G: :::A
+  NC_002081.1 5201 AAGGUCUUAGCUUAAU-UAAAGUAUUUG*[9]*CAGAAGAUGUGGGGUAGUGuCCUGCAGAUCUUA 5133
+                   ****************.********876..7..678*********99887532999********** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (69 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (348 residues re-searched)
+Windows   passing  local HMM SSV           filter:             163  (0.5158); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              29  (0.1014); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              21  (0.06862); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              10  (0.04154); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              10  (0.04154); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              11  (0.0241); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               4  (0.008191); expected (0.0001)
+Total CM hits reported:                                          3  (0.00604); includes 0 truncated hit(s)
+
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+//
+Query:       trnG_fish  [CLEN=71]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   2.9e-18   83.9   0.0  NC_002081.1   9543   9612 +  cm    no 0.41  -
+  (2) !   4.5e-07   37.6   0.0  NC_002081.1  14339  14271 -  cm    no 0.39  -
+  (3) !   3.1e-06   34.2   0.0  NC_002081.1   9962  10030 +  cm    no 0.38  -
+  (4) !   3.3e-05   29.9   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (5) !   0.00034   25.7   0.0  NC_002081.1  11840  11914 +  cm    no 0.44  -
+ ------ inclusion threshold ------
+  (6) ?      0.91   11.5   0.0  NC_002081.1  11813  11829 +  cm    no 0.53  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.9e-18   83.9   0.0  cm        1       71 []        9543        9612 + .. 0.98    no 0.41
+
+                                            v               v                              NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnG_fish    1 AuCUUuCUAgUAcuAAauuAgUAcAagUGACUUCCAAUCAcuuaGUCuUGGUUAAAauCCAaGGaAAGaUA 71  
+                   AUCUUUCUA:UAC  AA  AGUA:A GUG:CUUCCAA:CAC ++GUCUUGGUUA A UCCAAGGAAAGAUA
+  NC_002081.1 9543 AUCUUUCUAGUAC-UAAGGAGUAUAAGUGGCUUCCAACCACACGGUCUUGGUUAGAGUCCAAGGAAAGAUA 9612
+                   *************.778889*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   4.5e-07   37.6   0.0  cm        1       71 []       14339       14271 - .. 0.99    no 0.39
+
+                                                                                            NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnG_fish     1 AuCUUuCUAgUAcuAAauuAgUAcAagUGACUUCCAAUCAcuuaGUCuUGGUUAAAauCCAaGGaAAGaUA 71   
+                    :U:: U UAGU :  AAU A: AC  : :  UU CA  : : UAGUC: GGUUAA AUCC :G A ::A: 
+  NC_002081.1 14339 GUUCUUGUAGUUG--AAUAACAACGGUGGUUUUUCAUAUCAUUAGUCCUGGUUAAGAUCCGGGCAGGAAUU 14271
+                    *************..99999*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   3.1e-06   34.2   0.0  cm        1       71 []        9962       10030 + .. 0.96    no 0.38
+
+                               v         v                                                  NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnG_fish     1 AuCUUuCUAgUAcuAAauuAgUAcAagUGACUUCCAAUCAcuuaGUCuUGGUUAAAauCCAaGGaAAGaUA 71   
+                    A::  ::UA:U :  AA UA: A:A::UGA UUC   UCA:: +   :UGGUUAAA UCCA: ::  ::UA
+  NC_002081.1  9962 AGGUGAUUAGUCU--AAGUAAAAUACUUGAUUUCGGCUCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUA 10030
+                    ***********88..7777788************988********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   3.3e-05   29.9   0.0  cm        1       71 []        7070        7137 + .. 0.98    no 0.50
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnG_fish    1 AuCUUuCUAgUAcuAAauuAgUAcAagUGACUUCCAAUCAcuuaGUCuUGGUUAAAauCCAaGGaAAGaUA 71  
+                   ::::U:CU GU::   A UA::ACA::  : U  CAA:  :: A U ::GGUUAAAA+CC:: G:A:::: 
+  NC_002081.1 7070 GGGCUACUGGUGA---AAUAUCACACUGCCUUGUCAAGGCAGAAUUGUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   ************9...6688*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   0.00034   25.7   0.0  cm        1       71 []       11840       11914 + .. 0.93    no 0.44
+
+                                                                                                NC
+                    ((((.(((,,<<<<_.______>>>>,<<<<<_______>>>>>,,,.,<<<<<_______>>>>>))).)))): CS
+    trnG_fish     1 AuCU.UuCUAgUAcu.AAauuAgUAcAagUGACUUCCAAUCAcuuaG.UCuUGGUUAAAauCCAaGGaA.AGaUA 71   
+                    A:CU :U  AG A:+  A+ U :U C :: G CUU   A C :: A+ UCUUGGU  AA UCCAAG A: AG:UA
+  NC_002081.1 11840 AGCUcCUAAAGGAUAaUAGCUCAUCCGUUGGUCUUAGGAACCAAAAAcUCUUGGUGCAACUCCAAGUAGcAGCUA 11914
+                    ****9999******99999999*********9**999999998876538*****************9999***** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?      0.91   11.5   0.0  cm       47       63 ..       11813       11829 + .. 1.00    no 0.53
+
+                                      NC
+                    <<<<<_______>>>>> CS
+    trnG_fish    47 CuUGGUUAAAauCCAaG 63   
+                    CUUGGUUA A +CCAAG
+  NC_002081.1 11813 CUUGGUUAGACCCCAAG 11829
+                    ***************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (356 residues re-searched)
+Windows   passing  local HMM SSV           filter:             148  (0.4894); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              31  (0.1055); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              20  (0.07158); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              12  (0.05647); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              12  (0.05647); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              12  (0.03311); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               5  (0.01302); expected (0.0001)
+Total CM hits reported:                                          6  (0.01084); includes 0 truncated hit(s)
+
+# CPU time: 0.26u 0.01s 00:00:00.27 Elapsed: 00:00:00.25
+//
+Query:       trnH_fish  [CLEN=69]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   8.8e-21   88.9   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (2) !   4.8e-09   42.8   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (3) !   5.3e-09   42.7   0.0  NC_002081.1   9962  10030 +  cm    no 0.38  -
+  (4) !     3e-07   35.8   0.0  NC_002081.1   5441   5375 -  cm    no 0.52  -
+  (5) !   1.2e-06   33.5   0.0  NC_002081.1   5201   5133 -  cm    no 0.36  -
+  (6) !   6.9e-06   30.4   0.0  NC_002081.1      1     68 +  cm    no 0.37  -
+  (7) !   6.9e-06   30.4   0.0  NC_002081.1  16697  16764 +  cm    no 0.37  -
+  (8) !   2.5e-05   28.3   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (9) !     3e-05   27.9   0.0  NC_002081.1   3808   3878 +  cm    no 0.45  -
+ ------ inclusion threshold ------
+ (10) ?      0.52   11.3   0.0  NC_002081.1   7058   6996 -  cm    no 0.51  -
+ (11) ?       1.7    9.3   0.0  NC_002081.1    819    877 +  cm    no 0.37  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   8.8e-21   88.9   0.0  cm        1       69 []       11702       11770 + .. 1.00    no 0.33
+
+                                                                                          NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish     1 GuggguaUAGUUUAAauAAAACAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69   
+                    GU:G:U:UAGU UAA+ AA ACAUUAGAUUGUGAUUCUAAAAAUAG:GGUUAAA +CC:CU:A:C:ACC
+  NC_002081.1 11702 GUAGAUUUAGUUUAACCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    ********************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   4.8e-09   42.8   0.0  cm        1       69 []       15699       15630 - .. 0.99    no 0.41
+
+                                                                                           NC
+                    (((((((,,<<<<___.__>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish     1 GuggguaUAGUUUAAa.uAAAACAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69   
+                     :G:G::UA:UU AA+ UA AA: :UAG:UU  G  :CUA: + U::G:GUUAAAAUC:C::::C:C:  
+  NC_002081.1 15699 CAGAGGGUAGUUUAAUuUAGAAUUCUAGCUUUGGGAGCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    ***************999*************99999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   5.3e-09   42.7   0.0  cm        1       69 []        9962       10030 + .. 1.00    no 0.38
+
+                               v       v                                                  NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish     1 GuggguaUAGUUUAAauAAAACAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69   
+                    ::G  ::UA:U UAA UAA A:A:U GAUU  G  UC A:A+ + G:GGUUAAA UCC:C ::  C:: 
+  NC_002081.1  9962 AGGUGAUUAGUCUAAGUAAAAUACUUGAUUUCGGCUCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUA 10030
+                    ********************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !     3e-07   35.8   0.0  cm        1       69 []        5441        5375 - .. 0.96    no 0.52
+
+                               v     v        v       v                                  NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish    1 GuggguaUAGUUUAAauAAAACAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69  
+                   G: : :AU G:U  A UA A:C :U:G UUGU A  C:A:A A+AG:GGUU  A +CC:CUU: : :C 
+  NC_002081.1 5441 GGUAGGAUGGCUG-AGUA-AGCGGUGGAUUGUAACCCCACAUACAGAGGUUUGAGCCCUCUUCUUGCCA 5375
+                   **********996.6666.89************************************************ PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   1.2e-06   33.5   0.0  cm        1       69 []        5201        5133 - .. 0.99    no 0.36
+
+                                                                                         NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish    1 GuggguaUAGUUUAAauAAAACAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69  
+                   ::G::::UA::UUAA+UAAA::AU: G UU   AU C :AA+AU: :GG UA   UCC: :::::C:: 
+  NC_002081.1 5201 AAGGUCUUAGCUUAAUUAAAGUAUUUGUUUUGCAUACAGAAGAUGUGGGGUAGUGUCCUGCAGAUCUUA 5133
+                   *****************************988899********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   6.9e-06   30.4   0.0  cm        1       69 []           1          68 + [. 0.98    no 0.37
+
+                    v                                            v       v       v     NC
+                 (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish  1 GuggguaUAGUUUAAauAAAACAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69
+                 G:: :::UA::UUAA+UAAA:: U:A A UG    U U:A +AU:G::  UA AA  ::C:::: ::C 
+  NC_002081.1  1 GCUAUCGUAGCUUAAUUAAAGUUUAAUACUGAAGAUAUUAGGAUGGACCCUAGAAA-GUCCCGAAAGCA 68
+                 *******************************9999*************99999997.7*********** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   6.9e-06   30.4   0.0  cm        1       69 []       16697       16764 + .. 0.98    no 0.37
+
+                       v                                            v       v       v     NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish     1 GuggguaUAGUUUAAauAAAACAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69   
+                    G:: :::UA::UUAA+UAAA:: U:A A UG    U U:A +AU:G::  UA AA  ::C:::: ::C 
+  NC_002081.1 16697 GCUAUCGUAGCUUAAUUAAAGUUUAAUACUGAAGAUAUUAGGAUGGACCCUAGAAA-GUCCCGAAAGCA 16764
+                    *******************************9999*************99999997.7*********** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   2.5e-05   28.3   0.0  cm        1       69 []        2760        2833 + .. 0.88    no 0.50
+
+                                                                                             NC
+                   (((((((,,<<<<___.....__>>>>,<<<<<_~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish    1 GuggguaUAGUUUAAa.....uAAAACAuuAGAU*[6]*UCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69  
+                   GU::G::U G:  A +      A  :CA::AG:      :CU::  A+AG:GGUU AA UCC:CU::C::AC 
+  NC_002081.1 2760 GUUAGAGUGGCAGAGCccggaCAUUGCAAAAGGC*[6]*CCUUUCUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   **********9876555555555789******95..7..9********************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !     3e-05   27.9   0.0  cm        1       69 []        3808        3878 + .. 0.79    no 0.45
+
+                               v     v     v               v                               NC
+                   (((((((,,<<<<_____>>>>.,<<<<<_______>>>>>,.,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish    1 GuggguaUAGUUUAAauAAAAC.AuuAGAUUGUGAUUCUaaA.aAuAggGGUUAAAauCCccUuacccaCC 69  
+                   G::G:U:U  :U AA UA A:  A :A  UUG  A   U: A  AUA:GGGUUAAA UCCC:U:A:C::C 
+  NC_002081.1 3808 GGAGUUGUGCCUGAAGUAAAGGgACCACUUUGAUAGGGUGAAuCAUAAGGGUUAAAGUCCCUUCAACUCCU 3878
+                   *********9999999776666045555555555555555542699************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) ?      0.52   11.3   0.0  cm        1       69 []        7058        6996 - .. 0.84    no 0.51
+
+                     v                                                         v    NC
+                   (((((((,,<~~~~~~>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnH_fish    1 GuggguaUAG*[11]*CAuuAGAUUGUGAUUCUaaAaAuAggGGUUAAAauCCccUuacccaCC 69  
+                   G: : ::U :      : :: G: U   A :C ::A+AU::GGGUU  A UCCC:::: : :C 
+  NC_002081.1 7058 GACAGAGUGG*[ 5]*UGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   *********7...6..5666676654444477778***************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) ?       1.7    9.3   0.0  cm        8       61 ..         819         877 + .. 0.97    no 0.37
+
+                                                    v       v     NC
+                  ,,<<<<_____>>>>,<<~~~~~~>>,,,,<<<<<_______>>>>> CS
+    trnH_fish   8 UAGUUUAAauAAAACAuu*[13]*aaAaAuAggGGUUAAAauCCccU 61 
+                  UA:UUU AA+AAAA: ::      ::AA UAGGG  UA A U CCCU
+  NC_002081.1 819 UAAUUUGAAAAAAAUUAC*[18]*GUAAGUAGGGACUAGAGUGCCCU 877
+                  ***************986...*..78********************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (69 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (348 residues re-searched)
+Windows   passing  local HMM SSV           filter:             205  (0.6289); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              53  (0.1788); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              34  (0.1226); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              15  (0.08209); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              14  (0.07696); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              14  (0.03324); expected (0.02)
+Envelopes passing  local CM  CYK           filter:              11  (0.02537); expected (0.0001)
+Total CM hits reported:                                         11  (0.02201); includes 0 truncated hit(s)
+
+# CPU time: 0.29u 0.00s 00:00:00.28 Elapsed: 00:00:00.29
+//
+Query:       trnI_fish  [CLEN=70]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   9.1e-24   85.4   0.0  NC_002081.1   3808   3878 +  cm    no 0.45  -
+  (2) !   1.2e-09   38.4   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (3) !   1.9e-06   27.7   0.0  NC_002081.1  15485  15555 +  cm    no 0.61  -
+  (4) !   3.9e-05   23.3   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (5) !   5.4e-05   22.9   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (6) !   0.00033   20.3   0.0  NC_002081.1  11702  11768 +  cm    no 0.31  -
+  (7) !    0.0012   18.4   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (8) !    0.0034   16.9   0.0  NC_002081.1   5063   5130 +  cm    no 0.56  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   9.1e-24   85.4   0.0  cm        1       70 []        3808        3878 + .. 0.98    no 0.45
+
+                                                                                           NC
+                   (((((((,,<<<<_____.>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish    1 GGAgcuGUGCCugAAuua.aaGGacCACUUUGAUAGAGUGgauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70  
+                   GGAG:UGUGCC GAA UA A GGA:CAC UUGAUAG GUG:AU+AU::GGGUUAAA+UCCC::CA:CUCCU
+  NC_002081.1 3808 GGAGUUGUGCCUGAAGUAaAGGGACCACUUUGAUAGGGUGAAUCAUAAGGGUUAAAGUCCCUUCAACUCCU 3878
+                   ****************99888999*********************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.2e-09   38.4   0.0  cm        1       70 []        7070        7137 + .. 0.96    no 0.50
+
+                                                                                          NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish    1 GGAgcuGUGCCugAAuuaaaGGacCACUUUGAUAGAGUGgauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70  
+                   :G:::: UG ::: A+UA::: AC::C:UUG  A :G::GA U UG GGGUUAAAA CCC C ::::C:U
+  NC_002081.1 7070 GGGCUACUGGUGA-AAUAUCACACUGCCUUGUCAAGGCAGAAU-UGUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   *************.5577**********************877.9************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.9e-06   27.7   0.0  cm        1       70 []       15485       15555 + .. 0.98    no 0.61
+
+                      v                                                                v    NC
+                    (((((((,,<<<<_____.>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish     1 GGAgcuGUGCCugAAuua.aaGGacCACUUUGAUAGAGUGgauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70   
+                    G  :::GU  CU:A U   :AG +CC: : U  UA : :GGA    GG GG UAAA UCC CCC:::  CU
+  NC_002081.1 15485 GCCCUAGUAGCUCAGUAUaGAGCGCCGGCCUUGUAAGCCGGAGGCCGGGGGCUAAAUUCCUCCCUAGUGCU 15555
+                    *************888779************99************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   3.9e-05   23.3   0.0  cm        1       70 []        2760        2833 + .. 0.86    no 0.50
+
+                                                                                  NC
+                   (((((((,,<<<<_~~~~~>>>>,<~~~~~~>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish    1 GGAgcuGUGCCugA*[4]*aaGGac*[15]*gauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70  
+                   G  :::GUG C::A     ::G A:      :  UA :G:GGUU AA+UCC:C:C:::  CU
+  NC_002081.1 2760 GUUAGAGUGGCAGA*[9]*UUGCAA*[14]*UUCUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   *********88875..7..677776...8..5899*************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   5.4e-05   22.9   0.0  cm        1       70 []       15699       15630 - .. 0.96    no 0.41
+
+                              v           v                                                  NC
+                    (((((((,,<<<<_____..>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish     1 GGAgcuGUGCCugAAuua..aaGGacCACUUUGAUAGAGUGgauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70   
+                     :::::GU   U:AAUU   :A   :::CUUUG   GAG::: U  U  G:GUUAAAAUC:C  C:::::  
+  NC_002081.1 15699 CAGAGGGUAGUUUAAUUUagAAUUCUAGCUUUG--GGAGCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    *************999999889999*******9..46*********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   0.00033   20.3   0.0  cm        1       70 []       11702       11768 + .. 0.97    no 0.31
+
+                     vv                                                               vv   NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish     1 GGAgcuGUGCCugAAuuaaaGGacCACUUUGAUAGAGUGgauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70   
+                    G+AG:U U  : :AA  A: : A::A  UUG  A   U::   AU:G:GGUUAAA  CC:C: A:C  C 
+  NC_002081.1 11702 GUAGAUUUAGUUUAACCAAGACAUUAGAUUGUGAUUCUAA-AAAUAGAGGUUAAACCCCUCUAAUC--CA 11768
+                    *******************************9999***99.579**********************..** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !    0.0012   18.4   0.0  cm        1       70 []        7066        6996 - .. 0.85    no 0.48
+
+                   v                             v       v                                v  NC
+                   (((((((,,<<<<_____..>>>>,.<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish    1 GGAgcuGUGCCugAAuua..aaGGa.cCACUUUGAUAGAGUGgauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70  
+                    :::::GUG C:GA U    A:G +  ::  UUGA     ::    AUG GGGUU  A UCCC CC:::::  
+  NC_002081.1 7066 AAGAAAGUGACAGAGUGGucAUGUGaUUGGCUUGAA--ACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   *************87776789999735555677664..3357799**************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !    0.0034   16.9   0.0  cm        1       70 []        5063        5130 + .. 0.77    no 0.56
+
+                             v             v      v       v                                   NC
+                   (((((((,,<<<<..._____.>>>>,<<<<<__~~~~~>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnI_fish    1 GGAgcuGUGCCug...AAuua.aaGGacCACUUU*[5]*AGUGgauuAUGgGGGUUAAAaUCCCcCCagcUCCU 70  
+                   GG:GCU   : :G   AA UA A: :A:::C UU      G:::     GG:GGU AAAAUCC:CC AGC:CCU
+  NC_002081.1 5063 GGGGCU---UAGGauaAACUAgACCAAGGGCCUU*[3]*AGCCCUCAGCGGAGGUGAAAAUCCUCC-AGCCCCU 5130
+                   ******...6556222444446555577777665..5..677889999******************.******* PP
 
 
 
 Internal CM pipeline statistics summary:
 ----------------------------------------
 Query model(s):                                                  1  (70 consensus positions)
-Target sequences:                                                1  (160 residues searched)
-Target sequences re-searched for truncated hits:                 1  (480 residues re-searched)
-Windows   passing  local HMM SSV           filter:               4  (0.5); expected (0.35)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (356 residues re-searched)
+Windows   passing  local HMM SSV           filter:             145  (0.4752); expected (0.35)
 Windows   passing  local HMM Viterbi       filter:                  (off)
 Windows   passing  local HMM Viterbi  bias filter:                  (off)
-Windows   passing  local HMM Forward       filter:               4  (0.5); expected (0.02)
-Windows   passing  local HMM Forward  bias filter:               4  (0.5); expected (0.02)
-Windows   passing glocal HMM Forward       filter:               4  (0.5); expected (0.02)
-Windows   passing glocal HMM Forward  bias filter:               4  (0.5); expected (0.02)
-Envelopes passing glocal HMM envelope defn filter:               4  (0.4719); expected (0.02)
-Envelopes passing  local CM  CYK           filter:               4  (0.4719); expected (0.0001)
-Total CM hits reported:                                          1  (0.1109); includes 0 truncated hit(s)
+Windows   passing  local HMM Forward       filter:              32  (0.1194); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              30  (0.1111); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              15  (0.0686); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              15  (0.0686); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              15  (0.04012); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               8  (0.0208); expected (0.0001)
+Total CM hits reported:                                          8  (0.0165); includes 0 truncated hit(s)
 
-# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# CPU time: 0.37u 0.00s 00:00:00.37 Elapsed: 00:00:00.36
+//
+Query:       trnK_fish  [CLEN=74]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   1.6e-21   79.0   0.0  NC_002081.1   7842   7915 +  cm    no 0.46  -
+  (2) !   3.8e-12   47.3   0.0  NC_002081.1  15485  15555 +  cm    no 0.61  -
+  (3) !   1.4e-05   25.1   0.0  NC_002081.1  11841  11913 +  cm    no 0.45  -
+ ------ inclusion threshold ------
+  (4) ?       1.4    8.2   0.0  NC_002081.1   9568   9582 +  cm    no 0.60  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.6e-21   79.0   0.0  cm        1       74 []        7842        7915 + .. 1.00    no 0.46
+
+                     v                                                                   v    NC
+                   (((((((,,<<<<_________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnK_fish    1 CgcuagGAAGCUaAAuagGguauAGCGuUaGCCUUUUAAGCuAaAGAUUGGuGgCUcCCaAcCaCCCcuagcGA 74  
+                   C: UA:GAAGCU:A ++GGGU :AGC+::AGCCUUUUAAGCU::A    GGUG:CUCCCAA:CACCC:UA :GA
+  NC_002081.1 7842 CACUAAGAAGCUAAUAUGGGUUAAGCACCAGCCUUUUAAGCUGGAAGCAGGUGACUCCCAACCACCCUUAAUGA 7915
+                   ************************************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   3.8e-12   47.3   0.0  cm        1       74 []       15485       15555 + .. 0.98    no 0.61
+
+                      v                                                                   v    NC
+                    (((((((,,<<<<_________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnK_fish     1 CgcuagGAAGCUaAAuagGguauAGCGuUaGCCUUUUAAGCuAaAGAUUGGuGgCUcCCaAcCaCCCcuagcGA 74   
+                    :: :::G AGCU:A UA    A:AGCG:::GCCUU UAAGC:::AG   GG GGCU+    CC CCC::: :: 
+  NC_002081.1 15485 GCCCUAGUAGCUCAGUAU---AGAGCGCCGGCCUUGUAAGCCGGAGGCCGGGGGCUAAAUUCCUCCCUAGUGCU 15555
+                    *************99875...5**************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.4e-05   25.1   0.0  cm        1       74 []       11841       11913 + .. 0.97    no 0.45
+
+                       v                                                                 v     NC
+                    (((((((,,<<<<_________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnK_fish     1 CgcuagGAAGCUaAAuagGguauAGCGuUaGCCUUUUAAGCuAaAGAUUGGuGgCUcCCaAcCaCCCcuagcGA 74   
+                    ::: :::AAG  :AAUAG  U :  CGUU:G:CUU   A:C:AAA A U  UGG+ C    CCA  ::: ::: 
+  NC_002081.1 11841 GCUCCUAAAGGAUAAUAGC-UCAUCCGUUGGUCUUAGGAACCAAAAACUCUUGGUGCAACUCCAAGUAGCAGCU 11913
+                    ***************9986.88*************9999******************9999************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?       1.4    8.2   0.0  cm       51       65 ..        9568        9582 + .. 1.00    no 0.60
+
+                                   NC
+                   <<<<_______>>>> CS
+    trnK_fish   51 GuGgCUcCCaAcCaC 65  
+                   GUGGCU CCAACCAC
+  NC_002081.1 9568 GUGGCUUCCAACCAC 9582
+                   *************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (74 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (368 residues re-searched)
+Windows   passing  local HMM SSV           filter:             178  (0.5819); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              16  (0.07105); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              15  (0.0669); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              12  (0.05489); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              12  (0.05489); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              11  (0.02694); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               4  (0.007362); expected (0.0001)
+Total CM hits reported:                                          4  (0.006861); includes 0 truncated hit(s)
+
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.12
+//
+Query:       trnL1_fish  [CLEN=73]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   2.6e-26   98.3   0.0  NC_002081.1  11841  11913 +  cm    no 0.45  -
+  (2) !    0.0002   21.9   0.0  NC_002081.1   9543   9612 +  cm    no 0.41  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.6e-26   98.3   0.0  cm        1       73 []       11841       11913 + .. 1.00    no 0.45
+
+                       v                                                                v     NC
+                    (((((((,,<<<<________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+   trnL1_fish     1 gCuucuaAAGGAUAAuAGuucAUCCauUGGuCUUAGGAaCCAaAAAcUCUUGGUGCAAaUCCAAGuagaaGcU 73   
+                    GCU CUAAAGGAUAAUAG+UCAUCC+UUGGUCUUAGGAACCAAAAACUCUUGGUGCAA UCCAAGUAG AGCU
+  NC_002081.1 11841 GCUCCUAAAGGAUAAUAGCUCAUCCGUUGGUCUUAGGAACCAAAAACUCUUGGUGCAACUCCAAGUAGCAGCU 11913
+                    ************************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !    0.0002   21.9   0.0  cm        1       73 []        9543        9612 + .. 0.84    no 0.41
+
+                                             v               v                               NC
+                   (((((((,,<<<<________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+   trnL1_fish    1 gCuucuaAAGGAUAAuAGuucAUCCauUGGuCUUAGGAaCCAaAAAcUCUUGGUGCAAaUCCAAGuagaaGcU 73  
+                   :::U:U: A  A: A  G   :U  A+: G:CUU   A:C : A   UCUUGGU   A UCCAAG:A:A::: 
+  NC_002081.1 9543 AUCUUUCUAGUACUAAGGA--GUAUAAGUGGCUUCCAACCAC-ACGGUCUUGGUUAGAGUCCAAGGAAAGAUA 9612
+                   *********9999887776..888876666667666666665.66679************************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (73 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (364 residues re-searched)
+Windows   passing  local HMM SSV           filter:             145  (0.4798); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              18  (0.06485); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              18  (0.06485); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              11  (0.04049); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              11  (0.04049); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              11  (0.02721); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               2  (0.004241); expected (0.0001)
+Total CM hits reported:                                          2  (0.004211); includes 0 truncated hit(s)
+
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.08
+//
+Query:       trnL2_fish  [CLEN=74]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   1.3e-26   92.9   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (2) !   7.2e-14   51.4   0.0  NC_002081.1  11841  11913 +  cm    no 0.45  -
+  (3) !   5.4e-09   35.5   0.0  NC_002081.1   5062   5131 +  cm    no 0.56  -
+  (4) !   6.4e-08   32.0   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (5) !   8.8e-08   31.5   0.0  NC_002081.1   5441   5375 -  cm    no 0.52  -
+  (6) !   0.00012   21.4   0.0  NC_002081.1   3948   4016 +  cm    no 0.42  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.3e-26   92.9   0.0  cm        1       74 []        2760        2833 + .. 1.00    no 0.50
+
+                                                                                              NC
+                   (((((((,,<<<<__________>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnL2_fish    1 GcUaggGUGGCAuAGCcuGGuaAaUGCAaaAGgCCUAAGCcCUuuaaACaGaGGUUCAAAUCCuCuCccuAgCU 74  
+                   G:UAG:GUGGCA:AGCC GG+ A:UGCAAAAGGCCUAAGCCCUUU++ACAGAGGUUCAA UCCUCUC:CUA:CU
+  NC_002081.1 2760 GUUAGAGUGGCAGAGCCCGGACAUUGCAAAAGGCCUAAGCCCUUUCUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   *****************9******************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.2e-14   51.4   0.0  cm        1       74 []       11841       11913 + .. 0.97    no 0.45
+
+                       v                                                                  v     NC
+                    (((((((,,<<<<__________>>>>,<<<<<_______>>>>>,,,,.<<<<<_______>>>>>))))))): CS
+   trnL2_fish     1 GcUaggGUGGCAuAGCcuGGuaAaUGCAaaAGgCCUAAGCcCUuuaaAC.aGaGGUUCAAAUCCuCuCccuAgCU 74   
+                    GCU :::  G:AUA  +    + AU:C :::G:C+UA G :C:::AAAC :::GGU CAA UCC:::::: AGCU
+  NC_002081.1 11841 GCUCCUAAAGGAUAAUAG--CUCAUCCGUUGGUCUUAGGAACCAAAAACuCUUGGUGCAACUCCAAGUAGCAGCU 11913
+                    **************9874..499**************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   5.4e-09   35.5   0.0  cm        1       74 []        5062        5131 + .. 0.97    no 0.56
+
+                              v            v                                                  NC
+                   (((((((,,<<<<__________>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnL2_fish    1 GcUaggGUGGCAuAGCcuGGuaAaUGCAaaAGgCCUAAGCcCUuuaaACaGaGGUUCAAAUCCuCuCccuAgCU 74  
+                   :: :G: U G:  A  CU    A  :CAA::G:C+U A  :C::U+A C:GAGGU  AAAUCCUC: :C: :: 
+  NC_002081.1 5062 AGGGGCUUAGGAUAAACU----AGACCAAGGGCCUUCAAAGCCCUCAGCGGAGGUGAAAAUCCUCCAGCCCCUG 5131
+                   ***********9999985....788************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   6.4e-08   32.0   0.0  cm        1       74 []        7066        6996 - .. 0.97    no 0.48
+
+                   v           v          v                                                v  NC
+                   (((((((,,<<<<__________>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnL2_fish    1 GcUaggGUGGCAuAGCcuGGuaAaUGCAaaAGgCCUAAGCcCUuuaaACaGaGGUUCAAAUCCuCuCccuAgCU 74  
+                    : A::GUG CA AG      +  UG  A  GGC+U A  CC  UA A : :GGUUC A UCC: :C::U :  
+  NC_002081.1 7066 AAGAAAGUGACAGAGUGG---UCAUGUGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   **************9754...68*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   8.8e-08   31.5   0.0  cm        1       74 []        5441        5375 - .. 0.96    no 0.52
+
+                               v       v                                                   NC
+                   (((((((,,<<<<__~~~~~>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnL2_fish    1 GcUaggGUGGCAuAG*[8]*aUGCAaaAGgCCUAAGCcCUuuaaACaGaGGUUCAAAUCCuCuCccuAgCU 74  
+                   G: A:G:UGGC  AG       GC :::G: +  A C:C:::A+ACAGAGGUU  A  CCUCU:C:U :C 
+  NC_002081.1 5441 GGUAGGAUGGCUGAG*[1]*AAGCGGUGGAUUGUAACCCCACAUACAGAGGUUUGAGCCCUCUUCUUGCCA 5375
+                   ***********9887..4..88********9999999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   0.00012   21.4   0.0  cm        1       74 []        3948        4016 + .. 0.98    no 0.42
+
+                                                                     vv           vv          NC
+                   (((((((,,<<<<__________>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnL2_fish    1 GcUaggGUGGCAuAGCcuGGuaAaUGCAaaAGgCCUAAGCcCUuuaaACaGaGGUUCAAAUCCuCuCccuAgCU 74  
+                   :: A::GU  : UA  +U     A :  : :GGCC A  CCC: :A A :  GGUU AA UCC  :C::U :: 
+  NC_002081.1 3948 AGUAAAGUCAGCUAAAAU-----AGCUCUUGGGCCCAUACCCCGAACAUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   *************98764.....*************************************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (74 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (368 residues re-searched)
+Windows   passing  local HMM SSV           filter:             145  (0.4848); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              26  (0.1059); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              24  (0.09658); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              12  (0.0583); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              12  (0.0583); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              12  (0.0285); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               6  (0.01337); expected (0.0001)
+Total CM hits reported:                                          6  (0.01249); includes 0 truncated hit(s)
+
+# CPU time: 0.14u 0.00s 00:00:00.14 Elapsed: 00:00:00.13
+//
+Query:       trnM_fish  [CLEN=69]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   2.4e-22   85.6   0.0  NC_002081.1   3948   4016 +  cm    no 0.42  -
+  (2) !   7.8e-07   30.6   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (3) !   4.6e-06   27.9   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (4) !   6.3e-06   27.4   0.0  NC_002081.1   5062   5131 +  cm    no 0.56  -
+  (5) !   1.5e-05   26.1   0.0  NC_002081.1   5441   5375 -  cm    no 0.52  -
+ ------ inclusion threshold ------
+  (6) ?     0.045   13.7   0.0  NC_002081.1   7055   6997 -  cm    no 0.49  -
+  (7) ?      0.28   10.9   0.0  NC_002081.1   7112   7129 +  cm    no 0.56  -
+  (8) ?      0.51   10.0   0.0  NC_002081.1  15696  15630 -  cm    no 0.40  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.4e-22   85.6   0.0  cm        1       69 []        3948        4016 + .. 1.00    no 0.42
+
+                                                                                         NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnM_fish    1 gGuaagGUCAGCUAAuuAAGCUuuuGGGCCCAUACCCCaaAcAUGaaGGUUAAAaUCCuuCCcuuaCcA 69  
+                   :G:AA:GUCAGCUAA+  AGCU U:GGGCCCAUACCCC:AACAUG::GGUUAAA UCC::CC:UU:C:A
+  NC_002081.1 3948 AGUAAAGUCAGCUAAAAUAGCUCUUGGGCCCAUACCCCGAACAUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   ********************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.8e-07   30.6   0.0  cm        1       69 []       11702       11770 + .. 0.96    no 0.33
+
+                      v                                                             v    NC
+                    (((((((,,<<<<_____>>>>,<<<<<_~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnM_fish     1 gGuaagGUCAGCUAAuuAAGCUuuuGGGC*[6]*CCCaaAcAUGaaGGUUAAAaUCCuuCCcuuaCcA 69   
+                    G: :A::U :  UAA  AA  : UU:G:      :C:AAA+AU::AGGUUAAA  CCU::::U: :C 
+  NC_002081.1 11702 GUAGAUUUAGUUUAACCAAGACAUUAGAU*[6]*UCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    ***************************85..7..8********************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   4.6e-06   27.9   0.0  cm        1       69 []        2760        2833 + .. 0.96    no 0.50
+
+                                                                                    NC
+                   (((((((,,<~~~~~~>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnM_fish    1 gGuaagGUCA*[11]*UuuuGGGCCCAUACCCCaaAcAUGaaGGUUAAAaUCCuuCCcuuaCcA 69  
+                   G:UA::GU :      : :::GGCC A  CCC:::  A ::AGGUU AA UCCU::C::UA:C 
+  NC_002081.1 2760 GUUAGAGUGG*[16]*CAAAAGGCCUAAGCCCUUUCUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   *********6...9..7*********************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   6.3e-06   27.4   0.0  cm        1       69 []        5062        5131 + .. 0.92    no 0.56
+
+                              v        v                                                  NC
+                   (((((((,,<<<<_____.>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnM_fish    1 gGuaagGUCAGCUAAuuA.AGCUuuuGGGCCCAUACCCCaaAcAUGaaGGUUAAAaUCCuuCCcuuaCcA 69  
+                   :G:::::U :G  AA+     C: ::GG C    A  CC:: +  G:AGGU AAAAUCCU:C:::::C: 
+  NC_002081.1 5062 AGGGGCUUAGGAUAAACUaGACCAAGGGCCUUCAAAGCCCUCAGCGGAGGUGAAAAUCCUCCAGCCCCUG 5131
+                   *************9998865699999999976666699999***************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   1.5e-05   26.1   0.0  cm        1       69 []        5441        5375 - .. 0.94    no 0.52
+
+                                              v       v                                  NC
+                   (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnM_fish    1 gGuaagGUCAGCUAAuuAAGCUuuuGGGCCCAUACCCCaaAcAUGaaGGUUAAAaUCCuuCCcuuaCcA 69  
+                   GG:A G:U  GCU A UAAGC  :UGG      AC CCA:A A ::AGGUU  A  CCU:::C U:CCA
+  NC_002081.1 5441 GGUAGGAUG-GCUGAGUAAGC-GGUGGAUUGUAACCCCACAUACAGAGGUUUGAGCCCUCUUCUUGCCA 5375
+                   ********9.***********.9****766666667********************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?     0.045   13.7   0.0  cm        1       69 []        7055        6997 - .. 0.92    no 0.49
+
+                       v                                                     v      NC
+                   (((((((,,<~~~~~~>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnM_fish    1 gGuaagGUCA*[11]*UuuuGGGCCCAUACCCCaaAcAUGaaGGUUAAAaUCCuuCCcuuaCcA 69  
+                   :G: +:GUCA      U :: GGC    A CC ::A AUG :GGUU  A UCC: CC:  :C: 
+  NC_002081.1 7055 AGAGUGGUCA*[ 2]*UGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCU-UUCUC 6997
+                   *********8...6..8******9888888*******************999998876.89*** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) ?      0.28   10.9   0.0  cm       44       61 ..        7112        7129 + .. 1.00    no 0.56
+
+                                      NC
+                   ,<<<<<_______>>>>> CS
+    trnM_fish   44 UGaaGGUUAAAaUCCuuC 61  
+                   UG :GGUUAAAA CC: C
+  NC_002081.1 7112 UGUGGGUUAAAACCCCGC 7129
+                   ****************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?      0.51   10.0   0.0  cm        1       69 []       15696       15630 - .. 0.95    no 0.40
+
+                    vvv                                                             vvv  NC
+                    (((((((,,<<<<_____.>>>>,<<<<<~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnM_fish     1 gGuaagGUCAGCUAAuuA.AGCUuuuGGG*[7]*CCCaaAcAUGaaGGUUAAAaUCCuuCCcuuaCcA 69   
+                       A:GGU   : AAUU   :  U:U:G       C:A:   U  ::GUUAAAAUC::  CC:U + A
+  NC_002081.1 15696 ---AGGGUAGUUUAAUUUaGAAUUCUAGC*[7]*GCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    ...*************9977899****96..9..69******************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (69 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (344 residues re-searched)
+Windows   passing  local HMM SSV           filter:             157  (0.5198); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              25  (0.09144); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              23  (0.08578); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              19  (0.0706); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              19  (0.0706); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              17  (0.04255); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               8  (0.01503); expected (0.0001)
+Total CM hits reported:                                          8  (0.01453); includes 0 truncated hit(s)
+
+# CPU time: 0.24u 0.00s 00:00:00.24 Elapsed: 00:00:00.23
+//
+Query:       trnN_fish  [CLEN=73]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   1.7e-26   94.1   0.0  NC_002081.1   5276   5204 -  cm    no 0.42  -
+  (2) !   2.7e-08   33.9   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (3) !   1.4e-07   31.5   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (4) !   0.00013   21.7   0.0  NC_002081.1   3948   3878 -  cm    no 0.46  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.7e-26   94.1   0.0  cm        1       73 []        5276        5204 - .. 1.00    no 0.42
+
+                                                                                             NC
+                   (((((((,,<<<<________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnN_fish    1 uAGauggAUGCucGCUGGuUUgaGCGcUUAGCUGUUAACUAAgAgUUUGcAGGAUCGAGGCCUgCccauCUaG 73  
+                   UAGA::GAU CUCGCUGGUUUGAG GCUUAGCUGUUAACUAAGAGUUU::AGGAUCGAGGCCU::C::UCUAG
+  NC_002081.1 5276 UAGAUAGAUGCUCGCUGGUUUGAGUGCUUAGCUGUUAACUAAGAGUUUAAAGGAUCGAGGCCUUUCUGUCUAG 5204
+                   ************************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   2.7e-08   33.9   0.0  cm        1       73 []        7070        7137 + .. 0.98    no 0.50
+
+                                                                                             NC
+                   (((((((,,<<<<________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnN_fish    1 uAGauggAUGCucGCUGGuUUgaGCGcUUAGCUGUUAACUAAgAgUUUGcAGGAUCGAGGCCUgCccauCUaG 73  
+                    :G:U::  G:::      U :::C CU::: UGU AA:::AGA UU G::GG U  A  CC::C::A:C:  
+  NC_002081.1 7070 GGGCUACUGGUGA----AAUAUCACACUGCCUUGUCAAGGCAGAAUU-GUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   *************....8889***********************998.************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.4e-07   31.5   0.0  cm        1       73 []        7066        6996 - .. 0.97    no 0.48
+
+                   v           v        v                                                 v  NC
+                   (((((((,,<<<<________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnN_fish    1 uAGauggAUGCucGCUGGuUUgaGCGcUUAGCUGUUAACUAAgAgUUUGcAGGAUCGAGGCCUgCccauCUaG 73  
+                    AGA::G  :C:   UGGU   :G:G: U:GCU   AAC:A :AG U G :GG UCGA  CC: CC::UCU G
+  NC_002081.1 7066 AAGAAAGUGACAGAGUGGUC-AUGUGAUUGGCUUGAAACCAGUAGAU-GGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   ************99999887.59***********************9.************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   0.00013   21.7   0.0  cm        1       73 []        3948        3878 - .. 0.95    no 0.46
+
+                                                                    v             v          NC
+                   (((((((,,<<<<________>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnN_fish    1 uAGauggAUGCucGCUGGuUUgaGCGcUUAGCUGUUAACUAAgAgUUUGcAGGAUCGAGGCCUgCccauCUaG 73  
+                   UAGA:::  G::   UGG    ::C :::AG U U A CU::: +   : :GG UCGAG CC: ::::UCUA 
+  NC_002081.1 3948 UAGAAAGUGGUGUAGUGGAA-GCACUAGGAGUUUUGAUCUCCUGUGG-AUGGGUUCGAGCCCCCUUUUUCUAA 3878
+                   *************9999874.9********************97666.************************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (73 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (364 residues re-searched)
+Windows   passing  local HMM SSV           filter:             155  (0.5061); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              14  (0.04833); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              13  (0.04609); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               6  (0.03178); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               6  (0.03178); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               6  (0.01552); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               4  (0.008894); expected (0.0001)
+Total CM hits reported:                                          4  (0.008334); includes 0 truncated hit(s)
+
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.10
+//
+Query:       trnP_fish  [CLEN=70]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   3.7e-24   93.1   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (2) !   2.7e-09   40.1   0.0  NC_002081.1   9962  10030 +  cm    no 0.38  -
+  (3) !     7e-08   35.1   0.0  NC_002081.1  15485  15555 +  cm    no 0.61  -
+  (4) !   1.3e-06   30.6   0.0  NC_002081.1   3948   3878 -  cm    no 0.46  -
+  (5) !   8.4e-06   27.7   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (6) !    0.0005   21.3   0.0  NC_002081.1   7058   6996 -  cm    no 0.51  -
+  (7) !    0.0012   20.0   0.0  NC_002081.1   3808   3878 +  cm    no 0.45  -
+ ------ inclusion threshold ------
+  (8) ?     0.028   15.1   0.0  NC_002081.1   3948   4016 +  cm    no 0.42  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   3.7e-24   93.1   0.0  cm        1       70 []       15699       15630 - .. 1.00    no 0.41
+
+                                                                                           NC
+                    (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnP_fish     1 CAgagaaUAGUUuAauUUAgAAUucuggCUUUGGGAGccaggGGUggGgGUUaAAaUCcCccuucucUGA 70   
+                    CAGAG::UAGUUUAAUUUAGAAUUCU:GCUUUGGGAGC:AG+GGU::G:GUUAAAAUC:C::::CUCUGA
+  NC_002081.1 15699 CAGAGGGUAGUUUAAUUUAGAAUUCUAGCUUUGGGAGCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    ********************************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   2.7e-09   40.1   0.0  cm        1       70 []        9962       10030 + .. 0.98    no 0.38
+
+                               v        v                                                  NC
+                    (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnP_fish     1 CAgagaaUAGUUuAauUUAgAAUucuggCUUUGGGAGccaggGGUggGgGUUaAAaUCcCccuucucUGA 70   
+                     :G :A:UAGU : A+ UA: AU+CU:G UUU GG  C:AG G  :G:GGUUAAA UCC:C::U: C: A
+  NC_002081.1  9962 AGGUGAUUAGUCU-AAGUAAAAUACUUGAUUUCGGCUCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUA 10030
+                    *************.8888999************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !     7e-08   35.1   0.0  cm        1       70 []       15485       15555 + .. 0.99    no 0.61
+
+                      v                                                                v    NC
+                    (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,.<<<<<_______>>>>>))))))): CS
+    trnP_fish     1 CAgagaaUAGUUuAauUUAgAAUucuggCUUUGGGAGccaggGGU.ggGgGUUaAAaUCcCccuucucUGA 70   
+                       ::A:UA::U:A U UA:A:: C:GGC UUG  AGCC:G GG  GG:GG UAAA UCC:CC:U::    
+  NC_002081.1 15485 GCCCUAGUAGCUCAGUAUAGAGCGCCGGCCUUGUAAGCCGGAGGCcGGGGGCUAAAUUCCUCCCUAGUGCU 15555
+                    *******************************************966************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   1.3e-06   30.6   0.0  cm        1       70 []        3948        3878 - .. 0.95    no 0.46
+
+                                                                  v             v          NC
+                   (((((((,,<<<<___.___>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnP_fish    1 CAgagaaUAGUUuAau.UUAgAAUucuggCUUUGGGAGccaggGGUggGgGUUaAAaUCcCccuucucUGA 70  
+                    AGA:A:U :U:UA U   AG:A:U::G: UUU G   :C::G G : GGGUU  A  CCC ::U:UCU A
+  NC_002081.1 3948 UAGAAAGUGGUGUAGUgGAAGCACUAGGAGUUUUGAUCUCCUGUGGAUGGGUUCGAGCCCCCUUUUUCUAA 3878
+                   *************7661567*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   8.4e-06   27.7   0.0  cm        1       70 []       11702       11770 + .. 0.96    no 0.33
+
+                      v                                                               v    NC
+                    (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnP_fish     1 CAgagaaUAGUUuAauUUAgAAUucuggCUUUGGGAGccaggGGUggGgGUUaAAaUCcCccuucucUGA 70   
+                       ::::UA:U : A+  A: A:+:U:G UU  G   C:A:   U:G:GGUUAAA  CC:C:::::    
+  NC_002081.1 11702 GUAGAUUUAGUUU-AACCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    *************.888999*********9988888********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !    0.0005   21.3   0.0  cm        1       70 []        7058        6996 - .. 0.92    no 0.51
+
+                     v                                                         v    NC
+                   (((((((,,<~~~~~~>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnP_fish    1 CAgagaaUAG*[12]*UucuggCUUUGGGAGccaggGGUggGgGUUaAAaUCcCccuucucUGA 70  
+                    A A:A:U G      U : :G  UUG  A C: : G UG:GGGUU  A UCCC:C:U:U U  
+  NC_002081.1 7058 GACAGAGUGG*[ 5]*UGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   *********9...5..7777899999999999999***************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !    0.0012   20.0   0.0  cm        1       70 []        3808        3878 + .. 0.93    no 0.45
+
+                               v      v    vv               vv                              NC
+                   (((((((,,<<<<______>>>>,<<<<<____~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnP_fish    1 CAgagaaUAGUUuAauUUAgAAUucuggCUUUG*[3]*GccaggGGUggGgGUUaAAaUCcCccuucucUGA 70  
+                    ::::::U  :U  A+ UA A:    ::CUUUG     G::  +  U::GGGUUAAA UCCC::::::::  
+  NC_002081.1 3808 GGAGUUGUGCCUG-AAGUAAAGGGACCACUUUG*[5]*GUGAAUCAUAAGGGUUAAAGUCCCUUCAACUCCU 3878
+                   *************.677778999999*****98..6..99999***************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?     0.028   15.1   0.0  cm        1       70 []        3948        4016 + .. 0.95    no 0.42
+
+                                                             vv           vv          NC
+                   (((((((,,<<<<______>>>>,<<<<~~~~~>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnP_fish    1 CAgagaaUAGUUuAauUUAgAAUucugg*[9]*ccaggGGUggGgGUUaAAaUCcCccuucucUGA 70  
+                    : A:A:U : ::AA+ U :: :+: GG     CC :   UG  GGUUAAA UCC  C:U:U : A
+  NC_002081.1 3948 AGUAAAGUCAGCUAAAAU-AGCUCUUGG*[9]*CCGAACAUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   *************77776.79******9..8..9******************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (70 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (348 residues re-searched)
+Windows   passing  local HMM SSV           filter:             205  (0.6398); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              41  (0.1633); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              33  (0.1308); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              21  (0.09847); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              20  (0.0934); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              20  (0.04862); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               8  (0.01753); expected (0.0001)
+Total CM hits reported:                                          8  (0.01629); includes 0 truncated hit(s)
+
+# CPU time: 0.27u 0.00s 00:00:00.27 Elapsed: 00:00:00.27
+//
+Query:       trnQ_fish  [CLEN=71]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   1.5e-23   86.8   0.0  NC_002081.1   3948   3878 -  cm    no 0.46  -
+  (2) !   2.3e-11   45.3   0.0  NC_002081.1  14339  14271 -  cm    no 0.39  -
+  (3) !   6.4e-11   43.8   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (4) !   4.4e-09   37.5   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (5) !   2.9e-08   34.7   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (6) !   1.4e-06   29.0   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (7) !   4.8e-06   27.2   0.0  NC_002081.1   9962  10030 +  cm    no 0.38  -
+  (8) !   0.00014   22.2   0.0  NC_002081.1   9546   9609 +  cm    no 0.44  -
+  (9) !   0.00055   20.2   0.0  NC_002081.1   3808   3878 +  cm    no 0.45  -
+ (10) !     0.008   16.2   0.0  NC_002081.1   5276   5204 -  cm    no 0.42  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.5e-23   86.8   0.0  cm        1       71 []        3948        3878 - .. 1.00    no 0.46
+
+                                                                  v             v          NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish    1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71  
+                   UAGAAA:UGGUGUAGUGGAAGCACUA:GAGUUUUGAUCUC:U  G+A GGGUUCGAG CCC U:UUUCUAA
+  NC_002081.1 3948 UAGAAAGUGGUGUAGUGGAAGCACUAGGAGUUUUGAUCUCCUGUGGAUGGGUUCGAGCCCCCUUUUUCUAA 3878
+                   *********************************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   2.3e-11   45.3   0.0  cm        1       71 []       14339       14271 - .. 0.98    no 0.39
+
+                                                                                            NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish     1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71   
+                    ::::::GU+GU::  +  AA::AC ::G::UUUU AU::C::UAGU:: GGUU + +UCC ::C:::::: 
+  NC_002081.1 14339 GUUCUUGUAGUUG--AAUAACAACGGUGGUUUUUCAUAUCAUUAGUCCUGGUUAAGAUCCGGGCAGGAAUU 14271
+                    *************..66799*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   6.4e-11   43.8   0.0  cm        1       71 []       15699       15630 - .. 0.96    no 0.41
+
+                                                                                            NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish     1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71   
+                    :AGA::GU+ U:UA+U   AG:A U:::::UUU G  :::::U+GU  G:GUU +A+UC:C  C::UCU:A
+  NC_002081.1 15699 CAGAGGGUAGUUUAAU-UUAGAAUUCUAGCUUUGGGAGCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    *************876.456*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   4.4e-09   37.5   0.0  cm        1       71 []        7066        6996 - .. 0.99    no 0.48
+
+                   v           v       v                                                v  NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish    1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71  
+                    AGAAAGUG: : AGUGG   : : A  :G UU  A C:  U++ U: GGGUUCGA UCCC :CUUUCU  
+  NC_002081.1 7066 AAGAAAGUGACAGAGUGGUCAUGUGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   *********************************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   2.9e-08   34.7   0.0  cm        1       71 []       11702       11770 + .. 0.96    no 0.33
+
+                      v                                                                v    NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish     1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71   
+                    :: :A: U+GU :A+    A: AC :::::UU UGAU:::::+A UA::GGUU +A  CC::U :U: :: 
+  NC_002081.1 11702 GUAGAUUUAGUUUAA--CCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    ************964..45599************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   1.4e-06   29.0   0.0  cm        1       71 []        2760        2833 + .. 0.90    no 0.50
+
+                                                                                           NC
+                   (((((((,,<<<<__~~~~~>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish    1 uAGaaaGUGGUGuAg*[5]*gCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71  
+                   :::A:AGUGG : AG      : C AA::G  U    C::UU    A::GGUUC+AGUCC::UCU:U::: 
+  NC_002081.1 2760 GUUAGAGUGGCAGAG*[8]*UUGCAAAAGGCCUAAGCCCUUUCUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   **********99883..6..899*******7665555********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   4.8e-06   27.2   0.0  cm        1       71 []        9962       10030 + .. 0.97    no 0.38
+
+                               v         v                                                  NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish     1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71   
+                    ::G  A U+ U :  + G A: A  :: ::UUU G  :: ::++  :::GGUU +AGUCC::: U  C::A
+  NC_002081.1  9962 AGGUGAUUAGUCU--AAGUAAAAUACUUGAUUUCGGCUCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUA 10030
+                    *************..77888889999********************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   0.00014   22.2   0.0  cm        1       71 []        9546        9609 + .. 0.94    no 0.44
+
+                                            v               v                              NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish    1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUUUUGAUCUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71  
+                   U:::   U+ U::  + G A::A   : :G UU  A C: :  +GU:::GGUU GAGUCC:::   :::A 
+  NC_002081.1 9546 UUUC---UAGUAC-UAAGGAGUAUAAGUGGCUUCCAACCACACGGUCUUGGUUAGAGUCCAAG---GAAAG 9609
+                   *876...9*****.677778*******************************************...678** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   0.00055   20.2   0.0  cm        1       71 []        3808        3878 + .. 0.78    no 0.45
+
+                               v       v    vv             vv                              NC
+                   (((((((,,<<<<_______>>>>,<<<<<__~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnQ_fish    1 uAGaaaGUGGUGuAguGGAAgCACuaaGAGUU*[5]*CUCuuuAGuaaGGGUUCgAgUCCCuuCuuuCUaa 71  
+                   ::::::GUG  :   + G A :      A:UU     :U   U  UAAGGGUU +AGUCCCUUC:::::: 
+  NC_002081.1 3808 GGAGUUGUGCCUG--AAGUAAAGGGACCACUU*[7]*GUGAAUCAUAAGGGUUAAAGUCCCUUCAACUCCU 3878
+                   *********7665..44444555666666543..6..56666999************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !     0.008   16.2   0.0  cm        1       71 []        5276        5204 - .. 0.85    no 0.42
+
+                                                                                             NC
+                   (((((((,,<<<<___~~~~~>>>>,<<<<<_______>>>>>,,,,.<<<<<_______>>>>>))))))): CS
+    trnQ_fish    1 uAGaaaGUGGUGuAgu*[4]*gCACuaaGAGUUUUGAUCUCuuuAGu.aaGGGUUCgAgUCCCuuCuuuCUaa 71  
+                   UAGA:AG    ::  U     ::   :: AG U U A CU ::++ U AA:GG UCGAG CC:UUCU:UCUA 
+  NC_002081.1 5276 UAGAUAGAUGCUCGCU*[5]*GAGUGCUUAGCUGUUAACUAAGAGUUuAAAGGAUCGAGGCCUUUCUGUCUAG 5204
+                   *******988776544..6..67788999999999999999998764399*********************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (352 residues re-searched)
+Windows   passing  local HMM SSV           filter:             168  (0.5273); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              36  (0.1262); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              34  (0.118); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              20  (0.103); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              20  (0.103); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              19  (0.0446); expected (0.02)
+Envelopes passing  local CM  CYK           filter:              10  (0.02215); expected (0.0001)
+Total CM hits reported:                                         10  (0.02065); includes 0 truncated hit(s)
+
+# CPU time: 0.30u 0.00s 00:00:00.30 Elapsed: 00:00:00.29
+//
+Query:       trnR_fish  [CLEN=69]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   4.3e-14   75.2   0.0  NC_002081.1   9962  10030 +  cm    no 0.38  -
+  (2) !   8.9e-09   50.1   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (3) !     4e-06   37.6   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+ ------ inclusion threshold ------
+  (4) ?      0.11   16.6   0.0  NC_002081.1   3948   4016 +  cm    no 0.42  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.3e-14   75.2   0.0  cm        1       69 []        9962       10030 + .. 1.00    no 0.38
+
+                               v       v                                                  NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnR_fish     1 aGguaguUAGUcUAAauAAgACAucUGAUUUCGaCUCAgaAaAUuguGGUUaAAaUCCacaacuacCua 69   
+                    AGG  :UUA:U UAA UAA A:A::UGAUUUCG+CUCA::A+  UGUGGUUAAA UCCACAA:  CCUA
+  NC_002081.1  9962 AGGUGAUUAGUCUAAGUAAAAUACUUGAUUUCGGCUCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUA 10030
+                    ********************************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   8.9e-09   50.1   0.0  cm        1       69 []       11702       11770 + .. 0.99    no 0.33
+
+                      v                                                              v    NC
+                    (((((((,,<<<<_____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnR_fish     1 aGguaguUAGUcUAAauAAgACAucUGAUUUCGaCUCAgaAaAUuguGGUUaAAaUCCacaacuacCua 69   
+                    :: :A:UUAGU UAA +AA ACAU: GAUU  GA UC :AAAAU:G:GGUUAAA++CC:C:A:U: :: 
+  NC_002081.1 11702 GUAGAUUUAGUUUAACCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    ******************************99999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !     4e-06   37.6   0.0  cm        1       69 []       15699       15630 - .. 0.99    no 0.41
+
+                                                                                           NC
+                    (((((((,,<<<<._____>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnR_fish     1 aGguaguUAGUcU.AAauAAgACAucUGAUUUCGaCUCAgaAaAUuguGGUUaAAaUCCacaacuacCua 69   
+                    ::G::G:UA:U:  A +UA :A: :: G UUU G+  C :: + U  ::GUUAAAAUC::  :C::C::A
+  NC_002081.1 15699 CAGAGGGUAGUUUaAUUUAGAAUUCUAGCUUUGGGAGCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    *************999****************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) ?      0.11   16.6   0.0  cm        1       69 []        3948        4016 + .. 0.94    no 0.42
+
+                                                              vv           vv          NC
+                   (((((((,,<<<<_____>>>>,<<<<<~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnR_fish    1 aGguaguUAGUcUAAauAAgACAucUGA*[7]*UCAgaAaAUuguGGUUaAAaUCCacaacuacCua 69  
+                   AG :A::U : CUAAA+ AG : U  G:     :C  AA AU:  GGUUAAA UCC  :::U: CUA
+  NC_002081.1 3948 AGUAAAGUCAGCUAAAAUAGCUCUUGGG*[7]*CCCGAACAUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   *************99999*****98876..8..57799***************************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (69 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (364 residues re-searched)
+Windows   passing  local HMM SSV           filter:             201  (0.6533); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              34  (0.1344); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              16  (0.06579); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              10  (0.0569); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              10  (0.0569); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              10  (0.02409); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               4  (0.008217); expected (0.0001)
+Total CM hits reported:                                          4  (0.008158); includes 0 truncated hit(s)
+
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.11
+//
+Query:       trnS1_fish  [CLEN=67]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   3.6e-17   65.7   0.0  NC_002081.1  11771  11838 +  cm    no 0.59  -
+ ------ inclusion threshold ------
+  (2) ?      0.35   10.5   0.0  NC_002081.1   9974  10031 +  cm    no 0.36  -
+  (3) ?       1.3    8.6   0.0  NC_002081.1   1585   1565 -  cm    no 0.48  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   3.6e-17   65.7   0.0  cm        1       67 []       11771       11838 + .. 1.00    no 0.59
+
+                       v                  v           v                            v     NC
+                    (((((((,,<<<_.__>>>,<<<<<_______>>>>>,,,,<<<<<_________>>>>>))))))): CS
+   trnS1_fish     1 GAGgGAGGauuga.AgcaaCaaGaaCUGCUAAuuCuugcccCCguGGUUAAAcuCCacGGCUCcCUCA 67   
+                    GAG GAGG+::GA  GC::+:A  :CUGCUAA:  U:+CCCCC:UGGUUA AC+CCA:GGCUC CUC+
+  NC_002081.1 11771 GAGAGAGGCCCGAcGGCAAUGAAGACUGCUAACUAUCACCCCCUUGGUUAGACCCCAAGGCUCCCUCG 11838
+                    ******************************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) ?      0.35   10.5   0.0  cm        1       67 []        9974       10031 + .. 0.94    no 0.36
+
+                      v                                 v                 v    v    NC
+                    (((((((,,<<<___>>>,<<<<~~~~~>>>>,,,,<<<<<_________>>>>>))))))): CS
+   trnS1_fish     1 GAGgGAGGauugaAgcaaCaaGa*[9]*uCuugcccCCguGGUUAAAcuCCacGGCUCcCUCA 67   
+                     A G A: A         C::GA     UC::G  + :GUGGUUAAA UCCAC: :U C U A
+  NC_002081.1  9974 UAAGUAAAA----UA---CUUGA*[7]*UCAAGAGUCUGUGGUUAAAGUCCACAAUUGCCUAA 10031
+                    *********....55...99998..9..899999999************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) ?       1.3    8.6   0.0  cm        1       67 []        1585        1565 - .. 0.97    no 0.48
+
+                                                      NC
+                   (((((((,,~~~~~~~~~~~~~~~~~))))))): CS
+   trnS1_fish    1 GAGgGAGGa*[9]**[18]**[23]*CUCcCUCA 67  
+                   :A::G:G                   C:C::U:+
+  NC_002081.1 1585 AAAAGGG--*[2]**[ 3]**[ 1]*CCCUUUUG 1565
+                   ******9....7.....*.....*..9******* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (67 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (332 residues re-searched)
+Windows   passing  local HMM SSV           filter:             188  (0.5528); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              44  (0.1442); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              40  (0.1288); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              17  (0.08717); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              16  (0.08392); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              16  (0.03378); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               3  (0.004775); expected (0.0001)
+Total CM hits reported:                                          3  (0.004333); includes 0 truncated hit(s)
+
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.08
+//
+Query:       trnS2_fish  [CLEN=71]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   4.9e-26   91.4   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (2) !   1.6e-10   40.7   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (3) !   2.2e-10   40.3   0.0  NC_002081.1   3948   3878 -  cm    no 0.46  -
+  (4) !   5.9e-08   32.3   0.0  NC_002081.1   5062   5131 +  cm    no 0.56  -
+  (5) !   8.7e-08   31.8   0.0  NC_002081.1  15485  15555 +  cm    no 0.61  -
+  (6) !   1.2e-07   31.4   0.0  NC_002081.1   5441   5375 -  cm    no 0.52  -
+  (7) !   6.8e-05   22.3   0.0  NC_002081.1   3948   4016 +  cm    no 0.42  -
+ ------ inclusion threshold ------
+  (8) ?       1.1    8.6   0.0  NC_002081.1   3850   3870 +  cm    no 0.38  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.9e-26   91.4   0.0  cm        1       71 []        7066        6996 - .. 1.00    no 0.48
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnS2_fish    1 gAGaAaGUGgCAcAGuGGUUgUGcGgcuGGCUUGAAACCagcuuAuGggGGUUCaAUUCCccCCuUuCUcG 71  
+                   :AGAAAGUG:CA:AGUGGU :UG:G::UGGCUUGAAACCA::+ AUG:GGGUUC+AUUCCC:CCUUUCU:G
+  NC_002081.1 7066 AAGAAAGUGACAGAGUGGUCAUGUGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   *********************************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.6e-10   40.7   0.0  cm        1       71 []        2760        2833 + .. 0.97    no 0.50
+
+                                                                                           NC
+                   (((((((,,<<<<__~~~~~>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnS2_fish    1 gAGaAaGUGgCAcAG*[5]*gUGcGgcuGGCUUGAAACCagcuuAuGggGGUUCaAUUCCccCCuUuCUcG 71  
+                   G  A:AGUGGCA AG      UGC :::GGC U A  CC::: UA :G:GGUUCAA UCC:C:CU:U  C 
+  NC_002081.1 2760 GUUAGAGUGGCAGAG*[8]*UUGCAAAAGGCCUAAGCCCUUUCUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   *************98..8..9************9999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   2.2e-10   40.3   0.0  cm        1       71 []        3948        3878 - .. 1.00    no 0.46
+
+                                                                  v             v          NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnS2_fish    1 gAGaAaGUGgCAcAGuGGUUgUGcGgcuGGCUUGAAACCagcuuAuGggGGUUCaAUUCCccCCuUuCUcG 71  
+                   :AGAAA:UGG:: AGUGG   ::C ::::G UU  A C:::: U  : GGGUUC+A  CCC ::UUUCU: 
+  NC_002081.1 3948 UAGAAAGUGGUGUAGUGGAAGCACUAGGAGUUUUGAUCUCCUGUGGAUGGGUUCGAGCCCCCUUUUUCUAA 3878
+                   **********************************9*9********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   5.9e-08   32.3   0.0  cm        1       71 []        5062        5131 + .. 0.93    no 0.56
+
+                                                                                      NC
+                   (((((((,,<<~~~~~~>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnS2_fish    1 gAGaAaGUGgC*[11]*GcGgcuGGCUUGAAACCagcuuAuGggGGUUCaAUUCCccCCuUuCUcG 71  
+                   ::G::::U G        C :::G:CUU AAA:C:::    GG:GGU  AA UCC:CC::::C::G
+  NC_002081.1 5062 AGGGGCUUAGG*[10]*CCAAGGGCCUUCAAAGCCCUCAGCGGAGGUGAAAAUCCUCCAGCCCCUG 5131
+                   *********96...6..69*********************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   8.7e-08   31.8   0.0  cm        1       71 []       15485       15555 + .. 0.95    no 0.61
+
+                      v                                                                 v    NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,.<<<<<_______>>>>>))))))): CS
+   trnS2_fish     1 gAGaAaGUGgCAcAGuGGUUgUGcGgcuGGCUUGAAACCagcuuAu.GggGGUUCaAUUCCccCCuUuCUcG 71   
+                    G  : AGU GC CAGU  U G GCG:C:G:CUUG AA:C:G:+    GG:GG U AAUUCC:CCCU :  C 
+  NC_002081.1 15485 GCCCUAGUAGCUCAGU-AUAGAGCGCCGGCCUUGUAAGCCGGAGGCcGGGGGCUAAAUUCCUCCCUAGUGCU 15555
+                    **************99.466**********************98644************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   1.2e-07   31.4   0.0  cm        1       71 []        5441        5375 - .. 0.91    no 0.52
+
+                                                v       v                                  NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnS2_fish    1 gAGaAaGUGgCAcAGuGGUUgUGcGgcuGGCUUGAAACCagcuuAuGggGGUUCaAUUCCccCCuUuCUcG 71  
+                   G: A:::UGGC :AGU    : GCGG::G  U  AA  C::C+UA :G:GGUU +A  CC:C::::U :C 
+  NC_002081.1 5441 GGUAGGAUGGCUGAGU----AAGCGGUGGAUUGUAACCCCACAUACAGAGGUUUGAGCCCUCUUCUUGCCA 5375
+                   **************97....*******7755555555679******************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   6.8e-05   22.3   0.0  cm        1       71 []        3948        4016 + .. 0.95    no 0.42
+
+                                                                  vv           vv          NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+   trnS2_fish    1 gAGaAaGUGgCAcAGuGGUUgUGcGgcuGGCUUGAAACCagcuuAuGggGGUUCaAUUCCccCCuUuCUcG 71  
+                   :: AAAGU :  :A     U:  : :::GGC    A CC:::+ AUG  GGUU AAUUCC  CCUUU :: 
+  NC_002081.1 3948 AGUAAAGUCAGCUAAA--AUAGCUCUUGGGCCCAUACCCCGAACAUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   *************986..56**********9877777********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?       1.1    8.6   0.0  cm       43       63 ..        3850        3870 + .. 1.00    no 0.38
+
+                                         NC
+                   ,,,,<<<<<_______>>>>> CS
+   trnS2_fish   43 uuAuGggGGUUCaAUUCCccC 63  
+                   U AU::GGGUU AA UCCC::
+  NC_002081.1 3850 UCAUAAGGGUUAAAGUCCCUU 3870
+                   ********************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (352 residues re-searched)
+Windows   passing  local HMM SSV           filter:             121  (0.4015); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              19  (0.06894); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              16  (0.05977); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              12  (0.04808); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              12  (0.04808); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              13  (0.02905); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               8  (0.01729); expected (0.0001)
+Total CM hits reported:                                          8  (0.01514); includes 0 truncated hit(s)
+
+# CPU time: 0.16u 0.00s 00:00:00.16 Elapsed: 00:00:00.15
+//
+Query:       trnT_fish  [CLEN=72]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   2.9e-22   82.4   0.0  NC_002081.1  15485  15555 +  cm    no 0.61  -
+  (2) !   1.2e-09   39.2   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (3) !   2.9e-09   37.8   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (4) !   4.6e-09   37.2   0.0  NC_002081.1   5062   5131 +  cm    no 0.56  -
+  (5) !     2e-08   35.0   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (6) !   5.7e-08   33.4   0.0  NC_002081.1   7842   7915 +  cm    no 0.46  -
+  (7) !   2.3e-07   31.3   0.0  NC_002081.1  14339  14271 -  cm    no 0.39  -
+  (8) !   5.7e-07   30.0   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (9) !   1.3e-06   28.7   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+ (10) !     3e-06   27.5   0.0  NC_002081.1   5201   5133 -  cm    no 0.36  -
+ (11) !   4.5e-06   26.9   0.0  NC_002081.1   5441   5375 -  cm    no 0.52  -
+ (12) !   5.6e-05   23.2   0.0  NC_002081.1      1     68 +  cm    no 0.37  -
+ (13) !   5.6e-05   23.2   0.0  NC_002081.1  16697  16764 +  cm    no 0.37  -
+ (14) !   0.00021   21.2   0.0  NC_002081.1   3948   4016 +  cm    no 0.42  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.9e-22   82.4   0.0  cm        1       72 []       15485       15555 + .. 0.99    no 0.61
+
+                      v                                                                 v    NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish     1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72   
+                    GC CUAGUAGCU:AG++UA :AGC+CCGG:CUUGUAA:CCGGAG+ CGG GG UAAA+UCC CCCUAG GCU
+  NC_002081.1 15485 GCCCUAGUAGCUCAGUAUA-GAGCGCCGGCCUUGUAAGCCGGAGGCCGGGGGCUAAAUUCCUCCCUAGUGCU 15555
+                    ****************996.**************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   1.2e-09   39.2   0.0  cm        1       72 []       15699       15630 - .. 0.98    no 0.41
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish     1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72   
+                    ::::::GUA :U A++UUA  A:  C::G: UUG  A:C::G  + +  G:GUUAAAAUC:C  C::::::+
+  NC_002081.1 15699 CAGAGGGUAGUUUAAUUUA-GAAUUCUAGCUUUGGGAGCUAG-UGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    ***************9986.**********************.9999************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   2.9e-09   37.8   0.0  cm        1       72 []       11702       11770 + .. 0.91    no 0.33
+
+                      v                                                                  v    NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______.>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish     1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAA.aCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72   
+                    G: ::: UAG: UA+C    A :CA:::G: UUGU A :C::: +A++:G:GGUUAAA  CC:C: ::: :C 
+  NC_002081.1 11702 GUAGAUUUAGUUUAACCA--AGACAUUAGA-UUGUGAuUCUAA-AAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    **************9875..*****99887.788877467777.8899************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   4.6e-09   37.2   0.0  cm        1       72 []        5062        5131 + .. 0.98    no 0.56
+
+                              v         v                                                   NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                   :::::: UAG   A++ UA    CA::GG:CUU  AA:CC::  A CGG:GGU AAAAUCC:CC :::::: 
+  NC_002081.1 5062 AGGGGCUUAGGAUAAACUA-GACCAAGGGCCUUCAAAGCCCU-CAGCGGAGGUGAAAAUCCUCCAGCCCCUG 5131
+                   **************99986.99********************.9**************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !     2e-08   35.0   0.0  cm        1       72 []        7070        7137 + .. 0.92    no 0.50
+
+                                                                                             NC
+                   (((((((,,<<<<_______>>>>,<<<<<_____.__>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGU.AAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                    ::CUA U G:::A++   A:::CAC:G : UUGU AA: C:G +AU+G GGGUUAAAA CCC C UAG:: U
+  NC_002081.1 7070 GGGCUACUGGUGAAAU---AUCACACUGCC-UUGUcAAGGCAG-AAUUGUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   *************976...4********87.55553779****.89*************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   5.7e-08   33.4   0.0  cm        1       72 []        7842        7915 + .. 0.94    no 0.46
+
+                     v         v        v                              v       v        v    NC
+                   (((((((,,<<<<___~~~~~>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgc*[4]*aAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                   :: ::AG AGCU A +      AGCACC:G:CUU UAA:C:GGA++  GG:G  U   A  C:CCCU:: ::+
+  NC_002081.1 7842 CACUAAGAAGCUAAUA*[6]*AAGCACCAGCCUUUUAAGCUGGAAGCAGGUGACUCCCAACCACCCUUAAUGA 7915
+                   ************8865..6..8*******************************9999999************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   2.3e-07   31.3   0.0  cm        1       72 []       14339       14271 - .. 0.96    no 0.39
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish     1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72   
+                     ::C :GUAG:U:A+++  A:A:C+ :G U UU  A A C:   A + : GGUUAA AUCC : C: G:: U
+  NC_002081.1 14339 GUUCUUGUAGUUGAAUA--ACAACGGUGGUUUUUCAUAUCAU-UAGUCCUGGUUAAGAUCCGGGCAGGAAUU 14271
+                    **************886..5************98888*****.999************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !   5.7e-07   30.0   0.0  cm        1       72 []        2760        2833 + .. 0.92    no 0.50
+
+                                                                                              NC
+                   (((((((,,<<<<______..._>>>>,<<<<<_~~~~~>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgcuua...AaAGCaccGGuC*[6]*aCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                   G::::AGU GC: AGC +    A :GCA:::G:C     :C:::   +C:G:GGUU AA UCC:C:CU::::CU
+  NC_002081.1 2760 GUUAGAGUGGCAGAGCCCGgacAUUGCAAAAGGC*[6]*CCUUU-CUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   ***************99888888*******8887..7..77777.899************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !   1.3e-06   28.7   0.0  cm        1       72 []        7066        6996 - .. 0.97    no 0.48
+
+                   v           v       v                                                 v  NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                    ::::AGU  C: AG+  +  :G +:  G:CUUG AA:C  : ++++G GGGUU  A+UCCC CCU::::  
+  NC_002081.1 7066 AAGAAAGUGACAGAGUGGUCAUGUGAUUGGCUUGAAACCAGU-AGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   ****************99989*********************.5678************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !     3e-06   27.5   0.0  cm        1       72 []        5201        5133 - .. 0.96    no 0.36
+
+                                                                                            NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                   ::: U: UA CUUA++U   AAG A:  GU UUG A AC  : ++++G  GG UA   UCC  C :A :::+
+  NC_002081.1 5201 AAGGUCUUAGCUUAAUUA--AAGUAUUUGUUUUGCAUACAGA-AGAUGUGGGGUAGUGUCCUGCAGAUCUUA 5133
+                   **************9875..**********************.6678************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !   4.5e-06   26.9   0.0  cm        1       72 []        5441        5375 - .. 0.94    no 0.52
+
+                               v       v        v        v                                   NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______.>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAA.aCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                   G: : ::U GCU AG+     AGC+::GG  UUGUAA  CC::A  +C:G:GGUU  A  CC:C::: : :C+
+  NC_002081.1 5441 GGUAGGAUGGCUGAGU----AAGCGGUGG-AUUGUAAcCCCACAU-ACAGAGGUUUGAGCCCUCUUCUUGCCA 5375
+                   ************9986....8*******9.5******7699**65.68************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !   5.6e-05   23.2   0.0  cm        1       72 []           1          68 + [. 0.91    no 0.37
+
+                    v                                               v       v       v     NC
+                 (((((((,,<<<<_______>>>>,<<<<<__~~~~~>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish  1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCU*[5]*aCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72
+                 GC: U:GUA CUUA++U   AAG  ::: :CU     : ::: G+++GG::  UA AA  ::CCC:A :GC+
+  NC_002081.1  1 GCUAUCGUAGCUUAAUUA--AAGUUUAAUACU*[5]*UAUUA-GGAUGGACCCUAGAAA-GUCCCGAAAGCA 68
+                 **************9875..*****9999987..6..99999.********99999996.8*********** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !   5.6e-05   23.2   0.0  cm        1       72 []       16697       16764 + .. 0.91    no 0.37
+
+                       v                                               v       v       v     NC
+                    (((((((,,<<<<_______>>>>,<<<<<__~~~~~>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish     1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCU*[5]*aCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72   
+                    GC: U:GUA CUUA++U   AAG  ::: :CU     : ::: G+++GG::  UA AA  ::CCC:A :GC+
+  NC_002081.1 16697 GCUAUCGUAGCUUAAUUA--AAGUUUAAUACU*[5]*UAUUA-GGAUGGACCCUAGAAA-GUCCCGAAAGCA 16764
+                    **************9875..*****9999987..6..99999.********99999996.8*********** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !   0.00021   21.2   0.0  cm        1       72 []        3948        4016 + .. 0.94    no 0.42
+
+                                                                   vv           vv          NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,,<<<<<_______>>>>>))))))): CS
+    trnT_fish    1 GcccuaGUAGCUuAgcuuaAaAGCaccGGuCUUGUAAaCCggAgAucGGgGGUUAAAaUCCcCCCuagggCu 72  
+                   :: ::AGU   :UA+++U  A:   : GG:C   UA :CC :A  ++G  GGUUAAA+UCC  CCU:: ::+
+  NC_002081.1 3948 AGUAAAGUCAGCUAAAAU--AGCUCUUGGGCCCAUACCCCGAAC-AUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   **************9999..**********97777779****76.57************************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (72 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (392 residues re-searched)
+Windows   passing  local HMM SSV           filter:             134  (0.4796); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              29  (0.1102); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              28  (0.1071); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              18  (0.09446); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              18  (0.09446); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              18  (0.04223); expected (0.02)
+Envelopes passing  local CM  CYK           filter:              14  (0.03084); expected (0.0001)
+Total CM hits reported:                                         14  (0.02875); includes 0 truncated hit(s)
+
+# CPU time: 0.32u 0.00s 00:00:00.32 Elapsed: 00:00:00.31
+//
+Query:       trnV_fish  [CLEN=71]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   6.1e-18   75.0   0.0  NC_002081.1   1019   1090 +  cm    no 0.51  -
+  (2) !   3.6e-07   34.3   0.0  NC_002081.1  15699  15630 -  cm    no 0.41  -
+  (3) !   4.9e-07   33.8   0.0  NC_002081.1   5201   5133 -  cm    no 0.36  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   6.1e-18   75.0   0.0  cm        1       71 []        1019        1090 + .. 1.00    no 0.51
+
+                      v       v          v       v       v                            v     NC
+                   (((((((,,<<<<______._>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnV_fish    1 CAgggcGUAGCUuAAauag.AaAGCAucucgCUUACACcgagaAGAuauCcgUgCAAaUcgGauCgcccUGA 71  
+                   CAG GC:UAGC :A +UAG A: GCAUCUC CUUACAC GAGAAG +:UCCGUGCAAAUCGGA::GC CUGA
+  NC_002081.1 1019 CAGAGCAUAGCCAAGUUAGuAAAGCAUCUCCCUUACACCGAGAAGUCGUCCGUGCAAAUCGGACUGCCCUGA 1090
+                   ************************************************************************ PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   3.6e-07   34.3   0.0  cm        1       71 []       15699       15630 - .. 0.97    no 0.41
+
+                                                                                             NC
+                    (((((((,,<<<<_______>>>>,<<<<<___~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnV_fish     1 CAgggcGUAGCUuAAauagAaAGCAucucgCUU*[4]*cgagaAGAuauCcgUgCAAaUcgGauCgcccUGA 71   
+                    CAG:G:GUA :U AA+U +  A:  ::::: UU     ::::: G U  ::GU  AAAUC::  C:C:CUGA
+  NC_002081.1 15699 CAGAGGGUAGUUUAAUUUA-GAAUUCUAGCUUU*[4]*GCUAGUGGUGGGAGUUAAAAUCUCUUCCCUCUGA 15630
+                    *****************96.*********9987..9..9********************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   4.9e-07   33.8   0.0  cm        1       71 []        5201        5133 - .. 0.97    no 0.36
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnV_fish    1 CAgggcGUAGCUuAAauagAaAGCAucucgCUUACACcgagaAGAuauCcgUgCAAaUcgGauCgcccUGA 71  
+                    AG :C UA CUUAA+U  AAAG AU U:: UU CA ::A AAGAU:: :G      UC: :: G: CU A
+  NC_002081.1 5201 AAGGUCUUAGCUUAAUU--AAAGUAUUUGUUUUGCAUACAGAAGAUGUGGGGUAGUGUCCUGCAGAUCUUA 5133
+                   *****************..7*******************************8888888************* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (460 residues re-searched)
+Windows   passing  local HMM SSV           filter:             112  (0.4662); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              21  (0.1013); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              17  (0.08047); expected (0.02)
+Windows   passing glocal HMM Forward       filter:               9  (0.04461); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:               9  (0.04461); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:               9  (0.022); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               3  (0.006402); expected (0.0001)
+Total CM hits reported:                                          3  (0.006196); includes 0 truncated hit(s)
+
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+//
+Query:       trnW_fish  [CLEN=71]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   1.5e-24   91.1   0.0  NC_002081.1   5062   5131 +  cm    no 0.56  -
+  (2) !   7.5e-08   33.6   0.0  NC_002081.1  15698  15631 -  cm    no 0.41  -
+  (3) !   1.9e-07   32.3   0.0  NC_002081.1  11702  11770 +  cm    no 0.33  -
+  (4) !   2.6e-06   28.4   0.0  NC_002081.1   7070   7137 +  cm    no 0.50  -
+  (5) !   2.8e-05   24.8   0.0  NC_002081.1  15485  15555 +  cm    no 0.61  -
+ ------ inclusion threshold ------
+  (6) ?     0.036   14.1   0.0  NC_002081.1   7856   7912 +  cm    no 0.49  -
+  (7) ?       1.1    9.1   0.0  NC_002081.1   3872   3931 +  cm    no 0.48  -
+  (8) ?       1.9    8.2   0.0  NC_002081.1   3853   3870 +  cm    no 0.39  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   1.5e-24   91.1   0.0  cm        1       71 []        5062        5131 + .. 1.00    no 0.56
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnW_fish    1 AGgggcUUAGGuuaaaauuAgaCCAaggGCCUUCAAAGCccuAAGcggGgGUGAAAAUCcCccAgcccCUG 71  
+                   AGGGGCUUAGG:U AAA+UAG:CCAAGGGCCUUCAAAGCCCU AGCGG:GGUGAAAAUCC:CCAGCCCCUG
+  NC_002081.1 5062 AGGGGCUUAGGAU-AAACUAGACCAAGGGCCUUCAAAGCCCUCAGCGGAGGUGAAAAUCCUCCAGCCCCUG 5131
+                   *************.99******************************************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   7.5e-08   33.6   0.0  cm        1       71 []       15698       15631 - .. 0.97    no 0.41
+
+                                                                                            NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnW_fish     1 AGgggcUUAGGuuaaaauuAgaCCAaggGCCUUCAAAGCccuAAGcggGgGUGAAAAUCcCccAgcccCUG 71   
+                    AG:GG: UA  UU AA+UUAGA   :::GC UU   AGC:::  G+ :G:GU AAAAUC:C:  :CC:CUG
+  NC_002081.1 15698 AGAGGG-UAGUUU-AAUUUAGAAUUCUAGCUUUGGGAGCUAGUGGUGGGAGUUAAAAUCUCUU-CCCUCUG 15631
+                    ***998.9**999.99*****************9999**************************.899**** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   1.9e-07   32.3   0.0  cm        1       71 []       11702       11770 + .. 0.92    no 0.33
+
+                      v                                                                v    NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnW_fish     1 AGgggcUUAGGuuaaaauuAgaCCAaggGCCUUCAAAGCccuAAGcggGgGUGAAAAUCcCccAgcccCUG 71   
+                    :  G::UUAG  :  AA+ A:  CA:::G  U   A  C:::AA +:G:GGU AAA  CC:C:A::C  : 
+  NC_002081.1 11702 GUAGAUUUAGUUU--AACCAAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUCCACC 11770
+                    *********9999..888999999*****776555557********************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   2.6e-06   28.4   0.0  cm        1       71 []        7070        7137 + .. 0.96    no 0.50
+
+                                                                                           NC
+                   (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnW_fish    1 AGgggcUUAGGuuaaaauuAgaCCAaggGCCUUCAAAGCccuAAGcggGgGUGAAAAUCcCccAgcccCUG 71  
+                    GG::::U G ::   A+UA:: CA::G:C U   AAG:C::AA +G GGGU AAAA CCC C::::CC  
+  NC_002081.1 7070 GGGCUACUGGUGA---AAUAUCACACUGCCUUGUCAAGGCAGAAUUGUGGGUUAAAACCCCGCGUAGCCUU 7137
+                   ************9...6678999*********99999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   2.8e-05   24.8   0.0  cm        1       71 []       15485       15555 + .. 0.98    no 0.61
+
+                      v                                                                 v    NC
+                    (((((((,,<<<<_______>>>>,<<<<<_______>>>>>,,,,.<<<<<_______>>>>>))))))): CS
+    trnW_fish     1 AGgggcUUAGGuuaaaauuAgaCCAaggGCCUUCAAAGCccuAAGc.ggGgGUGAAAAUCcCccAgcccCUG 71   
+                    :  ::: UAG U: A ++UA:A C ::GGCCUU  AAGCC::A GC GG GG  AAA UCC CC :::  : 
+  NC_002081.1 15485 GCCCUAGUAGCUC-AGUAUAGAGCGCCGGCCUUGUAAGCCGGAGGCcGGGGGCUAAAUUCCUCCCUAGUGCU 15555
+                    *************.89999*************************976************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) ?     0.036   14.1   0.0  cm        1       71 []        7856        7912 + .. 0.91    no 0.49
+
+                     v                                  v v           v v    v    NC
+                   (((((((,,~~~~~~,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnW_fish    1 AGgggcUUA*[15]*AaggGCCUUCAAAGCccuAAGcggGgGUGAAAAUCcCccAgcccCUG 71  
+                    : GG:UUA      A:::GCCUU  AAGC:::AAGC G :G  A    C: C A:CC :  
+  NC_002081.1 7856 UAUGGGUUA*[ 3]*ACCAGCCUUUUAAGCUGGAAGCAGGUG--ACUCCCAACCACCCUUAA 7912
+                   *********...8..**********************99554..6666688999******** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) ?       1.1    9.1   0.0  cm        1       71 []        3872        3931 + .. 0.88    no 0.48
+
+                     v v            v             v                        v v    NC
+                   (((((((,,~~~~~~,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnW_fish    1 AGgggcUUA*[15]*AaggGCCUUCAAAGCccuAAGcggGgGUGAAAAUCcCccAgcccCUG 71  
+                   A:   CUUA      AA GG   UC AA CC U   C:GG:G   AAA C:CC:AG   :U 
+  NC_002081.1 3872 AACUCCUUA*[ 4]*AAGGGGGCUCGAACCCAUCCACAGGAGAUCAAAACUCCUAGUGCUUC 3931
+                   *********...4..66666666788899999999*************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) ?       1.9    8.2   0.0  cm       46       63 ..        3853        3870 + .. 1.00    no 0.39
+
+                                      NC
+                   ,<<<<<_______>>>>> CS
+    trnW_fish   46 cggGgGUGAAAAUCcCcc 63  
+                   +::GGGU AAA UCCC::
+  NC_002081.1 3853 UAAGGGUUAAAGUCCCUU 3870
+                   ****************** PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (71 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (356 residues re-searched)
+Windows   passing  local HMM SSV           filter:             194  (0.6356); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              27  (0.1093); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              23  (0.09311); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              15  (0.05653); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              15  (0.05653); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              14  (0.0332); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               7  (0.0147); expected (0.0001)
+Total CM hits reported:                                          8  (0.01417); includes 0 truncated hit(s)
+
+# CPU time: 0.23u 0.00s 00:00:00.23 Elapsed: 00:00:00.22
+//
+Query:       trnY_fish  [CLEN=70]
+Hit scores:
+ rank     E-value  score  bias  sequence     start    end   mdl trunc   gc  description
+ ----   --------- ------ -----  ----------- ------ ------   --- ----- ----  -----------
+  (1) !   4.3e-22   79.2   0.0  NC_002081.1   5441   5375 -  cm    no 0.52  -
+  (2) !   8.3e-13   48.6   0.0  NC_002081.1   2760   2833 +  cm    no 0.50  -
+  (3) !   9.9e-11   41.7   0.0  NC_002081.1   7066   6996 -  cm    no 0.48  -
+  (4) !     1e-08   35.1   0.0  NC_002081.1  11702  11768 +  cm    no 0.31  -
+  (5) !     3e-08   33.6   0.0  NC_002081.1  15485  15555 +  cm    no 0.61  -
+  (6) !   5.7e-08   32.6   0.0  NC_002081.1   3808   3878 +  cm    no 0.45  -
+  (7) !   8.2e-07   28.8   0.0  NC_002081.1   3948   3878 -  cm    no 0.46  -
+  (8) !     0.002   17.7   0.0  NC_002081.1   3949   4016 +  cm    no 0.43  -
+ ------ inclusion threshold ------
+  (9) ?      0.47    9.8   0.0  NC_002081.1   2845   2778 -  cm    no 0.44  -
+
+
+Hit alignments:
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   4.3e-22   79.2   0.0  cm        1       70 []        5441        5375 - .. 1.00    no 0.52
+
+                                                                                          NC
+                   (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnY_fish    1 GguAgggUGGCugAGugUUaaGCGguGGgUUGUAGccCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70  
+                   GG:A:G:UGGCUGAGU   AAGCGGUGG:UUGUA+C:CCACAUACAGAGGUUU+AG CCUCU:C:U:CCA
+  NC_002081.1 5441 GGUAGGAUGGCUGAGU---AAGCGGUGGAUUGUAACCCCACAUACAGAGGUUUGAGCCCUCUUCUUGCCA 5375
+                   ****************...*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   8.3e-13   48.6   0.0  cm        1       70 []        2760        2833 + .. 0.96    no 0.50
+
+                                                                                           NC
+                   (((((((,,<<<<__~~~~~>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnY_fish    1 GguAgggUGGCugAG*[4]*aaGCGguGGgUUGUAGccCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70  
+                   G:UAG:GUGGC: AG      :GC :::GG    AGCCC::: UACAGAGGUU AAGUCCUCUC:CUA:C 
+  NC_002081.1 2760 GUUAGAGUGGCAGAG*[8]*UUGCAAAAGGCCUAAGCCCUUUCUACAGAGGUUCAAGUCCUCUCUCUAACU 2833
+                   ************998..7..9************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   9.9e-11   41.7   0.0  cm        1       70 []        7066        6996 - .. 0.99    no 0.48
+
+                   v                                                                    v  NC
+                   (((((((,,<<<<______.>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnY_fish    1 GguAgggUGGCugAGugUU.aaGCGguGGgUUGUAGccCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70  
+                    ::A::GUG:C:GAGUG U A:G:G:: GG U  A+ CC ::A+A+:::GGUU +A UCC:::C::U::  
+  NC_002081.1 7066 AAGAAAGUGACAGAGUGGUcAUGUGAUUGGCUUGAAACCAGUAGAUGGGGGUUCGAUUCCCUCCUUUCUCG 6996
+                   *****************99*************99999********************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !     1e-08   35.1   0.0  cm        1       70 []       11702       11768 + .. 0.97    no 0.31
+
+                     vv                                                                vv   NC
+                    (((((((,,<<<<______.>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnY_fish     1 GguAgggUGGCugAGugUU.aaGCGguGGgUUGUAGccCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70   
+                    G++::::U G ::A      :: C :U:G:UUGU + :C:A:A+A+AGAGGUU AA  CCUCU::::  CA
+  NC_002081.1 11702 GUAGAUUUAGUUUAACC--aAGACAUUAGAUUGUGAUUCUAAAAAUAGAGGUUAAACCCCUCUAAUC--CA 11768
+                    *************9986..49*********************************************9..** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !     3e-08   33.6   0.0  cm        1       70 []       15485       15555 + .. 0.93    no 0.61
+
+                      v                                                                 v    NC
+                    (((((((,,<<<<______>>>>,<<<<<._______>>>>>,,,,.<<<<<_______>>>>>))))))): CS
+    trnY_fish     1 GguAgggUGGCugAGugUUaaGCGguGGg.UUGUAGccCCacauAC.AGaGGUUuAAgUCCuCUcccUacCA 70   
+                    G:  ::GU GCU:AGU U :AGCG::GG: UUGUA+ :CC::A+ C :G:GG U AA UCC:C:C::  :C 
+  NC_002081.1 15485 GCCCUAGUAGCUCAGUAUAGAGCGCCGGCcUUGUAA-GCCGGAGGCcGGGGGCUAAAUUCCUCCCUAGUGCU 15555
+                    ***************************985778886.7999997644************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   5.7e-08   32.6   0.0  cm        1       70 []        3808        3878 + .. 0.85    no 0.45
+
+                                           vv             vv                              NC
+                   (((((((,,<<<<______>>>>,<<<<<__~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnY_fish    1 GguAgggUGGCugAGugUUaaGCGguGGgUU*[5]*cCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70  
+                   GG::::GUG:CUGA  +  AAG:G   ::UU     ::     A+A::GGUU AAGUCC::UC::::CC 
+  NC_002081.1 3808 GGAGUUGUGCCUGAAGU-AAAGGGACCACUU*[7]*GUGAAUCAUAAGGGUUAAAGUCCCUUCAACUCCU 3878
+                   *************9986.3888887777765..4..7777799*************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   8.2e-07   28.8   0.0  cm        1       70 []        3948        3878 - .. 0.99    no 0.46
+
+                                                                  v             v          NC
+                   (((((((,,<<<<______.>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnY_fish    1 GguAgggUGGCugAGugUU.aaGCGguGGgUUGUAGccCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70  
+                    ::A:::UGG : AGUG    : C ::G:GUU U + C:C:: U  A :GGUU +AG CC: U:::U:: A
+  NC_002081.1 3948 UAGAAAGUGGUGUAGUGGAaGCACUAGGAGUUUUGAUCUCCUGUGGAUGGGUUCGAGCCCCCUUUUUCUAA 3878
+                   *****************999*************************************************** PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !     0.002   17.7   0.0  cm        1       70 []        3949        4016 + .. 0.95    no 0.43
+
+                   v                                            vv           vv       v  NC
+                   (((((((,,<<<<______>>>>,<<<<<_~~~~~>>>>>,,,,<<<<<_______>>>>>))))))): CS
+    trnY_fish    1 GguAgggUGGCugAGugUUaaGCGguGGgU*[6]*cCCacauACAGaGGUUuAAgUCCuCUcccUacCA 70  
+                    G:A::GU : ::A   U :: : ::GGG      CCC::A A+:  GGUU AA UCC  :C::U:C+A
+  NC_002081.1 3949 -GUAAAGUCAGCUAAAAU-AGCUCUUGGGC*[6]*CCCGAACAUGUUGGUUAAAUUCCUUCCUUUGCUA 4016
+                   .*************9985.*********96..7..9********************************* PP
+
+>> NC_002081.1  
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) ?      0.47    9.8   0.0  cm        1       70 []        2845        2778 - .. 0.92    no 0.44
+
+                              vv      vv                                                    NC
+                   (((((((,,<<<<______>>>>,<<<<<_______>>>>>,,,,<<<<<_______>>>>>..))))))): CS
+    trnY_fish    1 GguAgggUGGCugAGugUUaaGCGguGGgUUGUAGccCCacauACAGaGGUUuAAgUCCuCU..cccUacCA 70  
+                   G::A::G G C  AGU     G G:::GG   U + CC::: UA A:AGG  U AG CCU:U  C::U::C 
+  NC_002081.1 2845 GAUAUUG-GUCAUAGU---UAGAGAGAGGACUUGAACCUCUGUAGAAAGGGCUUAGGCCUUUugCAAUGUCC 2778
+                   ******9.89988888...5699*****987777779***************************9******* PP
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (70 consensus positions)
+Target sequences:                                                1  (33592 residues searched)
+Target sequences re-searched for truncated hits:                 1  (348 residues re-searched)
+Windows   passing  local HMM SSV           filter:             172  (0.5494); expected (0.35)
+Windows   passing  local HMM Viterbi       filter:                  (off)
+Windows   passing  local HMM Viterbi  bias filter:                  (off)
+Windows   passing  local HMM Forward       filter:              44  (0.161); expected (0.02)
+Windows   passing  local HMM Forward  bias filter:              43  (0.1579); expected (0.02)
+Windows   passing glocal HMM Forward       filter:              22  (0.1176); expected (0.02)
+Windows   passing glocal HMM Forward  bias filter:              21  (0.1136); expected (0.02)
+Envelopes passing glocal HMM envelope defn filter:              24  (0.05442); expected (0.02)
+Envelopes passing  local CM  CYK           filter:               9  (0.01959); expected (0.0001)
+Total CM hits reported:                                          9  (0.0185); includes 0 truncated hit(s)
+
+# CPU time: 0.19u 0.00s 00:00:00.19 Elapsed: 00:00:00.19
 //
 [ok]

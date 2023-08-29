@@ -13,224 +13,224 @@ Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-   2.4e-117  381.5  36.5   2.7e-117  381.3  36.5    1.0  1  NC_002785.1*+*7963-8644  
+   1.6e-116  378.3  33.1   1.8e-116  378.2  33.1    1.0  1  NC_002081.1*+*8075-8756  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*7963-8644  
+>> NC_002081.1*+*8075-8756  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  381.3  36.5  8.6e-119  2.7e-117       1     227 []       1     227 []       1     227 [] 1.00
+   1 !  378.2  33.1  7.8e-118  1.8e-116       1     227 []       1     227 []       1     227 [] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 381.3 bits;  conditional E-value: 8.6e-119
+  == domain 1  score: 378.2 bits;  conditional E-value: 7.8e-118
              ATP6.protein   1 mnlslfdqfasptllgiplillalllpllllptpskrllnnrlltlqswlikrftkqlllplnkkghkwallltslmlflltlnll 86 
-                              mnls+fdqfasp+llgiplill+ll+p+lllp+p++r++nnrl+tlq w+++ +tkql++plnk+ghkwal+ltslm+fll++nll
-  NC_002785.1*+*7963-8644   1 MNLSFFDQFASPQLLGIPLILLSLLFPTLLLPSPNNRWINNRLSTLQLWFLQLITKQLMMPLNKAGHKWALILTSLMTFLLLINLL 86 
-                              9************************************************************************************* PP
+                              m+lslfdqf+sp++lgip+il+al+lp+ll+ptp++r+l+nr+++lq w+i rft+ql+lpln++ghkwa ll+slm+flltln+l
+  NC_002081.1*+*8075-8756   1 MTLSLFDQFSSPSFLGIPMILMALALPWLLIPTPTSRWLSNRVVSLQGWFIARFTNQLFLPLNVGGHKWAPLLASLMMFLLTLNML 86 
+                              99************************************************************************************ PP
 
              ATP6.protein  87 gllpytftpttqlslnlglavplwlatvliglrnqptaslahllPegtPtpLipvLiiietisllirPlaLgvrltanltaghlLi 172
-                              gllpytftpttqls+n++la+plwlat+l+glrnqp++sl+hllPegtPtpLip+Li+iet+sllirPlaLgvrltanltaghlLi
-  NC_002785.1*+*7963-8644  87 GLLPYTFTPTTQLSMNMALAFPLWLATLLTGLRNQPSISLGHLLPEGTPTPLIPALILIETTSLLIRPLALGVRLTANLTAGHLLI 172
+                              gl+py ftpttqlslnlglavplwlatvlig+rnqpt++l+h+lPegtPt+Lip+Lii++tisl+irPlaLgvrltanltaghlLi
+  NC_002081.1*+*8075-8756  87 GLMPYIFTPTTQLSLNLGLAVPLWLATVLIGMRNQPTHALGHFLPEGTPTALIPILIIMQTISLFIRPLALGVRLTANLTAGHLLI 172
                               ************************************************************************************** PP
 
              ATP6.protein 173 qlistatlvllslmptvalltlivlllLtllevavaliqayvfvLLlslylqenv 227
-                              qlistatl+ll++mpt+++lt++vlllLt+le+ava+iqayvfvLLlslylqen+
-  NC_002785.1*+*7963-8644 173 QLISTATLALLPTMPTISVLTATVLLLLTILELAVAMIQAYVFVLLLSLYLQENI 227
-                              ******************************************************6 PP
+                              +lis+a++vl+++mp+va+lt+++lllLt+levava+iqayvf+LLlslylqenv
+  NC_002081.1*+*8075-8756 173 HLISSAVFVLMPMMPVVAILTAVLLLLLTMLEVAVAMIQAYVFILLLSLYLQENV 227
+                              ******************************************************7 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (227 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         8  (0.258065); expected 0.6 (0.02)
-Passed bias filter:                        1  (0.0322581); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         5  (0.217391); expected 0.5 (0.02)
+Passed bias filter:                        1  (0.0434783); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 627.53
+# Mc/sec: 595.04
 //
 Query:       ATP8.protein  [M=66]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-    5.7e-23   72.1  24.2    6.2e-23   71.9  24.2    1.0  1  NC_002785.1*+*7805-7970  
+    9.7e-29   90.1  19.9    1.1e-28   90.0  19.9    1.0  1  NC_002081.1*+*7917-8082  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*7805-7970  
+>> NC_002081.1*+*7917-8082  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !   71.9  24.2     2e-24   6.2e-23       1      55 [.       1      55 []       1      55 [] 0.99
+   1 !   90.0  19.9   4.6e-30   1.1e-28       1      55 [.       1      55 []       1      55 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 71.9 bits;  conditional E-value: 2e-24
+  == domain 1  score: 90.0 bits;  conditional E-value: 4.6e-30
              ATP8.protein  1 MPQLnpspWflillfswltllliiqpKilkhtfpneptpkstkkkkttpWtwpWt 55
-                             MPQLnp+pW++i+++sw+++l+++qpK+++++++n+p++k++++ ++tpWtwpWt
-  NC_002785.1*+*7805-7970  1 MPQLNPNPWLFIMFMSWTVFLFLMQPKLTSFISTNSPSNKNKTTLTPTPWTWPWT 55
-                             *****************************************99***********9 PP
+                             MPQLnp+pWf+i++f+w ++l+i++pK+++htfpnep+p+ ++++kt pW+wpW+
+  NC_002081.1*+*7917-8082  1 MPQLNPAPWFMIFMFTWAIFLTILPPKVMAHTFPNEPSPQGMTTPKTAPWNWPWH 55
+                             ******************************************************6 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (66 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         9  (0.290323); expected 0.6 (0.02)
-Passed bias filter:                        2  (0.0645161); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         8  (0.347826); expected 0.5 (0.02)
+Passed bias filter:                        2  (0.0869565); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 644.22
+# Mc/sec: 724.37
 //
 Query:       COX1.protein  [M=516]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-          0 1102.9  42.4          0 1102.7  42.4    1.0  1  NC_002785.1*+*5302-6907  
+          0 1121.4  46.1          0 1121.2  46.1    1.0  1  NC_002081.1*+*5404-6991  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*5302-6907  
+>> NC_002081.1*+*5404-6991  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1102.7  42.4         0         0       2     514 ..      22     534 ..      21     535 .] 1.00
+   1 ! 1121.2  46.1         0         0       2     515 ..      15     528 ..      14     529 .] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 1102.7 bits;  conditional E-value: 0
+  == domain 1  score: 1121.2 bits;  conditional E-value: 0
              COX1.protein   2 aitrwlfstnhkdigtlyllfgawaglvgtalslliraelsqpgallgddqiynvivtahafvmiffmvmpiliggfgnwlvplmi 87 
-                              +itrwlfstnhkdigtlyl+fgawag+vgtalsllirael qpg+llgddqiynvivtahafvmiffmvmp++iggfgnwlvplmi
-  NC_002785.1*+*5302-6907  22 FITRWLFSTNHKDIGTLYLIFGAWAGMVGTALSLLIRAELGQPGTLLGDDQIYNVIVTAHAFVMIFFMVMPVMIGGFGNWLVPLMI 107
-                              69************************************************************************************ PP
+                              aitrw+fstnhkdigtlyl+fgawag+vgtalslliraelsqpgallgddqiynvivtahafvmiffmvmp++iggfgnwl+plmi
+  NC_002081.1*+*5404-6991  15 AITRWFFSTNHKDIGTLYLVFGAWAGMVGTALSLLIRAELSQPGALLGDDQIYNVIVTAHAFVMIFFMVMPLMIGGFGNWLIPLMI 100
+                              79************************************************************************************ PP
 
              COX1.protein  88 gapdmafprmnnmsfwllppslllllassaveagagtgwtvypplagnlahagasvdltifslhlagvssilgainfittiinmkp 173
-                              gapdmafprmnnmsfwllpps+llllass+veagagtgwtvypplagnlahagasvdl+ifslhlagvssilgainfitt+inmkp
-  NC_002785.1*+*5302-6907 108 GAPDMAFPRMNNMSFWLLPPSFLLLLASSTVEAGAGTGWTVYPPLAGNLAHAGASVDLAIFSLHLAGVSSILGAINFITTAINMKP 193
+                              gapdmafprmnnmsfwllpps+llllass+veagagtgwt+ypplagnlahagasvdltifslhlag+ssilgainfittiinmkp
+  NC_002081.1*+*5404-6991 101 GAPDMAFPRMNNMSFWLLPPSFLLLLASSGVEAGAGTGWTLYPPLAGNLAHAGASVDLTIFSLHLAGISSILGAINFITTIINMKP 186
                               ************************************************************************************** PP
 
              COX1.protein 174 palsqyqtplfvwsvlitavllllslpvlaagitmlltdrnlnttffdpagggdpilyqhlfwffghpevyililpgfglishiva 259
-                              palsqyqtplfvwsvlita+llllslpvlaagitmlltdrnlnttffdpagggdp+lyqhlfwffghpevyililpgfg+ish+v+
-  NC_002785.1*+*5302-6907 194 PALSQYQTPLFVWSVLITAILLLLSLPVLAAGITMLLTDRNLNTTFFDPAGGGDPVLYQHLFWFFGHPEVYILILPGFGIISHVVT 279
+                              pa+sqyqtplfvw+vlitavllllslpvlaagitmlltdrnlnt+ffdpagggdpilyqhlfwffghpevyililpgfg+ishiva
+  NC_002081.1*+*5404-6991 187 PAISQYQTPLFVWAVLITAVLLLLSLPVLAAGITMLLTDRNLNTSFFDPAGGGDPILYQHLFWFFGHPEVYILILPGFGMISHIVA 272
                               ************************************************************************************** PP
 
              COX1.protein 260 yysgkkepfgymgmvwamlaigllgfivwahhmftvgldvdtrayftsatmiiaiptgvkvfswlatlhggkikweapllwalgfi 345
-                              yy+gkkepfgymgmvwaml+ig+lgfivwahhmftvg+dvdtrayftsatmiiaiptg+kvfswlatlhgg+ikw++p+lwalgfi
-  NC_002785.1*+*5302-6907 280 YYAGKKEPFGYMGMVWAMLSIGFLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAIPTGIKVFSWLATLHGGTIKWDPPILWALGFI 365
+                              yysgkkepfgymgmvwam+aigllgfivwahhmftvg+dvdtrayftsatmiiaiptgvkvfswlatlhgg+ikwe+pllwalgfi
+  NC_002081.1*+*5404-6991 273 YYSGKKEPFGYMGMVWAMMAIGLLGFIVWAHHMFTVGMDVDTRAYFTSATMIIAIPTGVKVFSWLATLHGGSIKWETPLLWALGFI 358
                               ************************************************************************************** PP
 
              COX1.protein 346 flftvggltgivlanssldivlhdtyyvvahfhyvlsmgavfailaglvhwfplftgytlnetltkihfavmfvgvnltffpqhfl 431
-                              flft+ggltgivlanssldi lhdtyyvvahfhyvlsmgavfailag++hwfplftgytl+ t++k+hf+vmf+gvnltffpqhfl
-  NC_002785.1*+*5302-6907 366 FLFTIGGLTGIVLANSSLDIALHDTYYVVAHFHYVLSMGAVFAILAGFTHWFPLFTGYTLHPTWAKAHFGVMFTGVNLTFFPQHFL 451
+                              flftvggltgivlanssldivlhdtyyvvahfhyvlsmgavfai+a++vhwfplftgytl++t+tkihf+vmfvgvnltffpqhfl
+  NC_002081.1*+*5404-6991 359 FLFTVGGLTGIVLANSSLDIVLHDTYYVVAHFHYVLSMGAVFAIMAAFVHWFPLFTGYTLHDTWTKIHFGVMFVGVNLTFFPQHFL 444
                               ************************************************************************************** PP
 
-             COX1.protein 432 glagmprrysdypdaytlwntvssigslislvavilllfiiweafaakrevlsveltktnvewlhgcpppyhtfeepafvqvk 514
-                              glagmprrysdypdaytlwnt+ssigslis++avi+l+fiiweaf++kr+vl+ el +tn+ew+hgcppp+htfeepafvqv+
-  NC_002785.1*+*5302-6907 452 GLAGMPRRYSDYPDAYTLWNTMSSIGSLISMTAVIMLMFIIWEAFSSKRKVLQPELIATNIEWIHGCPPPHHTFEEPAFVQVQ 534
-                              ********************************************************************************997 PP
+             COX1.protein 432 glagmprrysdypdaytlwntvssigslislvavilllfiiweafaakrevlsveltktnvewlhgcpppyhtfeepafvqvke 515
+                              glagmprrysdypdaytlwntvssigslisl+avi++lfi+weafaakrev++ve+t+tnvewlhgcpppyhtfeepafvq+++
+  NC_002081.1*+*5404-6991 445 GLAGMPRRYSDYPDAYTLWNTVSSIGSLISLMAVIMFLFILWEAFAAKREVMAVEMTMTNVEWLHGCPPPYHTFEEPAFVQIQT 528
+                              *********************************************************************************985 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (516 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         6  (0.193548); expected 0.6 (0.02)
-Passed bias filter:                        3  (0.0967742); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         2  (0.0869565); expected 0.5 (0.02)
+Passed bias filter:                        2  (0.0869565); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
-# Mc/sec: 406.10
+# Mc/sec: 405.48
 //
 Query:       COX2.protein  [M=229]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-   1.6e-129  421.0   1.2   1.8e-129  420.8   1.2    1.0  1  NC_002785.1*+*7048-7735  
+   2.5e-144  469.0   2.7     3e-144  468.7   2.7    1.0  1  NC_002081.1*+*7151-7841  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*7048-7735  
+>> NC_002081.1*+*7151-7841  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  420.8   1.2  5.9e-131  1.8e-129       1     226 [.       1     225 [.       1     228 [. 0.99
+   1 !  468.7   2.7  1.3e-145    3e-144       1     228 [.       1     228 [.       1     229 [. 0.99
 
   Alignments for each domain:
-  == domain 1  score: 420.8 bits;  conditional E-value: 5.9e-131
+  == domain 1  score: 468.7 bits;  conditional E-value: 1.3e-145
              COX2.protein   1 maepsqlglqdaaspvmeellhfhdhalmivllistlvlyiivamvttkltnksildaqeieivwtilpaiililialPslrilyl 86 
-                              ma+psq+g+qda+sp+meel++fhdhalm++l+i++lvly++++m+++kl+ ++++daqe+e++wtilpai+lil+alPsl+ily+
-  NC_002785.1*+*7048-7735   1 MANPSQFGFQDASSPIMEELVEFHDHALMVALAICSLVLYLLALMLVEKLS-SNTVDAQEVELIWTILPAIVLILLALPSLQILYM 85 
-                              9*************************************************9.899******************************* PP
+                              ma+psqlg+qdaaspvmeellhfhdhalmiv+listlvlyiivamv+tkltnk+ild+qeiei+wt+lpa+ililialPslrilyl
+  NC_002081.1*+*7151-7841   1 MAHPSQLGFQDAASPVMEELLHFHDHALMIVFLISTLVLYIIVAMVSTKLTNKYILDSQEIEIIWTVLPAVILILIALPSLRILYL 86 
+                              9************************************************************************************* PP
 
              COX2.protein  87 mdeindphltikaighqwywsyeytdyedlefdsymiptqdlkkgqfrllevdhrvvvpvespirvlvsaedvlhswavpslgvkv 172
-                              mdei++p+lt+kaighqwywsyeytd++dl+fdsymipt++l +g+frllevdhrvvvp+espirv+++a dvlhswavp+lgvk+
-  NC_002785.1*+*7048-7735  86 MDEIDEPDLTLKAIGHQWYWSYEYTDFKDLTFDSYMIPTSELPPGHFRLLEVDHRVVVPMESPIRVIITAGDVLHSWAVPTLGVKT 171
+                              mdeindphltika+ghqwywsyeytdyedl fdsymiptqdl++gqfrlle+dhr+vvpvespir+l+saedvlhswavp+lg+k+
+  NC_002081.1*+*7151-7841  87 MDEINDPHLTIKAMGHQWYWSYEYTDYEDLGFDSYMIPTQDLAPGQFRLLEADHRMVVPVESPIRILISAEDVLHSWAVPALGIKM 172
                               ************************************************************************************** PP
 
-             COX2.protein 173 davPGrlnqtaliasrpgvfyGqcseicGanhsfmPivveavplkkfekwssll 226
-                              da+PGrlnqt++i++rpg+fyGqcseicGanhs+mPivve++pl++fe+wssll
-  NC_002785.1*+*7048-7735 172 DAIPGRLNQTSFITTRPGIFYGQCSEICGANHSYMPIVVESTPLTYFESWSSLL 225
-                              ***************************************************976 PP
+             COX2.protein 173 davPGrlnqtaliasrpgvfyGqcseicGanhsfmPivveavplkkfekwssllle 228
+                              davPGrlnqta+i+srpgvfyGqcseicGanhsfmPivveavpl++fe+wssl+le
+  NC_002081.1*+*7151-7841 173 DAVPGRLNQTAFITSRPGVFYGQCSEICGANHSFMPIVVEAVPLEHFESWSSLMLE 228
+                              ****************************************************9975 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (229 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         3  (0.0967742); expected 0.6 (0.02)
-Passed bias filter:                        2  (0.0645161); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         2  (0.0869565); expected 0.5 (0.02)
+Passed bias filter:                        2  (0.0869565); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 675.31
+# Mc/sec: 687.73
 //
 Query:       COX3.protein  [M=261]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-   3.7e-161  525.6  23.4   4.1e-161  525.4  23.4    1.0  1  NC_002785.1*+*8646-9429  
+   9.2e-170  553.3  21.8     1e-169  553.2  21.8    1.0  1  NC_002081.1*+*8758-9541  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*8646-9429  
+>> NC_002081.1*+*8758-9541  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  525.4  23.4  1.3e-162  4.1e-161       1     261 []       1     261 []       1     261 [] 1.00
+   1 !  553.2  21.8  4.5e-171    1e-169       1     261 []       1     261 []       1     261 [] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 525.4 bits;  conditional E-value: 1.3e-162
+  == domain 1  score: 553.2 bits;  conditional E-value: 4.5e-171
              COX3.protein   1 mahqahayhmvdpspwPltgavaallltsGlaiwfhfnsttlltlglilllltmlqwwrdivregtfqghhtppvqkglrygmilf 86 
-                              mahqah+yhmvdpspwP++ga+aall+tsGl++wfh+ns+ lltlgl++++l+m+qwwrdivre+tfqghhtp+vqkglrygmilf
-  NC_002785.1*+*8646-9429   1 MAHQAHSYHMVDPSPWPIFGATAALLTTSGLIMWFHYNSLYLLTLGLLSMFLVMIQWWRDIVRESTFQGHHTPTVQKGLRYGMILF 86 
+                              m+hqahayhmvdpspwPltgavaall+tsGla+wfhf+sttl++lg++lllltm+qwwrdi+regtfqghhtppvqkglrygmilf
+  NC_002081.1*+*8758-9541   1 MTHQAHAYHMVDPSPWPLTGAVAALLMTSGLAVWFHFHSTTLMALGTVLLLLTMYQWWRDIIREGTFQGHHTPPVQKGLRYGMILF 86 
                               9************************************************************************************* PP
 
              COX3.protein  87 itsevffflgffwafyhsslaptpelggawpptgitpldplevpllntavllasgvtvtwahhslmegerkqaiqaltltillGly 172
-                              itse ffflgffwaf+hsslaptpelg++wpptgi+pl+plevpllnta+llasgvtvtwahhs++e++rkqai+al+lti+lG+y
-  NC_002785.1*+*8646-9429  87 ITSEAFFFLGFFWAFFHSSLAPTPELGAQWPPTGINPLNPLEVPLLNTAILLASGVTVTWAHHSITESNRKQAIHALSLTIILGFY 172
+                              itsevffflgffwafyh+slaptpelgg+wpptgit+ldp+evpllntavllasgvtvtwahhs+megerkqai++ltltillG+y
+  NC_002081.1*+*8758-9541  87 ITSEVFFFLGFFWAFYHASLAPTPELGGCWPPTGITTLDPFEVPLLNTAVLLASGVTVTWAHHSIMEGERKQAIHSLTLTILLGFY 172
                               ************************************************************************************** PP
 
              COX3.protein 173 ftalqameyyeapftiadgvygstffvatgfhglhviigstflavcllrqikyhftsehhfgfeaaawywhfvdvvwlflyvsiyw 258
-                              ftalqamey+ea+f+iadgvygstffvatgfhglhviigs+fl+vcllr ik+hft++hhfgfeaaawywhfvdv+wlfly+siyw
-  NC_002785.1*+*8646-9429 173 FTALQAMEYHEASFSIADGVYGSTFFVATGFHGLHVIIGSSFLTVCLLRLIKFHFTTNHHFGFEAAAWYWHFVDVIWLFLYMSIYW 258
+                              ft+lq +eyy+apftiadgvygstffvatgfhglhviigstflavcllrqi+yhftsehhfgfeaaawywhfvdvvwlfly+siyw
+  NC_002081.1*+*8758-9541 173 FTFLQGLEYYDAPFTIADGVYGSTFFVATGFHGLHVIIGSTFLAVCLLRQIRYHFTSEHHFGFEAAAWYWHFVDVVWLFLYISIYW 258
                               ************************************************************************************** PP
 
              COX3.protein 259 wgs 261
                               wgs
-  NC_002785.1*+*8646-9429 259 WGS 261
+  NC_002081.1*+*8758-9541 259 WGS 261
                               **8 PP
 
 
@@ -238,607 +238,608 @@ Domain annotation for each sequence (and alignments):
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (261 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         3  (0.0967742); expected 0.6 (0.02)
-Passed bias filter:                        2  (0.0645161); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         4  (0.173913); expected 0.5 (0.02)
+Passed bias filter:                        1  (0.0434783); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 758.17
+# Mc/sec: 818.23
 //
 Query:       CYTB.protein  [M=379]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
-     3e-223  731.6  24.4   3.3e-223  731.4  24.4    1.0  1  NC_002785.1*+*13622-14759  
+   5.1e-228  746.9  26.3   5.7e-228  746.7  26.3    1.0  1  NC_002081.1*+*14344-15484  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*13622-14759  
+>> NC_002081.1*+*14344-15484  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  731.4  24.4  1.1e-224  3.3e-223       2     377 ..       2     378 ..       1     379 [] 0.99
+   1 !  746.7  26.3  2.5e-229  5.7e-228       1     379 []       1     379 [.       1     379 [. 1.00
 
   Alignments for each domain:
-  == domain 1  score: 731.4 bits;  conditional E-value: 1.1e-224
-               CYTB.protein   2 a.slrkthpllkiindalidlPapsnisawwnfGsllglclilqiltGlflamhytadislafssvahicrdvnygwlirnlha 84 
-                                a ++rk+hpllkiin++lidlP+psnisawwnfGsllg+cli+qiltGl+lamhytad++lafssvah+cr+v+ygw+irnlha
-  NC_002785.1*+*13622-14759   2 ApNIRKSHPLLKIINNSLIDLPSPSNISAWWNFGSLLGICLITQILTGLLLAMHYTADTTLAFSSVAHTCRNVQYGWFIRNLHA 85 
-                                5589******************************************************************************** PP
+  == domain 1  score: 746.7 bits;  conditional E-value: 2.5e-229
+               CYTB.protein   1 maslrkthpllkiindalidlPapsnisawwnfGsllglclilqiltGlflamhytadislafssvahicrdvnygwlirnlha 84 
+                                maslrkthp+lki+n+al+dlPapsnis+wwnfGsllglcli+q+ltGlflamhyt+di++afssv+hicrdvnygwlirn+ha
+  NC_002081.1*+*14344-15484   1 MASLRKTHPILKIANSALVDLPAPSNISVWWNFGSLLGLCLITQLLTGLFLAMHYTSDIETAFSSVVHICRDVNYGWLIRNMHA 84 
+                                899********************************************************************************* PP
 
                CYTB.protein  85 ngaslfficiylhigrglyygsylyketwniGvillllvmatafvGyvlpwGqmsfwgatvitnllsaipyiGetlvewiwggf 168
-                                ngas+fficiylhigrglyygsylyketwn+Gvilll++matafvGyvlpwGqmsfwgatvitnl+saipyiG+tlvew wggf
-  NC_002785.1*+*13622-14759  86 NGASFFFICIYLHIGRGLYYGSYLYKETWNTGVILLLTLMATAFVGYVLPWGQMSFWGATVITNLFSAIPYIGQTLVEWAWGGF 169
+                                ngas+ffic+y+hi+rglyygsyl+ etwniGv+l+llvm+t+fvGyvlpwGqmsfwgatvitnl+s++py+G++lv+wiwggf
+  NC_002081.1*+*14344-15484  85 NGASFFFICLYMHIARGLYYGSYLFVETWNIGVVLFLLVMMTSFVGYVLPWGQMSFWGATVITNLMSTVPYVGDALVQWIWGGF 168
                                 ************************************************************************************ PP
 
                CYTB.protein 169 svdnatltrffalhfllpfiiaaltlvhllflhetGsnnplglnsdadkipfhpyfslkdllglllllllllllalfspnllgd 252
-                                svdn+tltrffalhfllpf+ia++tlvhl+flhe+Gsnnplg+ s++dkipfhpyfslkd+lg++l+++ ll+la+fspnllgd
-  NC_002785.1*+*13622-14759 170 SVDNPTLTRFFALHFLLPFVIAGITLVHLTFLHESGSNNPLGIISHCDKIPFHPYFSLKDILGFTLMFIPLLSLAFFSPNLLGD 253
+                                svdnatltrffa+hfl+pf++aa+t++hllflhetGsnnp+g+ns+adkipfhpyf++kdllg++++ll l++lalf+pnllgd
+  NC_002081.1*+*14344-15484 169 SVDNATLTRFFAFHFLFPFVVAAFTMLHLLFLHETGSNNPTGINSNADKIPFHPYFTYKDLLGFAVMLLGLTALALFAPNLLGD 252
                                 ************************************************************************************ PP
 
                CYTB.protein 253 penftpanplvtpphikpewyflfayailrsiPnklgGvlalllsilvlllvpllhtskqrsltfrplsqllfwllvadllilt 336
-                                penftpanpl+tpphikpewyflfayailrsiPnklgGvlal++s+l+l+l+pllh+skqrs+tfrplsqllfw lva+llilt
-  NC_002785.1*+*13622-14759 254 PENFTPANPLATPPHIKPEWYFLFAYAILRSIPNKLGGVLALAASVLILFLIPLLHKSKQRSMTFRPLSQLLFWFLVANLLILT 337
+                                p+nftpanp+vtpph+kpewyflfayailrsiPnklgGvlall+silvl++vp+lhtskqr+ltfrpl+q+lfw+lvad+l+lt
+  NC_002081.1*+*14344-15484 253 PDNFTPANPIVTPPHVKPEWYFLFAYAILRSIPNKLGGVLALLFSILVLMVVPFLHTSKQRGLTFRPLTQMLFWVLVADMLVLT 336
                                 ************************************************************************************ PP
 
-               CYTB.protein 337 wiggqpveepfiiigqvasvlyfllllillplagllenkll 377
-                                wig+qpve+pfiiigqvas++yfl+ll+l+p++++lenk++
-  NC_002785.1*+*13622-14759 338 WIGSQPVEHPFIIIGQVASFTYFLILLVLFPAIAALENKMI 378
-                                ***************************************96 PP
+               CYTB.protein 337 wiggqpveepfiiigqvasvlyfllllillplagllenkllkl 379
+                                wigg pve+pfiiigqvasvlyf+l+l+l+plag++enk+l++
+  NC_002081.1*+*14344-15484 337 WIGGVPVEHPFIIIGQVASVLYFSLFLVLFPLAGMTENKALEW 379
+                                ***************************************9986 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (379 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         3  (0.0967742); expected 0.6 (0.02)
-Passed bias filter:                        1  (0.0322581); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         3  (0.130435); expected 0.5 (0.02)
+Passed bias filter:                        2  (0.0869565); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 577.58
+# Mc/sec: 568.46
 //
 Query:       ND1.protein  [M=324]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-   4.4e-183  598.6  25.6   4.9e-183  598.4  25.6    1.0  1  NC_002785.1*+*2767-3739  
+   1.5e-186  609.6  21.4   1.6e-186  609.4  21.4    1.0  1  NC_002081.1*+*2834-3803  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*2767-3739  
+>> NC_002081.1*+*2834-3803  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  598.4  25.6  1.6e-184  4.9e-183       1     323 [.       1     323 [.       1     324 [] 0.99
+   1 !  609.4  21.4  7.2e-188  1.6e-186       1     323 [.       1     322 [.       1     323 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 598.4 bits;  conditional E-value: 1.6e-184
+  == domain 1  score: 609.4 bits;  conditional E-value: 7.2e-188
               ND1.protein   1 mlktlltalinplllivpvllavafltlverkvlgymqlrkGpnivGplgllqPiadgvklfikepvrpstsspllfllapilalt 86 
-                              m+ t++t+l+++l++ vp+l+avafltlverkvl+ymq+rkGpnivGp+gllqP+adgvklfikepvrp+tssp+lf+++pilal+
-  NC_002785.1*+*2767-3739   1 MQFTIFTHLTMALSYAVPILIAVAFLTLVERKVLSYMQARKGPNIVGPFGLLQPVADGVKLFIKEPVRPTTSSPILFIATPILALL 86 
-                              667899******************************************************************************** PP
+                              m+++++++++npl+++vpvllavafltl+erkvlgymqlrkGpnivGp+gllqPiadgvklfikep+rpstssp lf+l p+lalt
+  NC_002081.1*+*2834-3803   1 MTNIVVSYILNPLIYMVPVLLAVAFLTLIERKVLGYMQLRKGPNIVGPYGLLQPIADGVKLFIKEPIRPSTSSPSLFVL-PVLALT 85 
+                              888999***********************************************************************86.9***** PP
 
               ND1.protein  87 lalllwaplplplplidlnlgllfilalsslavysilgsgwasnskyaliGalravaqtisYevtlglillsvillsggftlqtla 172
-                              la+++w+plplp++l+dlnlgllf+l++sslavysil+sgwasnskyaliGalravaqtisYevtl++illsvi+lsg++tl+tla
-  NC_002785.1*+*2767-3739  87 LAITIWIPLPLPFSLTDLNLGLLFLLSMSSLAVYSILWSGWASNSKYALIGALRAVAQTISYEVTLAIILLSVIMLSGNYTLNTLA 172
+                              lal+lwap+p+p+p++dlnl++lf+lalsslavysilgsgwasnskyal+GalravaqtisYev+lglillsvi++sggftlqt++
+  NC_002081.1*+*2834-3803  86 LALTLWAPMPMPFPVADLNLSILFVLALSSLAVYSILGSGWASNSKYALVGALRAVAQTISYEVSLGLILLSVIIFSGGFTLQTFS 171
                               ************************************************************************************** PP
 
               ND1.protein 173 ttqesiwlllpawplaamwyistlaetnrapfdltegeselvsgfnveyaagpfalfflaeyanillmntlsailflgasllkllp 258
-                              ttqe ++l++++wpla+mwyistlaetnrapfdltegeselvsgfnveyaagpfalfflaeyani+lmntl+ailfl++s+l+l +
-  NC_002785.1*+*2767-3739 173 TTQEPLYLIFSTWPLAMMWYISTLAETNRAPFDLTEGESELVSGFNVEYAAGPFALFFLAEYANIMLMNTLTAILFLNPSSLNLPS 258
+                              ttqe++wl lpawplaamwyistl etnrapfdltegeselvsgfnveya+gpfalfflaeyanillmntlsa+lflg+s+ +++p
+  NC_002081.1*+*2834-3803 172 TTQEATWLALPAWPLAAMWYISTLEETNRAPFDLTEGESELVSGFNVEYAGGPFALFFLAEYANILLMNTLSAVLFLGSSYSTTMP 257
                               ************************************************************************************** PP
 
               ND1.protein 259 elttinlmtkalllsllflwvrasyprfrydqLmhlvwknflPltlalvlwhislpialaglppq 323
-                              el+ + l+tk+llls+ flwvrasyprfrydqLmhl+wknflPltlal+lwh+slpi++ag+pp+
-  NC_002785.1*+*2767-3739 259 ELFPLILATKTLLLSSGFLWVRASYPRFRYDQLMHLLWKNFLPLTLALCLWHTSLPISYAGIPPH 323
-                              ****************************************************************7 PP
+                              e+t+++lmtka+lls++flwvrasyprfrydqLmhlvwknflPltlalv+wh+sl++a+aglpp+
+  NC_002081.1*+*2834-3803 258 EFTSLTLMTKAALLSMVFLWVRASYPRFRYDQLMHLVWKNFLPLTLALVIWHLSLSTACAGLPPH 322
+                              ***************************************************************97 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (324 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         3  (0.0967742); expected 0.6 (0.02)
-Passed bias filter:                        1  (0.0322581); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         5  (0.217391); expected 0.5 (0.02)
+Passed bias filter:                        2  (0.0869565); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 827.82
+# Mc/sec: 831.33
 //
 Query:       ND2.protein  [M=347]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
-   9.6e-158  515.7  59.0   1.1e-157  515.5  59.0    1.0  1  NC_002785.1*+*3961-4999    
-    3.8e-18   56.6  32.9    3.8e-18   56.6  32.9    2.7  2  NC_002785.1*+*11795-13610  
-      3e-05   14.2  56.1    3.2e-06   17.4  51.1    1.8  1  NC_002785.1*+*10205-11585  
+   8.9e-169  551.5  51.3     1e-168  551.4  51.3    1.0  1  NC_002081.1*+*4017-5061    
+    1.7e-20   63.9  22.5    1.7e-20   63.9  22.5    2.4  2  NC_002081.1*+*11914-13750  
+    6.9e-10   29.0  39.9    6.9e-10   29.0  39.9    1.9  2  NC_002081.1*+*10321-11701  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*3961-4999  
+>> NC_002081.1*+*4017-5061  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  515.5  59.0    1e-158  1.1e-157       1     345 [.       1     344 [.       1     346 [] 0.99
+   1 !  551.4  51.3  1.3e-169    1e-168       1     346 [.       1     345 [.       1     346 [. 1.00
 
   Alignments for each domain:
-  == domain 1  score: 515.5 bits;  conditional E-value: 1e-158
+  == domain 1  score: 551.4 bits;  conditional E-value: 1.3e-169
               ND2.protein   1 mnplillilllslllgttitlasshwllaWmgLEintlaiipllakkhhpraveAatkYfltqatasalllfasttnawltgqwdi 86 
-                              mnp+++li l+slllgttit++s+hw++aW+gLEintlaiipl++k+hhpraveA++kYfl+qa+asal+lf+s+ naw tgqwdi
-  NC_002785.1*+*3961-4999   1 MNPHAKLISLISLLLGTTITISSNHWIMAWTGLEINTLAIIPLISKSHHPRAVEASVKYFLVQAAASALVLFSSMSNAWATGQWDI 86 
+                              mnp+il+illlsl+lgtt+t+asshwllaWmgLEi+tlaiipl++++hhpraveA+tkYf+tqa+a+al+lfasttnaw+tgqwdi
+  NC_002081.1*+*4017-5061   1 MNPFILSILLLSLGLGTTLTFASSHWLLAWMGLEISTLAIIPLMSQHHHPRAVEATTKYFITQAAAAALILFASTTNAWITGQWDI 86 
                               9************************************************************************************* PP
 
               ND2.protein  87 tqlsnplastlltlAlalKlglaPlhfwlpevlqgldlttglilsTwqklaPlalllqispslnptlllllgllsilvggwggLnq 172
-                              tql++p+as+llt+A+a+Klgl+P+hfw+pevlqg++ltt+l+lsT++kl+P+a+ll++spslnpt+l+ ++l+s+++ggw+gLnq
-  NC_002785.1*+*3961-4999  87 TQLTHPTASMLLTAAIAIKLGLVPFHFWFPEVLQGTSLTTALLLSTLMKLPPMAILLMTSPSLNPTVLTSMALASAALGGWMGLNQ 172
-                              ************************************************************************************** PP
+                              +   + +++ +lt+AlalK+glaP+hfwlpevlqgldlttglilsTwqklaP++l++qi p +n++l+++lg++s+lvggwggLnq
+  NC_002081.1*+*4017-5061  87 NFDLHFFPASMLTMALALKMGLAPVHFWLPEVLQGLDLTTGLILSTWQKLAPFILMCQIMP-VNSSLITFLGVTSTLVGGWGGLNQ 171
+                              *************************************************************.************************ PP
 
               ND2.protein 173 tqlrKilAysSiahlGwmililqfspkltllnlliYiimtsavfltlkllsstkinslatswtksplltalllltllslggLPplt 258
-                              tq+rKilA+sSiahlGwm++i+ ++pkltll++++Yi+mt++vfl+l+++++ k+++l+tswtk+p+l+a l+ltllsl+gLPplt
-  NC_002785.1*+*3961-4999 173 TQTRKILAFSSIAHLGWMTMIIIYNPKLTLLTFYLYILMTATVFLSLNTTKTLKLSTLMTSWTKAPVLNAALMLTLLSLAGLPPLT 258
+                              tqlrKilAysSiahlGwmil++qf+++l+ll+l+iYi mt+++f+++k++sst++n+la sw+k+p+lta+++++llslggLPpl+
+  NC_002081.1*+*4017-5061 172 TQLRKILAYSSIAHLGWMILVMQFNQQLALLALIIYIPMTFSTFMIFKTNSSTTVNTLAASWAKTPALTAITPMILLSLGGLPPLS 257
                               ************************************************************************************** PP
 
               ND2.protein 259 gflpkwlilqeLtkqelillatlmalsaLlsLyfYlrlsYattltlspnttnsktkwrlkttkktlllallttlsllllpltplil 344
-                              gf+pkwlilqeLtkqe++++at++al++Ll L+fYlrl+Y++t+tl+pn+ n++++w +++ ++t  +a+l +ls +llp++p+il
-  NC_002785.1*+*3961-4999 259 GFMPKWLILQELTKQEMTTVATIIALLSLLGLFFYLRLAYYATITLPPNSANHMKQWYISNPTNT-SIAILSSLSAILLPISPMIL 343
-                              *************************************************************9888.9******************9 PP
+                              gf+pkw+ilqeLtkq+++l+a ++alsaLlsLyfYlr+sYa+tlt+spn+ n++t+wrl+tt +tl+la+++t+s +llpl+p++l
+  NC_002081.1*+*4017-5061 258 GFMPKWMILQELTKQDIPLTASIAALSALLSLYFYLRVSYAMTLTISPNNLNATTPWRLQTTASTLPLAISATISAMLLPLAPATL 343
+                              ************************************************************************************99 PP
 
-              ND2.protein 345 a 345
-                              a
-  NC_002785.1*+*3961-4999 344 A 344
-                              7 PP
+              ND2.protein 345 al 346
+                              al
+  NC_002081.1*+*4017-5061 344 AL 345
+                              87 PP
 
->> NC_002785.1*+*11795-13610  
+>> NC_002081.1*+*11914-13750  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ?   -4.2   4.3       1.1        12     208     242 ..      15      49 ..       3      78 .. 0.54
-   2 !   56.6  32.9   3.7e-19   3.8e-18       9     304 ..     122     429 ..     113     473 .. 0.75
+   1 ?   -5.4   6.7       2.6        20     282     335 ..       7      56 ..       1      87 [. 0.40
+   2 !   63.9  22.5   2.2e-21   1.7e-20      10     304 ..     126     440 ..     119     453 .. 0.81
 
   Alignments for each domain:
-  == domain 1  score: -4.2 bits;  conditional E-value: 1.1
-                ND2.protein 208 Yiimtsavfltlkllsstkinslatswtkspllta 242
-                                 +i+ ++++l l +++ +++  + t+  k+  +t+
-  NC_002785.1*+*11795-13610  15 LMILLTPILLPLLSTKLQNTPLIITTTVKMAFFTS 49 
-                                23333333333333333333333333333333333 PP
+  == domain 1  score: -5.4 bits;  conditional E-value: 2.6
+                ND2.protein 282 malsaLlsLyfYlrlsYattltlspnttnsktkwrlkttkktlllallttlsll 335
+                                m  s+Ll ++  l     +t t  p ++     w  ++ k+ +  a+l++l+ l
+  NC_002081.1*+*11914-13750   7 MYTSSLLLMFAVLLYPLLVTFTSLPLNND----WASSHAKTAVKSAFLISLAPL 56 
+                                33333333322222222222222222221....222222222222222222222 PP
 
-  == domain 2  score: 56.6 bits;  conditional E-value: 3.7e-19
-                ND2.protein   9 lllslllgttitlasshwllaWmgLE.intlaiipllakkhhpraveAatkYfltqatasalllfasttnawltgqwditqlsn 91 
-                                +ll +l+  ++ ++++++++ ++g E + +++++ +   +    a  Aa +  +        l++++   a + ++w+i+q+s 
-  NC_002785.1*+*11795-13610 122 YLLMFLIAMLTLTIANNMFMLFIGWEgVGIMSFLLISWWHGRAEANTAALQAVIYNRIGDVGLILSMAWLASTLNTWEIQQISY 205
-                                333333334444456667777777774555666666666667777888888888888887777777666666666666666654 PP
+  == domain 2  score: 63.9 bits;  conditional E-value: 2.2e-21
+                ND2.protein  10 llslllgttitlasshwllaWmgLE.intlaiipllakkhhpraveAatkYfltqatasalllfasttnawltgqwditql... 89 
+                                ll++l+  +i +++++ +  ++g E + +++++ +   +    a  Aa +  l        l++ +   a++ ++wdi+q+   
+  NC_002081.1*+*11914-13750 126 LLTFLVAMLILVSANNLFQLFIGWEgVGIMSFLLIGWWHGRADANTAALQAVLYNRVGDIGLILGMAWLATNVNSWDIQQMfil 209
+                                556666777777778777777777755566666666667777788899999999999999999999999999999999998444 PP
 
-                ND2.protein  92 p.....lastlltlAlalKlglaPlhfwlpevlqgldlttglilsTwqklaPlalllqispsln.....ptlllllgllsilvg 165
-                                +     l+ + l+lA + K +   lh wlp  + g +  ++l+ s+ + +a + ll+ i+p l       t+ l+lg ls+l+ 
-  NC_002785.1*+*11795-13610 206 EsqtpiLPLLGLILAATGKSAQFGLHPWLPAAMEGPTPVSALLHSSTMVVAGIFLLVRIHPLLAnnqtaLTTCLCLGALSTLFA 289
-                                41000145556788889999999************************************98765333335566789******** PP
+                ND2.protein  90 snplastlltlAlal....KlglaPlhfwlpevlqgldlttglilsTwqklaPlalllqispsln.....ptlllllgllsilv 164
+                                s++l +tl +l l+l    K +   lh wlp  + g +  ++l+ s+ + +a + ll+ +sp ++      tl l+lg l +++
+  NC_002081.1*+*11914-13750 210 SKNLDMTLPLLGLILaatgKSAQFGLHPWLPAAMEGPTPVSALLHSSTMVVAGIFLLIRMSPLMEnnqtaLTLCLCLGALTTMF 293
+                                56666666544444422227788899**********************************99776444446788899******* PP
 
-                ND2.protein 166 gwggLnqtqlrKilAysSiahlGwmililqfs.pkltllnlliYiimtsavfl.....tlkllsstkinslatswtksplltal 243
-                                +  +L q  ++Ki+A+s+ ++lG m++++ ++ p+l++l++ ++ +  + +fl     + +l   + i ++    +  p++t++
-  NC_002785.1*+*11795-13610 290 ATCALTQNDIKKIIAFSTSSQLGLMMVTIGLNlPQLAFLHISTHAFFKAMLFLcsgsiIHSLAGEQDIRKMGGLQKLLPTTTSC 373
-                                **************************99988769**********99999999832221345667899***************** PP
+                ND2.protein 165 ggwggLnqtqlrKilAysSiahlGwmililqfs.pkltllnlliYiimtsavfl.....tlkllsstkinslatswtkspllta 242
+                                 +  +L q  ++Ki+A+s+ ++lG m++++ ++ p+l++l+++++ +  + +fl     + +l++ + i ++    + +p +++
+  NC_002081.1*+*11914-13750 294 TATCALTQNDIKKIVAFSTSSQLGLMMVTIGLNqPQLAFLHICTHAFFKAMLFLcsgsvIHSLNDEQDIRKMGGLHHLAPFTSS 377
+                                *************************9998877539**********9999999983333245788999***************** PP
 
-                ND2.protein 244 llltllslggLPpltgflpkwlilqeLtkqelillatlmalsaLlsLyfYlrlsYattltl 304
-                                l++  l l g P l+gf  k li++ L +  l + a l++l   l+  f    +Y++ +tl
-  NC_002785.1*+*11795-13610 374 LTIGNLALMGTPFLAGFYSKDLIIESLNNSYLNAWALLLTL---LATSFT--ATYSLRMTL 429
-                                ***************************77777666665554...444442..334444443 PP
+                ND2.protein 243 lllltllslggLPpltgflpkwlilqeLtkqelillatlmalsaL.lsLyfYlrlsYattltl 304
+                                +l++  l l g P l+gf  k  i++ L + ++ + a +++l+a  ++  + lr+++ +t+ +
+  NC_002081.1*+*11914-13750 378 CLTVGSLALTGTPFLAGFFSKDAIIEALNTSHVNAWALTLTLIATsFTAIYSLRVIFFVTMGT 440
+                                ******************************999999987777664145555699999998865 PP
 
->> NC_002785.1*+*10205-11585  
+>> NC_002081.1*+*10321-11701  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !   17.4  51.1   3.1e-07   3.2e-06       9     344 ..     100     456 ..      92     459 .. 0.65
+   1 ?   -3.9   1.5      0.89       6.9      12      27 ..       8      23 ..       2      55 .. 0.57
+   2 !   29.0  39.9     9e-11   6.9e-10       5     294 ..      95     413 ..      90     432 .. 0.73
 
   Alignments for each domain:
-  == domain 1  score: 17.4 bits;  conditional E-value: 3.1e-07
-                ND2.protein   9 lllslllgttitlasshwllaWmgLEintlaiipllak.khhpraveAatkYfltqatasal.llfasttnawltgqwdi..tq 88 
-                                +l+++    +++++++   l ++++E   +  + l+++  ++p  + A + Y l  +  s l ll++++   ++ g+ ++   +
-  NC_002785.1*+*10205-11585 100 TLTTIQPFIILAFSATELTLFYISFEATLIPTLILITRwGNQPERLSAGI-YLLFYTLISSLpLLVTILHLHTQIGTLHMptLE 182
-                                55555555667777777888888888888888777777334455555444.555544444441444444444444544441133 PP
+  == domain 1  score: -3.9 bits;  conditional E-value: 0.89
+                ND2.protein 12 slllgttitlasshwl 27
+                               +l+l  t+ l+ss+wl
+  NC_002081.1*+*10321-11701  8 TLFLLPTTWLTSSKWL 23
+                               4444444444444444 PP
 
-                ND2.protein  89 lsnplas.........tlltlAlalKlglaPlhfwlpevlqgldlttglilsTwq.klaPlall...lqispsln..ptlllll 157
-                                l++pl +         + l++A ++K  l  lh+wlp  +  +++  +++l+++  kl    ++   l + p ++  +  +l+l
-  NC_002785.1*+*10205-11585 183 LTHPLLThswtgtlsgLALLMAFMVKAPLYGLHLWLPKAHVEAPIAGSMLLAALLlKLGGYGIMrvtLLMGPLTDrlSYPFLAL 266
-                                4444433111111111567889999999***************99999999987558876544411144444443225578999 PP
+  == domain 2  score: 29.0 bits;  conditional E-value: 9e-11
+                ND2.protein   5 illilllslllgttitlasshwllaWmgLEintlaiipllak.khhpraveAatkYfltqata.salllfasttnawltgqwd. 85 
+                                + ++ll +l l  ++++ ++ +++ ++ +E   +  + ++++  +h   ++A t Yfl  + a s  ll+a ++   +tg+ + 
+  NC_002081.1*+*10321-11701  95 MYITLLATLQLFLILAFGATEMIMFYVMFEATLIPTLLVITRwGNHTERLNAGT-YFLFYTLAgSLPLLVALLMLQNNTGTLSl 177
+                                4567889999999*********************99999998556666677666.66666666266688898888888887762 PP
 
-                ND2.protein 158 gllsilvggwggLnqtqlrKilAysSiahlGwmililqfspkltl...lnlliYiimtsavfltlkllsstkinslatswtk.. 236
-                                +l  +l+ +   L qt l+ ++AysS++h+G +i+  ++++  ++   + l+i   +ts++++ l  ++  +++s  +  t+  
-  NC_002785.1*+*10205-11585 267 ALWGALMTSSICLRQTDLKSLIAYSSVSHMGLVIAASMIQTDWSFsgaMILMISHGLTSSMLFCLANTNYERTHSRILLLTRgl 350
-                                9*********************************99998888876111344444557888877777776666655444333222 PP
+                ND2.protein  86 .itqlsnplast.........lltlAlalKlglaPlhfwlpevlqgldlttglilsTwq.kla...Plalllqispslnptl.. 153
+                                 i    +pl  +          +++A  +K+ l  +h+wlp  +  +++  +++l+++  kl     + l++ + p  + ++  
+  NC_002081.1*+*10321-11701 178 lIIPYAKPLLLMpfgskiwwaACMIAFLVKMPLYGMHLWLPKAHVEAPVAGSMVLAAVLlKLGgygMMRLMIVLDPLSKEMVyp 261
+                                2344444433221111111116899******************************98765986222577788888855554322 PP
 
-                ND2.protein 237 s...plltalllltllslggLPpltgflpkwlilqeLtkqelillatlmalsaLlsLyfYlrlsYattltlspnttnsktkwrl 317
-                                +   pl+++  ll+ l    LPp t  + ++ i+  L + ++ ++ +l+ l++Ll+  +     +++++t   +  ++ t+ + 
-  NC_002785.1*+*10205-11585 351 QpllPLMSVWWLLANLTNMALPPTTNLMAELTIMIALFNWST-PTIILTGLATLLTASY---TLFMLSMTQRGTLPTHLTSIHN 430
-                                41114455555555566789*****************87554.4556666777776665...4566777777777777777777 PP
+                ND2.protein 154 llllgllsilvggwggLnqtqlrKilAysSiahlGwmililqfsp....kltllnlliYiimtsavfltlkllsstkinslats 233
+                                +++l+l  +++ g   L qt l+ ++AysS++h+G ++  + +++    + +l+ ++ + + +sa+f++ +++   + +  ++ 
+  NC_002081.1*+*10321-11701 262 FIVLALWGVIITGSICLRQTDLKSLIAYSSVSHMGLVAGGILIQTpwgfTGALILMIAHGLASSALFCLANTNYERTHSRTMLL 345
+                                6899*******************************9975433333111134556666677788889998888877666665554 PP
 
-                ND2.protein 318 kttkktlllallttlsllllpltplil 344
-                                ++t+++ ll +l ++ +lll l p ++
-  NC_002785.1*+*10205-11585 431 SNTREH-LLMTLHIFPMLLLMLKPELI 456
-                                777666.78888899999999999876 PP
+                ND2.protein 234 wt....ksplltalllltllslggLPpltgflpkwlilqeLtkqe...lillatlmalsaLlsLyfYl 294
+                                        pl+t+   ++ l    LPpl   + +++il+ L + +   lil+ + + ++a  sLy++l
+  NC_002081.1*+*10321-11701 346 ARglqiALPLMTTWWFIASLANLALPPLPNLMGELMILTSLFNWSawtLILTGIGTLITAAYSLYMFL 413
+                                4311115666777666776766789****************876411166777778899999999987 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (347 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                        10  (0.322581); expected 0.6 (0.02)
-Passed bias filter:                        4  (0.129032); expected 0.6 (0.02)
-Passed Vit filter:                         3  (0.0967742); expected 0.0 (0.001)
-Passed Fwd filter:                         3  (0.0967742); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         8  (0.347826); expected 0.5 (0.02)
+Passed bias filter:                        4  (0.173913); expected 0.5 (0.02)
+Passed Vit filter:                         4  (0.173913); expected 0.0 (0.001)
+Passed Fwd filter:                         3  (0.130435); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               3  [number of targets reported over threshold]
-# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
-# Mc/sec: 103.04
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 156.30
 //
 Query:       ND3.protein  [M=116]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-    2.8e-33  105.8   1.1    3.1e-33  105.7   1.1    1.0  1  NC_002785.1*+*9499-9703  
-      1e-26   84.6   9.0    1.1e-26   84.5   9.0    1.0  1  NC_002785.1*+*9680-9848  
+    4.9e-65  207.8   6.3    5.5e-65  207.6   6.3    1.0  1  NC_002081.1*+*9613-9961  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*9499-9703  
+>> NC_002081.1*+*9613-9961  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  105.7   1.1     2e-34   3.1e-33       1      60 [.       1      60 [.       1      66 [. 0.97
+   1 !  207.6   6.3   2.4e-66   5.5e-65       1     116 []       1     116 []       1     116 [] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 105.7 bits;  conditional E-value: 2e-34
-              ND3.protein  1 mnliltillislllslilalvsfwlpqlnpdaeklspYecGfdplgsarlpfslrfFlva 60
-                             mn+i+++ll+sl+ls+il++++fwl+q+npdaeklspYecGfdplgsarlpfs+rfFl +
-  NC_002785.1*+*9499-9703  1 MNMITFMLLLSLTLSIILTTINFWLAQMNPDAEKLSPYECGFDPLGSARLPFSIRFFLSS 60
-                             9*********************************************************87 PP
+  == domain 1  score: 207.6 bits;  conditional E-value: 2.4e-66
+              ND3.protein   1 mnliltillislllslilalvsfwlpqlnpdaeklspYecGfdplgsarlpfslrfFlvailfllfdLeialLlplpwasqlespt 86 
+                              mnli t++li+ +lslil+lvsfwlpql+pd eklspYecGfdplgsarlpfslrfFl+ailfllfdLeialLlplpw++ql++pt
+  NC_002081.1*+*9613-9961   1 MNLISTVILIASALSLILILVSFWLPQLSPDYEKLSPYECGFDPLGSARLPFSLRFFLIAILFLLFDLEIALLLPLPWGDQLSNPT 86 
+                              9************************************************************************************* PP
 
->> NC_002785.1*+*9680-9848  
-   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
- ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !   84.5   9.0   7.2e-28   1.1e-26      61     116 .]       1      56 []       1      56 [] 0.98
-
-  Alignments for each domain:
-  == domain 1  score: 84.5 bits;  conditional E-value: 7.2e-28
-              ND3.protein  61 ilfllfdLeialLlplpwasqlesptttllwallllllltlgLiYewlqgglewae 116
-                              +lfllfdLeialLlplpwa+ql++p++tllw+++llllltlgL+Yew+qgglewae
-  NC_002785.1*+*9680-9848   1 MLFLLFDLEIALLLPLPWAIQLSQPLLTLLWTSILLLLLTLGLVYEWIQGGLEWAE 56 
-                              59****************************************************98 PP
+              ND3.protein  87 ttllwallllllltlgLiYewlqgglewae 116
+                              +t++wa+ +l+lltlgLiYewlqgglewae
+  NC_002081.1*+*9613-9961  87 LTFMWATSVLALLTLGLIYEWLQGGLEWAE 116
+                              ****************************98 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (116 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         7  (0.225806); expected 0.6 (0.02)
-Passed bias filter:                        2  (0.0645161); expected 0.6 (0.02)
-Passed Vit filter:                         2  (0.0645161); expected 0.0 (0.001)
-Passed Fwd filter:                         2  (0.0645161); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
-Domain search space  (domZ):               2  [number of targets reported over threshold]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         8  (0.347826); expected 0.5 (0.02)
+Passed bias filter:                        2  (0.0869565); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 853.24
+# Mc/sec: 834.46
 //
 Query:       ND4L.protein  [M=98]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
-    E-value  score  bias    E-value  score  bias    exp  N  Sequence                 Description
-    ------- ------ -----    ------- ------ -----   ---- --  --------                 -----------
-      1e-47  151.3  11.3    1.1e-47  151.1  11.3    1.0  1  NC_002785.1*+*9921-10215  
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
+    1.5e-48  153.5  15.5    1.7e-48  153.3  15.5    1.0  1  NC_002081.1*+*10031-10325  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*9921-10215  
+>> NC_002081.1*+*10031-10325  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  151.1  11.3   3.6e-49   1.1e-47       1      98 []       1      98 []       1      98 [] 0.99
+   1 !  153.3  15.5   7.4e-50   1.7e-48       1      98 []       1      98 []       1      98 [] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 151.1 bits;  conditional E-value: 3.6e-49
-              ND4L.protein  1 mtlvhlslllafllsllglalhrthLlsaLlclegmmLslfialslwalqlestslslapillLafsaceasvGLaLlvatsrthgt 87
-                              m+ +hls+++af+ls lgla+hrthL+saLlcle+mmLsl++als+w++q ++ s++l+pil+Lafsacea++GLa+lva++rthg+
-  NC_002785.1*+*9921-10215  1 MSFLHLSFYSAFTLSSLGLAFHRTHLISALLCLESMMLSLYLALSIWPVQAQTPSFTLVPILMLAFSACEAGTGLAMLVASTRTHGS 87
-                              899************************************************************************************ PP
+  == domain 1  score: 153.3 bits;  conditional E-value: 7.4e-50
+               ND4L.protein  1 mtlvhlslllafllsllglalhrthLlsaLlclegmmLslfialslwalqlestslslapillLafsaceasvGLaLlvatsrthg 86
+                               mt++h+++++afll+++gla+hrthLlsaLlcle+mmL+lfialslw+lql++t +s+ap+l+Lafsaceas+GLaLlvat+rthg
+  NC_002081.1*+*10031-10325  1 MTPTHFTISSAFLLGMMGLAFHRTHLLSALLCLEAMMLALFIALSLWSLQLDATGCSTAPMLMLAFSACEASAGLALLVATARTHG 86
+                               9************************************************************************************* PP
 
-              ND4L.protein 88 dhlknLnlLqc 98
-                              dhl+nLnlLqc
-  NC_002785.1*+*9921-10215 88 DHLHNLNLLQC 98
-                              **********9 PP
+               ND4L.protein 87 tdhlknLnlLqc 98
+                               tdh+++LnlLqc
+  NC_002081.1*+*10031-10325 87 TDHMQALNLLQC 98
+                               ***********9 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (98 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                        11  (0.354839); expected 0.6 (0.02)
-Passed bias filter:                        1  (0.0322581); expected 0.6 (0.02)
-Passed Vit filter:                         1  (0.0322581); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         4  (0.173913); expected 0.5 (0.02)
+Passed bias filter:                        1  (0.0434783); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 745.05
+# Mc/sec: 1016.96
 //
 Query:       ND5.protein  [M=611]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
-          0 1015.2  58.7          0 1015.1  58.7    1.0  1  NC_002785.1*+*11795-13610  
-    9.8e-16   48.1  38.8    1.3e-15   47.8  38.8    1.2  1  NC_002785.1*+*10205-11585  
-    9.6e-08   21.7  30.9    9.6e-08   21.7  30.9    1.3  1  NC_002785.1*+*3961-4999    
+          0 1068.0  49.7          0 1067.8  49.7    1.0  1  NC_002081.1*+*11914-13750  
+    3.2e-13   39.4  35.3      4e-13   39.1  35.3    1.1  1  NC_002081.1*+*10321-11701  
+    3.9e-07   19.3  21.7    3.9e-07   19.3  21.7    1.6  2  NC_002081.1*+*4017-5061    
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*11795-13610  
+>> NC_002081.1*+*11914-13750  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 ! 1015.1  58.7         0         0       1     606 [.       1     604 [.       1     605 [] 0.99
+   1 ! 1067.8  49.7         0         0       1     606 [.       1     610 [.       1     612 [] 0.99
 
   Alignments for each domain:
-  == domain 1  score: 1015.1 bits;  conditional E-value: 0
-                ND5.protein   1 meltllltsslllillllllpllttltpkkkkkkaltkvktavklaflisllplllflnegaesiitnwewlniqtfkinislk 84 
-                                me+tll+++slll+l++ll+p+l++l ++k  ++++  ++t+vk+af++s++p+++f+++g+e+ii++w w  + ++ki +s+k
-  NC_002785.1*+*11795-13610   1 METTLLFNTSLLLTLMILLTPILLPLLSTKL-QNTPLIITTTVKMAFFTSIIPTTIFIYSGTEAIISHWYWSFTPNLKIPLSFK 83 
-                                8899**********************97765.999************************************************* PP
+  == domain 1  score: 1067.8 bits;  conditional E-value: 0
+                ND5.protein   1 mel.tllltsslllillllllpllttltpkkkk.kkaltkvktavklaflisllplllflnegaesiitnwewlniqtfkinis 82 
+                                m+  tl++tsslll++++ll+pll+t+t+ + + ++a++++ktavk aflisl pl lfl++g+e+++++w+w+ ++t++i++s
+  NC_002081.1*+*11914-13750   1 MHPtTLMYTSSLLLMFAVLLYPLLVTFTSLPLNnDWASSHAKTAVKSAFLISLAPLSLFLSTGMEAVTSSWTWMVTTTLDITLS 84 
+                                67657999**********************9999************************************************** PP
 
-                ND5.protein  85 ldlysliFlpiaLfvtwsileFalwYmhsdpninkFfkyLllFLiaMliLvtAnnlfqLfigwegvGimsfLligwwygradan 168
-                                +d+ys++Flp+aLfvtwsil+Fa+wYm+s+p+++kFf yLl+FLiaMl+L++Ann+f+LfigwegvGimsfLli+ww+gra+an
-  NC_002785.1*+*11795-13610  84 MDQYSMLFLPVALFVTWSILQFAMWYMASEPHVTKFFIYLLMFLIAMLTLTIANNMFMLFIGWEGVGIMSFLLISWWHGRAEAN 167
+                ND5.protein  83 lkldlysliFlpiaLfvtwsileFalwYmhsdpninkFfkyLllFLiaMliLvtAnnlfqLfigwegvGimsfLligwwygrad 166
+                                +k+d+ys+iF+piaL+vtwsileFa+wYmhsdp +n+FfkyLl+FL+aMliLv+AnnlfqLfigwegvGimsfLligww+grad
+  NC_002081.1*+*11914-13750  85 FKFDHYSIIFIPIALYVTWSILEFATWYMHSDPFMNRFFKYLLTFLVAMLILVSANNLFQLFIGWEGVGIMSFLLIGWWHGRAD 168
                                 ************************************************************************************ PP
 
-                ND5.protein 169 taalqAvlYnrigdiglilamawlatnlnswelqqifllskedltlpllglilaatgkSAqfglhpwlpsAmegPtpVsaLLhS 252
-                                taalqAv+Ynrigd+glil+mawla++ln+we+qqi  +s+ +++lpllglilaatgkSAqfglhpwlp+AmegPtpVsaLLhS
-  NC_002785.1*+*11795-13610 168 TAALQAVIYNRIGDVGLILSMAWLASTLNTWEIQQISYESQ-TPILPLLGLILAATGKSAQFGLHPWLPAAMEGPTPVSALLHS 250
-                                ***************************************99.9***************************************** PP
-
-                ND5.protein 253 stmvvAgiFlLirlhpllennktaltlcLcLGalttlftatcaltqndikkiiafstsSqLgLmmvtiglnqpqlaflhictHa 336
-                                stmvvAgiFlL+r+hpll+nn+talt+cLcLGal+tlf+atcaltqndikkiiafstsSqLgLmmvtigln pqlaflhi+tHa
-  NC_002785.1*+*11795-13610 251 STMVVAGIFLLVRIHPLLANNQTALTTCLCLGALSTLFAATCALTQNDIKKIIAFSTSSQLGLMMVTIGLNLPQLAFLHISTHA 334
+                ND5.protein 167 antaalqAvlYnrigdiglilamawlatnlnswelqqifllske.dltlpllglilaatgkSAqfglhpwlpsAmegPtpVsaL 249
+                                antaalqAvlYnr+gdiglil mawlatn+nsw++qq+f+lsk+ d+tlpllglilaatgkSAqfglhpwlp+AmegPtpVsaL
+  NC_002081.1*+*11914-13750 169 ANTAALQAVLYNRVGDIGLILGMAWLATNVNSWDIQQMFILSKNlDMTLPLLGLILAATGKSAQFGLHPWLPAAMEGPTPVSAL 252
                                 ************************************************************************************ PP
 
-                ND5.protein 337 ffkAmLflcsgsiihslndeqDirkmgglqkllpltsscltigslaLtgtPflagFyskDaiiealntsylnawallltliats 420
-                                ffkAmLflcsgsiihsl  eqDirkmgglqkllp+t+scltig+laL+gtPflagFyskD+iie+ln+sylnawallltl+ats
-  NC_002785.1*+*11795-13610 335 FFKAMLFLCSGSIIHSLAGEQDIRKMGGLQKLLPTTTSCLTIGNLALMGTPFLAGFYSKDLIIESLNNSYLNAWALLLTLLATS 418
+                ND5.protein 250 LhSstmvvAgiFlLirlhpllennktaltlcLcLGalttlftatcaltqndikkiiafstsSqLgLmmvtiglnqpqlaflhic 333
+                                LhSstmvvAgiFlLir++pl+enn+taltlcLcLGaltt+ftatcaltqndikki+afstsSqLgLmmvtiglnqpqlaflhic
+  NC_002081.1*+*11914-13750 253 LHSSTMVVAGIFLLIRMSPLMENNQTALTLCLCLGALTTMFTATCALTQNDIKKIVAFSTSSQLGLMMVTIGLNQPQLAFLHIC 336
                                 ************************************************************************************ PP
 
-                ND5.protein 421 ftavYslriilfvllgkprfkplspinennpavinpikrlalgsiiagllitsnilptktpvmtmplllklaallvtilgllla 504
-                                fta+Yslr++l+v+ g++r++p++pinen+p vinpi+rlalgsi+agllitsnilptktp+mtmp+++k+aa++vtilg+lla
-  NC_002785.1*+*11795-13610 419 FTATYSLRMTLMVQSGFSRIPPITPINENTPLVINPITRLALGSIMAGLLITSNILPTKTPPMTMPTIMKTAAIVVTILGILLA 502
+                ND5.protein 334 tHaffkAmLflcsgsiihslndeqDirkmgglqkllpltsscltigslaLtgtPflagFyskDaiiealntsylnawallltli 417
+                                tHaffkAmLflcsgs+ihslndeqDirkmggl++l+p+tssclt+gslaLtgtPflagF+skDaiiealnts++nawal+ltli
+  NC_002081.1*+*11914-13750 337 THAFFKAMLFLCSGSVIHSLNDEQDIRKMGGLHHLAPFTSSCLTVGSLALTGTPFLAGFFSKDAIIEALNTSHVNAWALTLTLI 420
                                 ************************************************************************************ PP
 
-                ND5.protein 505 lelakltkkqllkkksklhkfsnmlgffptiihrllpklslklgqkiatqlldltwleklgpkalaslqlkliktlssaqkgli 588
-                                lel+++t++++  k++ +++fs++lg+f+ + hrl++++ l+ gqkia++l+dl+w++k+gp++la+lql+++kt + +++gli
-  NC_002785.1*+*11795-13610 503 LELSNMTHNLTAPKQNIYSNFSTTLGYFNPLAHRLSSMKLLNNGQKIASHLIDLSWYKKMGPEGLADLQLMAAKTSTPLHTGLI 586
+                ND5.protein 418 atsftavYslriilfvllgkprfkplspinennpavinpikrlalgsiiagllitsnilptktpvmtmplllklaallvtilgl 501
+                                atsfta+Yslr+i+fv++g+prf plspinennpavinp+krla+g i+ gll++ ni   ktpv+tmp  lklaal+v+ilgl
+  NC_002081.1*+*11914-13750 421 ATSFTAIYSLRVIFFVTMGTPRFLPLSPINENNPAVINPLKRLAWGGIFGGLLVMLNINLFKTPVLTMPAELKLAALAVSILGL 504
                                 ************************************************************************************ PP
 
-                ND5.protein 589 ktyltlflltlllallll 606
-                                ktyl +f+l++l++l+l+
-  NC_002785.1*+*11795-13610 587 KTYLGTFALSILILLTLT 604
-                                ************999876 PP
+                ND5.protein 502 llalelakltkkql.lkkksklhkfsnmlgffptiihrllpklslklgqkiatqlldltwleklgpkalaslqlkliktlssaq 584
+                                l+alela+lt+kq+ +++  ++h+fs++lgf+p+iihr +p+lsl lgqkia+q++d+twlek+gpka+a+++++l++++s++q
+  NC_002081.1*+*11914-13750 505 LTALELATLTSKQFkVTPLRTPHHFSTSLGFVPAIIHRQIPQLSLLLGQKIASQMVDQTWLEKTGPKAIANATTPLASATSNMQ 588
+                                **************99******************************************************************** PP
 
->> NC_002785.1*+*10205-11585  
+                ND5.protein 585 kgliktyltlflltlllallll 606
+                                +gliktyltlfl+tl+l++l+ 
+  NC_002081.1*+*11914-13750 589 QGLIKTYLTLFLMTLVLVTLIS 610
+                                *****************99875 PP
+
+>> NC_002081.1*+*10321-11701  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !   47.8  38.8   1.2e-16   1.3e-15     107     451 ..      82     434 ..       5     450 .. 0.79
+   1 !   39.1  35.3   5.2e-14     4e-13     105     437 ..      79     419 ..       8     441 .. 0.77
 
   Alignments for each domain:
-  == domain 1  score: 47.8 bits;  conditional E-value: 1.2e-16
-                ND5.protein 107 alwYmhsdpnink..FfkyLllFLiaMliLvtAnnlfqLfigwegvGimsfLligwwygradantaalqAvlYnrigdiglila 188
-                                ++  ++++p ++k  F+  L++    +++  +A +l  ++i +e+  i  ++li  w  + +  +a +  + Y  i+ + l+++
-  NC_002785.1*+*10205-11585  82 SQNHLQQEPLVRKrtFIVTLTTIQPFIILAFSATELTLFYISFEATLIPTLILITRWGNQPERLSAGIYLLFYTLISSLPLLVT 165
-                                5556666666543225555555544455557899************************************************** PP
+  == domain 1  score: 39.1 bits;  conditional E-value: 5.2e-14
+                ND5.protein 105 eFalwYmhsdpn.inkFfkyLllFLiaMliL.vtAnnlfqLfigwegvGimsfLligwwygradantaalqAvlYnrigdigli 186
+                                  ++  ++s+p   ++ +  Ll  L   liL   A +++++++ +e+  i  +L+i  w   ++   a    + Y   g + l+
+  NC_002081.1*+*10321-11701  79 LASQNHLSSEPMnRQRMYITLLATLQLFLILaFGATEMIMFYVMFEATLIPTLLVITRWGNHTERLNAGTYFLFYTLAGSLPLL 162
+                                445556666663123333334444444444415799************************************************ PP
 
-                ND5.protein 189 mawlatnlnswelqqifl.....lskedltlpllglilaatgkSAqfglhpwlpsA.megPtpVsaLLhSstmvvAgiFlLirl 266
-                                +  l t++ ++ + ++ l     +++ + tl+ l+l++a + k   +glh wlp A +e P   s LL    +   g + ++r+
-  NC_002785.1*+*10205-11585 166 ILHLHTQIGTLHMPTLELthpllTHSWTGTLSGLALLMAFMVKAPLYGLHLWLPKAhVEAPIAGSMLLAAL-LLKLGGYGIMRV 248
-                                **99888777766655442222155559999***********************9868*******999765.556667999*** PP
+                ND5.protein 187 lamawlatnlnswelqqifllske.....dltlpllglilaatgkSAqfglhpwlpsA.megPtpVsaLLhSstmvvAg...iF 261
+                                +a+ +l  n+ ++ l  i  ++        + +   + ++a   k   +g+h wlp A +e P   s  L    +   g   + 
+  NC_002081.1*+*10321-11701 163 VALLMLQNNTGTLSLLIIPYAKPLllmpfGSKIWWAACMIAFLVKMPLYGMHLWLPKAhVEAPVAGSMVLAAVLLKLGGygmMR 246
+                                ***99999999999877766544211011455667788999999************9868*******99988777776644444 PP
 
-                ND5.protein 267 hpllennktaltl.cLcLGalttlftatcaltqndikkiiafstsSqLgLmmvtiglnqp....qlaflhictHaffkAmLflc 345
-                                  l+   +  l+   L L+   +l t+ + l q d+k +ia+s+ S +gL++ +  + q     + a++ ++ H    +mLf  
-  NC_002785.1*+*10205-11585 249 TLLMGPLTDRLSYpFLALALWGALMTSSICLRQTDLKSLIAYSSVSHMGLVIAASMI-QTdwsfSGAMILMISHGLTSSMLFCL 331
-                                *999988777765379999999****************************9966544.541333557899************76 PP
+                ND5.protein 262 lLirlhpllennktaltlcLcLGalttlftatcaltqndikkiiafstsSqLgLmmvtiglnqp...qlaflhictHaffkAmL 342
+                                l+i l pl +    ++   ++L+    + t  + l q d+k +ia+s+ S +gL+   i ++ p   + a++ ++ H    + L
+  NC_002081.1*+*10321-11701 247 LMIVLDPLSK---EMVYPFIVLALWGVIITGSICLRQTDLKSLIAYSSVSHMGLVAGGILIQTPwgfTGALILMIAHGLASSAL 327
+                                5555555544...333344555556677889999******************************888899************** PP
 
-                ND5.protein 346 sgsiihslndeqDirkmgglqkllpltsscltigslaLtgtPflagFyskDaiiealntsylnawallltliatsftavYslri 429
-                                + +   + ++ + +    glq llpl s    +++l+ ++ P  +      +i+ al + +  + +++lt +at +ta Y+l +
-  NC_002785.1*+*10205-11585 332 ANT-NYERTHSRILLLTRGLQPLLPLMSVWWLLANLTNMALPPTTNLMAELTIMIALFNWS--TPTIILTGLATLLTASYTLFM 412
-                                554.555556666777889*******************************99998887655..556799*************** PP
+                ND5.protein 343 flcsgsiihslndeqDirkmgglqkllpltsscltigslaLtgtPflagFyskDaiiealntsylnawallltliatsftavYs 426
+                                f  +     + ++ + +    glq +lpl ++   i+sla  + P l       +i+ +l   +  aw+l+lt i t +ta+Ys
+  NC_002081.1*+*10321-11701 328 FCLAN-TNYERTHSRTMLLARGLQIALPLMTTWWFIASLANLALPPLPNLMGELMILTSLF--NWSAWTLILTGIGTLITAAYS 408
+                                96655.5555566677778889******************************999998876..5789***************** PP
 
-                ND5.protein 430 ilfvllgkprfkplspinennp 451
-                                + +++ g+  ++ +s  n n+ 
-  NC_002785.1*+*10205-11585 413 LSMTQRGTLPTHLTSIHNSNTR 434
-                                ***9999976665555555544 PP
+                ND5.protein 427 lriilfvllgk 437
+                                l + l+ + g 
+  NC_002081.1*+*10321-11701 409 LYMFLMSQRGP 419
+                                **988877664 PP
 
->> NC_002785.1*+*3961-4999  
+>> NC_002081.1*+*4017-5061  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !   21.7  30.9   9.3e-09   9.6e-08     191     441 ..      71     308 ..      29     342 .. 0.80
+   1 ?    1.1   0.7     0.017      0.13      12      92 ..      33     113 ..      22     119 .. 0.76
+   2 !   19.3  21.7   5.1e-08   3.9e-07     191     463 ..      71     331 ..      64     339 .. 0.79
 
   Alignments for each domain:
-  == domain 1  score: 21.7 bits;  conditional E-value: 9.3e-09
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.017
+              ND5.protein  12 llillllllpllttltpkkkkkkaltkvktavklaflisllplllflnegaesiitnwewlniqtfkinislkldlysliF 92 
+                              l i +l ++pl+++ ++ +  + ++++  t+   a li + +++    +g+  i   ++++  +++++ + lk+ l  ++F
+  NC_002081.1*+*4017-5061  33 LEISTLAIIPLMSQHHHPRAVEATTKYFITQAAAAALILFASTTNAWITGQWDINFDLHFFPASMLTMALALKMGLAPVHF 113
+                              445566677888877655555777788888888888888888888888999999999999999999999999998777776 PP
+
+  == domain 2  score: 19.3 bits;  conditional E-value: 5.1e-08
               ND5.protein 191 wlatnlnswelqqifllskedltlpllglilaatgkSAqfglhpwlpsAmegPtpVsaLLhSstmvvAgiFlLirlhpllennkta 276
-                               + + +n w   q  +++ +++t   + l  a + k     +h w p  ++g     aLL S  m    + +L+ ++p l+  +t+
-  NC_002785.1*+*3961-4999  71 LFSSMSNAWATGQWDITQLTHPT-ASMLLTAAIAIKLGLVPFHFWFPEVLQGTSLTTALLLSTLMKLPPMAILLMTSPSLN--PTV 153
-                              45556677777777666653333.334455566678889999************************************885..666 PP
+                               +a+++n w   q  ++ +  + +p   l +a + k     +h wlp  ++g      L+ S     A   l+ ++ p+ +     
+  NC_002081.1*+*4017-5061  71 LFASTTNAWITGQWDINFD-LHFFPASMLTMALALKMGLAPVHFWLPEVLQGLDLTTGLILSTWQKLAPFILMCQIMPVNS----- 150
+                              5677777777777666665.6778888888888888888888999999999988888888888888888777777777654..... PP
 
               ND5.protein 277 ltlcLcLGalttlftatcaltqndikkiiafstsSqLgLmmvtiglnqpqlaflhictHaffkAmLflcsgsiihslndeqDirkm 362
-                              lt    ++  ++     + l q + +ki+afs+ + Lg m  +i + +p+l++l       + A +fl+       ln  + ++  
-  NC_002785.1*+*3961-4999 154 LTS---MALASAALGGWMGLNQTQTRKILAFSSIAHLGWMT-MIIIYNPKLTLLTFYLYILMTATVFLS-------LNTTKTLKLS 228
-                              663...3344556678899*******************986.677899*******************97.......5655555444 PP
+                               +l+ +LG ++tl      l q +++ki+a+s+ + Lg m+  +  nq qla+l ++       m f  s  +i + n    +  +
+  NC_002081.1*+*4017-5061 151 -SLITFLGVTSTLVGGWGGLNQTQLRKILAYSSIAHLGWMILVMQFNQ-QLALLALIIYI---PMTF--STFMIFKTNSSTTVNTL 229
+                              .55669*****************************************9.89999988754...4555..67899999********* PP
 
-              ND5.protein 363 gglq..kllpltsscltigslaLtgtPflagFyskDaiiealntsylnawallltliatsftavYslriilfvllgkprfk 441
-                                ++  + +p+  ++l+++ l+L+g P l+gF  k +i++ l++ ++ ++a +++l++  +   + lr+ ++++++ p  +
-  NC_002785.1*+*3961-4999 229 TLMTswTKAPVLNAALMLTLLSLAGLPPLTGFMPKWLILQELTKQEMTTVATIIALLSL-LGLFFYLRLAYYATITLPPNS 308
-                              4443115689*******************************************999975.667777999999988876443 PP
+              ND5.protein 363 gglqkllpltsscltigslaLtgtPflagFyskDaiiealntsylnawallltliatsftavYslriilfvllgk..prfkplspi 446
+                              ++    +p+ +++  +  l+L g P l+gF  k +i++ l++  +  +a + +l ++ ++  + lr+ + ++l+    ++++++p 
+  NC_002081.1*+*4017-5061 230 AASWAKTPALTAITPMILLSLGGLPPLSGFMPKWMILQELTKQDIPLTASIAAL-SALLSLYFYLRVSYAMTLTIspNNLNATTPW 314
+                              **9999**999999999*************************999988876665.5567777788887766544321455666666 PP
+
+              ND5.protein 447 nennpavinpikrlalg 463
+                                +++a + p+   a+ 
+  NC_002081.1*+*4017-5061 315 RLQTTASTLPLAISATI 331
+                              66666666665555444 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (611 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         8  (0.258065); expected 0.6 (0.02)
-Passed bias filter:                        4  (0.129032); expected 0.6 (0.02)
-Passed Vit filter:                         3  (0.0967742); expected 0.0 (0.001)
-Passed Fwd filter:                         3  (0.0967742); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         7  (0.304348); expected 0.5 (0.02)
+Passed bias filter:                        4  (0.173913); expected 0.5 (0.02)
+Passed Vit filter:                         4  (0.173913); expected 0.0 (0.001)
+Passed Fwd filter:                         3  (0.130435); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               3  [number of targets reported over threshold]
-# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
-# Mc/sec: 145.33
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 138.70
 //
 Query:       ND6.protein  [M=197]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
-    3.2e-73  236.5  42.3    3.5e-73  236.4  42.3    1.0  1  NC_002785.1*-*1103-1625  
+    1.2e-80  260.4  37.0    1.3e-80  260.2  37.0    1.0  1  NC_002081.1*-*2427-2946  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*-*1103-1625  
+>> NC_002081.1*-*2427-2946  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  236.4  42.3   1.1e-74   3.5e-73       3     176 ..       1     174 []       1     174 [] 0.95
+   1 !  260.2  37.0   5.6e-82   1.3e-80       4     176 ..       1     173 []       1     173 [] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 236.4 bits;  conditional E-value: 1.1e-74
-              ND6.protein   3 lMtylvfllllllvlglvavasnpsPyygalgLvvvagvGcgvlvglGgsFlsLvlfLiYLGGmlVVFaYsaaLaaepypeawgsr 88 
-                              +Mty+v++l ++++lg vavasnpsPyyg+lgLvv+++vGcg+l++lG+sF+sL lfL+YLGGmlVVF+Ys++Laa+pyp+awgs+
-  NC_002785.1*-*1103-1625   1 MMTYFVMFLGFCFILGAVAVASNPSPYYGVLGLVVGSVVGCGWLLSLGVSFISLALFLVYLGGMLVVFVYSVSLAADPYPQAWGSW 86 
-                              7************************************************************************************* PP
+  == domain 1  score: 260.2 bits;  conditional E-value: 5.6e-82
+              ND6.protein   4 MtylvfllllllvlglvavasnpsPyygalgLvvvagvGcgvlvglGgsFlsLvlfLiYLGGmlVVFaYsaaLaaepypeawgsrs 89 
+                              M+y+++ ll+++vlg++ vasnpsPy++algLv+vagvGc+vl+g+GgsFlsLvlfLiYLGGmlVVFaY+aaLaaepypeawg++s
+  NC_002081.1*-*2427-2946   1 MAYIMLTLLIGMVLGVISVASNPSPYFAALGLVLVAGVGCVVLMGHGGSFLSLVLFLIYLGGMLVVFAYCAALAAEPYPEAWGEWS 86 
+                              99************************************************************************************ PP
 
-              ND6.protein  89 svvlyvlvyllvvvvlvvllvggw.yegswvvvdelkelsvvrgdvsGvallYslGggllvvagwvLlltLfvvleltrglsrgal 173
-                              +vv+y ++++lvv+v++ ++++ + +++ wv ++++++l+ vr d+sGval+Ys+G+gl++vagw+LlltLfvvlel+rglsrga+
-  NC_002785.1*-*1103-1625  87 QVVIYGVGLVLVVLVGI-VVGDFVgVWNLWVGTVDYGGLGAVRLDFSGVALFYSWGAGLFLVAGWGLLLTLFVVLELVRGLSRGAI 171
-                              ********999998844.4434445799********************************************************** PP
+              ND6.protein  90 vvlyvlvyllvvvvlvvllvggwyegswvvvdelkelsvvrgdvsGvallYslGggllvvagwvLlltLfvvleltrglsrgalra 175
+                              v+++vl+yll+vv ++ +++ggwyeg+wv vdel e+svv  d +Gval+YslGggllvv++wvLlltL+vvleltrgl rgalra
+  NC_002081.1*-*2427-2946  87 VLGSVLGYLLLVVGAGSWFWGGWYEGMWVPVDELIEFSVVAADSGGVALMYSLGGGLLVVSAWVLLLTLLVVLELTRGLARGALRA 172
+                              *************************************************************************************9 PP
 
-              ND6.protein 174 rav 176
-                              rav
-  NC_002785.1*-*1103-1625 172 RAV 174
-                              *96 PP
+              ND6.protein 176 v 176
+                              v
+  NC_002081.1*-*2427-2946 173 V 173
+                              6 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (197 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                        10  (0.322581); expected 0.6 (0.02)
-Passed bias filter:                        3  (0.0967742); expected 0.6 (0.02)
-Passed Vit filter:                         2  (0.0645161); expected 0.0 (0.001)
-Passed Fwd filter:                         1  (0.0322581); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                        11  (0.478261); expected 0.5 (0.02)
+Passed bias filter:                        3  (0.130435); expected 0.5 (0.02)
+Passed Vit filter:                         1  (0.0434783); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (0.0434783); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               1  [number of targets reported over threshold]
 # CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
-# Mc/sec: 788.52
+# Mc/sec: 843.84
 //
 Query:       ND4.protein  [M=460]
 Scores for complete sequences (score includes all domains):
    --- full sequence ---   --- best 1 domain ---    -#dom-
     E-value  score  bias    E-value  score  bias    exp  N  Sequence                  Description
     ------- ------ -----    ------- ------ -----   ---- --  --------                  -----------
-   4.5e-230  754.8  58.8   5.1e-230  754.6  58.8    1.0  1  NC_002785.1*+*10205-11585  
-    3.3e-21   66.2  44.0    3.3e-21   66.2  44.0    1.4  1  NC_002785.1*+*11795-13610  
+   4.5e-245  803.8  53.7     5e-245  803.6  53.7    1.0  1  NC_002081.1*+*10321-11701  
+    5.1e-19   58.6  33.9    1.1e-18   57.5  33.9    1.5  1  NC_002081.1*+*11914-13750  
 
 
 Domain annotation for each sequence (and alignments):
->> NC_002785.1*+*10205-11585  
+>> NC_002081.1*+*10321-11701  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !  754.6  58.8  3.3e-231  5.1e-230       1     458 [.       3     459 ..       3     460 .] 1.00
+   1 !  803.6  53.7  4.4e-246    5e-245       1     459 [.       1     459 [.       1     460 [] 1.00
 
   Alignments for each domain:
-  == domain 1  score: 754.6 bits;  conditional E-value: 3.3e-231
+  == domain 1  score: 803.6 bits;  conditional E-value: 4.4e-246
                 ND4.protein   1 mlkiliptimllpttllskkkllwttttahslliallsltllkktsetklkslnkllaidklstpllvltcwllplmilasqnh 84 
-                                mlki+iptimllpt+lls+k  lwt+tt++sllia++sl++l+ t+   +k+++ ++ id++s+pllvl+cwllplm+lasqnh
-  NC_002785.1*+*10205-11585   3 MLKIIIPTIMLLPTALLSPKASLWTNTTTYSLLIATISLQWLNPTYFP-HKNMTPWTGIDQISAPLLVLSCWLLPLMLLASQNH 85 
-                                9******************************************99988.9********************************** PP
+                                mlkilipt++llptt+l+++k+lw+t++++s+lial s+t+l++t++t++++ln+++ +d+lstpllvl+cwllplm+lasqnh
+  NC_002081.1*+*10321-11701   1 MLKILIPTLFLLPTTWLTSSKWLWPTALTQSMLIALGSITWLNNTTDTGWTALNSYIGTDPLSTPLLVLSCWLLPLMLLASQNH 84 
+                                9*********************************************************************************** PP
 
                 ND4.protein  85 lkkeplsrkrlyitllillqlllilafsatelilfyilfeatliPtliiitrwGnqaerlnagtyflfytlagslpllvallll 168
-                                l++epl rkr++i++l+++q ++ilafsatel+lfyi featliPtli+itrwGnq erl+ag+y+lfytl++slpllv++l+l
-  NC_002785.1*+*10205-11585  86 LQQEPLVRKRTFIVTLTTIQPFIILAFSATELTLFYISFEATLIPTLILITRWGNQPERLSAGIYLLFYTLISSLPLLVTILHL 169
+                                l++ep++r+r+yitll++lql+lilaf ate+i+fy++featliPtl++itrwGn++erlnagtyflfytlagslpllvall+l
+  NC_002081.1*+*10321-11701  85 LSSEPMNRQRMYITLLATLQLFLILAFGATEMIMFYVMFEATLIPTLLVITRWGNHTERLNAGTYFLFYTLAGSLPLLVALLML 168
                                 ************************************************************************************ PP
 
                 ND4.protein 169 qnstgtlsllllqlskklllkslsekllwlacllaflvkmplyglhlWLpkAhveaPiaGsmvLaavllklgGyGllritllle 252
-                                ++++gtl++ +l+l+++ll++s++ +l  la+l+af+vk+plyglhlWLpkAhveaPiaGsm+Laa+llklgGyG++r+tll+ 
-  NC_002785.1*+*10205-11585 170 HTQIGTLHMPTLELTHPLLTHSWTGTLSGLALLMAFMVKAPLYGLHLWLPKAHVEAPIAGSMLLAALLLKLGGYGIMRVTLLMG 253
+                                qn+tgtlsll++ ++k+lll+ + +k++w+ac++aflvkmplyg+hlWLpkAhveaP+aGsmvLaavllklgGyG++r++++l+
+  NC_002081.1*+*10321-11701 169 QNNTGTLSLLIIPYAKPLLLMPFGSKIWWAACMIAFLVKMPLYGMHLWLPKAHVEAPVAGSMVLAAVLLKLGGYGMMRLMIVLD 252
                                 ************************************************************************************ PP
 
                 ND4.protein 253 pltkelaypfiilalwGvimtssiclrqtdlksliayssvshmglviaailiqtpwslsgalilmiahGltssalfclantnye 336
-                                plt++l+ypf++lalwG++mtssiclrqtdlksliayssvshmglviaa +iqt+ws+sga+ilmi+hGltss+lfclantnye
-  NC_002785.1*+*10205-11585 254 PLTDRLSYPFLALALWGALMTSSICLRQTDLKSLIAYSSVSHMGLVIAASMIQTDWSFSGAMILMISHGLTSSMLFCLANTNYE 337
+                                pl+ke++ypfi+lalwGvi+t+siclrqtdlksliayssvshmglv+++iliqtpw+++galilmiahGl+ssalfclantnye
+  NC_002081.1*+*10321-11701 253 PLSKEMVYPFIVLALWGVIITGSICLRQTDLKSLIAYSSVSHMGLVAGGILIQTPWGFTGALILMIAHGLASSALFCLANTNYE 336
                                 ************************************************************************************ PP
 
                 ND4.protein 337 rthsrtlllarglqlilPlmatwwllaslanlalpPlinlmgelliitslfnwskltiiltglgtlitaaYslymflttqrgkl 420
-                                rthsr+lll+rglq +lPlm++wwlla+l+n+alpP++nlm+el+i+++lfnws+ tiiltgl+tl+ta+Y+l+m+ +tqrg+l
-  NC_002785.1*+*10205-11585 338 RTHSRILLLTRGLQPLLPLMSVWWLLANLTNMALPPTTNLMAELTIMIALFNWSTPTIILTGLATLLTASYTLFMLSMTQRGTL 421
+                                rthsrt+llarglq+ lPlm+tww++aslanlalpPl+nlmgel+i+tslfnws +t+iltg+gtlitaaYslymfl++qrg+l
+  NC_002081.1*+*10321-11701 337 RTHSRTMLLARGLQIALPLMTTWWFIASLANLALPPLPNLMGELMILTSLFNWSAWTLILTGIGTLITAAYSLYMFLMSQRGPL 420
                                 ************************************************************************************ PP
 
-                ND4.protein 421 pkhikslepshtrehlllalhllPllllilkpelilgl 458
-                                p+h++s+++s+trehll++lh++P+lll+lkpeli+g+
-  NC_002785.1*+*10205-11585 422 PTHLTSIHNSNTREHLLMTLHIFPMLLLMLKPELISGV 459
-                                ***********************************986 PP
+                ND4.protein 421 pkhikslepshtrehlllalhllPllllilkpelilgll 459
+                                p+h+ +l ps+trehll+alhl+Plll+ilkp l++g++
+  NC_002081.1*+*10321-11701 421 PQHMLALPPSYTREHLLMALHLIPLLLIILKPALLWGWF 459
+                                *************************************97 PP
 
->> NC_002785.1*+*11795-13610  
+>> NC_002081.1*+*11914-13750  
    #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
  ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
-   1 !   66.2  44.0   2.2e-22   3.3e-21      12     419 ..      26     435 ..      14     470 .. 0.78
+   1 !   57.5  33.9   9.3e-20   1.1e-18      28     418 ..      45     439 ..      10     453 .. 0.77
 
   Alignments for each domain:
-  == domain 1  score: 66.2 bits;  conditional E-value: 2.2e-22
-                ND4.protein  12 lpttllskkkllwttttahslliallsltllkktsetklkslnkllaidklstpllv....ltcwllplmilas.......qnh 84 
-                                l +t l ++ l+ ttt+ ++++ +++  t++  + ++++ s   + ++ +l  pl       ++ +lp+ ++ +          
-  NC_002785.1*+*11795-13610  26 LLSTKLQNTPLIITTTVKMAFFTSIIPTTIFIYSGTEAIISHWYWSFTPNLKIPLSFkmdqYSMLFLPVALFVTwsilqfaMWY 109
-                                444555555556666666666666666666665555544444445555554444432111144555555444431111000445 PP
+  == domain 1  score: 57.5 bits;  conditional E-value: 9.3e-20
+                ND4.protein  28 tahslliallsltllkktsetklkslnkllaidkl....stpllvltcwllplm......ila.sqnhlkkeplsrkrlyitll 100
+                                +  ++li+l+ l+l+ +t  ++++s+ +++++ +l    s  +   ++ ++p+       il  +   ++++p   +r++  ll
+  NC_002081.1*+*11914-13750  45 VKSAFLISLAPLSLFLSTGMEAVTSSWTWMVTTTLditlSFKFDHYSIIFIPIAlyvtwsILEfATWYMHSDP-FMNRFFKYLL 127
+                                4455666666666666555555555555544443300003333334455555440000113330333445555.4679999999 PP
 
-                ND4.protein  85 lkkeplsrkrlyitllillqlllilafsatelilfyilfeatliPtliiitrwGnqaerlnagtyflfytlagslpllvallll 168
-                                +++ep+   +++i ll++l ++l l++ a+++ +++i +e   i  +++i+ w  +ae  +a++  ++y  +g + l++++  l
-  NC_002785.1*+*11795-13610 110 MASEPH-VTKFFIYLLMFLIAMLTLTI-ANNMFMLFIGWEGVGIMSFLLISWWHGRAEANTAALQAVIYNRIGDVGLILSMAWL 191
-                                566665.5689***********99997.789***************************************************** PP
+                ND4.protein 101 illqlllilafsatelilfyilfeatliPtliiitrwGnqaerlnagtyflfytlagslpllvallllqnstgtlsllllqlsk 184
+                                ++l ++lil  sa++l  ++i +e   i  +++i  w  +a+  +a++  ++y  +g + l++ +  l +++++  +  + + +
+  NC_002081.1*+*11914-13750 128 TFLVAMLIL-VSANNLFQLFIGWEGVGIMSFLLIGWWHGRADANTAALQAVLYNRVGDIGLILGMAWLATNVNSWDIQQMFILS 210
+                                999999988.69************************************************************999998887774 PP
 
-                ND4.protein 169 qnstgtlsllllqlskklllkslsekllwlacllaflvkmplyglhlWLpkAhveaPiaGsmvLaa.vllklgGyGllritlll 251
-                                 ++++t ++  +++ +      ++  l  l+++la   k   +glh WLp A +e P   s +L + +++  g + l+ri  ll
-  NC_002785.1*+*11795-13610 192 ASTLNTWEIQQISYES------QTPILPLLGLILAATGKSAQFGLHPWLPAA-MEGPTPVSALLHSsTMVVAGIFLLVRIHPLL 268
-                                **99999988777764......556788899999****************66.7999999988865156666678999****** PP
+                ND4.protein 185 klllkslsekllwlacllaflvkmplyglhlWLpkAhveaPiaGsmvLaa.vllklgGyGllritlllepltkelaypfiilal 267
+                                    k+l  +l  l+++la   k   +glh WLp A +e P   s +L + +++  g + l+r++ l+e+ ++ l++ + + al
+  NC_002081.1*+*11914-13750 211 ----KNLDMTLPLLGLILAATGKSAQFGLHPWLPAA-MEGPTPVSALLHSsTMVVAGIFLLIRMSPLMENNQTALTLCLCLGAL 289
+                                ....4566778899********************66.799999998886516666677899*******9988888776655555 PP
 
-                ND4.protein 252 epltkelaypfiilalwGvimtssiclrqtdlksliayssvshmglviaailiqtpwslsgalilmiahGltssalfclant.n 334
-                                 + ++ l++  ++l  +  + +++  l q d+k +ia+s  s +gl++++i ++ p     a++ + +h +  ++lf  + +  
-  NC_002785.1*+*11795-13610 269 ANNQTALTT-CLCLGALSTLFAATCALTQNDIKKIIAFSTSSQLGLMMVTIGLNLPQ---LAFLHISTHAFFKAMLFLCSGSiI 348
-                                998777665.566666778999999**********************9999888775...46666778*********6665505 PP
+                ND4.protein 268 wGvimtssiclrqtdlksliayssvshmglviaailiqtpwslsgalilmiahGltssalfclantnyert.hsrtlllarglq 350
+                                   + t++  l q d+k ++a+s  s +gl++++i ++ p     a++ + +h +  ++lf  + +      + + +  + gl+
+  NC_002081.1*+*11914-13750 290 -TTMFTATCALTQNDIKKIVAFSTSSQLGLMMVTIGLNQPQ---LAFLHICTHAFFKAMLFLCSGSVIHSLnDEQDIRKMGGLH 369
+                                .66789999**********************9999777664...46677889*********77766655550566778899*** PP
 
-                ND4.protein 335 yerthsrtlllarglqlilPlmatwwllaslanlalpPlinlmgelliitslfnw..skltiiltglgtlitaaYslymflttq 416
-                                +     + +  + glq +lP ++    + +la +  p l  + ++ lii sl n     ++++lt l+t +ta+Ysl m l+ q
-  NC_002785.1*+*11795-13610 349 HSLAGEQDIRKMGGLQKLLPTTTSCLTIGNLALMGTPFLAGFYSKDLIIESLNNSylNAWALLLTLLATSFTATYSLRMTLMVQ 432
-                                5556677788999**************************************988533789************************ PP
-
-                ND4.protein 417 rgk 419
-                                 g 
-  NC_002785.1*+*11795-13610 433 SGF 435
-                                985 PP
+                ND4.protein 351 lilPlmatwwllaslanlalpPlinlmgelliitslf..nwskltiiltglgtlitaaYslymflttqrg 418
+                                 + P+++    + sla    p l  ++++  ii +l   +   +++ lt ++t +ta+Ysl +++   +g
+  NC_002081.1*+*11914-13750 370 HLAPFTSSCLTVGSLALTGTPFLAGFFSKDAIIEALNtsHVNAWALTLTLIATSFTAIYSLRVIFFVTMG 439
+                                *********************************99862146789*****************987766655 PP
 
 
 
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (460 nodes)
-Target sequences:                         31  (4814 residues searched)
-Passed MSV filter:                         8  (0.258065); expected 0.6 (0.02)
-Passed bias filter:                        3  (0.0967742); expected 0.6 (0.02)
-Passed Vit filter:                         2  (0.0645161); expected 0.0 (0.001)
-Passed Fwd filter:                         2  (0.0645161); expected 0.0 (1e-05)
-Initial search space (Z):                 31  [actual number of targets]
+Target sequences:                         23  (4477 residues searched)
+Passed MSV filter:                         7  (0.304348); expected 0.5 (0.02)
+Passed bias filter:                        3  (0.130435); expected 0.5 (0.02)
+Passed Vit filter:                         2  (0.0869565); expected 0.0 (0.001)
+Passed Fwd filter:                         2  (0.0869565); expected 0.0 (1e-05)
+Initial search space (Z):                 23  [actual number of targets]
 Domain search space  (domZ):               2  [number of targets reported over threshold]
-# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
-# Mc/sec: 154.65
+# CPU time: 0.00u 0.01s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 309.72
 //
 [ok]

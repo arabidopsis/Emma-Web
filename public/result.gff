@@ -1,64 +1,63 @@
-NC_002785.1	Emma	CDS	2767	3739	4.9e-183	+	0	Name=ND1;ID=ND1.CDS;Note=putative AAA stop codon is completed by the addition of 3' A residues to the mRNA
-NC_002785.1	Emma	CDS	7963	8646	2.7e-117	+	0	Name=ATP6;ID=ATP6.CDS
-NC_002785.1	Emma	CDS	13622	14761	3.3e-223	+	0	Name=CYTB;ID=CYTB.CDS
-NC_002785.1	Emma	CDS	3961	4999	1.1e-157	+	0	Name=ND2;ID=ND2.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
-NC_002785.1	Emma	CDS	7805	7972	6.2e-23	+	0	Name=ATP8;ID=ATP8.CDS
-NC_002785.1	Emma	CDS	5359	6909	0.0	+	0	Name=COX1;ID=COX1.CDS
-NC_002785.1	Emma	CDS	7048	7735	1.8e-129	+	0	Name=COX2;ID=COX2.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
-NC_002785.1	Emma	CDS	14969	15493	3.5e-73	-	0	Name=ND6;ID=ND6.CDS
-NC_002785.1	Emma	CDS	11795	13612	0.0	+	0	Name=ND5;ID=ND5.CDS
-NC_002785.1	Emma	CDS	10211	11587	5.1e-230	+	0	Name=ND4;ID=ND4.CDS
-NC_002785.1	Emma	CDS	9921	10217	1.1e-47	+	0	Name=ND4L;ID=ND4L.CDS
-NC_002785.1	Emma	CDS	8646	9429	4.1e-161	+	0	Name=COX3;ID=COX3.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
-NC_002785.1	Emma	tRNA	6978	7046	7.3e-15	+	.	Name=trnD-GUC;ID=trnD
-NC_002785.1	Emma	tRNA	5288	5357	1.4e-24	-	.	Name=trnY-GUA;ID=trnY;Note=tRNA completed by post-transcriptional addition of 2 As
-NC_002785.1	Emma	tRNA	5000	5073	1.4e-20	+	.	Name=trnW-UCA;ID=trnW
-NC_002785.1	Emma	tRNA	14764	14833	1.1e-17	+	.	Name=trnT-UGU;ID=trnT
-NC_002785.1	Emma	tRNA	9430	9498	9.3e-11	+	.	Name=trnG-UCC;ID=trnG
-NC_002785.1	Emma	tRNA	2684	2757	4.7e-24	+	.	Name=trnL2-UAA;ID=trnL2
-NC_002785.1	Emma	tRNA	15494	15561	4.6e-19	-	.	Name=trnE-UUC;ID=trnE
-NC_002785.1	Emma	tRNA	7736	7803	2.2e-15	+	.	Name=trnK-UUU;ID=trnK
-NC_002785.1	Emma	tRNA	1	69	1.1e-17	+	.	Name=trnF-GAA;ID=trnF
-NC_002785.1	Emma	tRNA	11589	11658	1.0e-18	+	.	Name=trnH-GUG;ID=trnH
-NC_002785.1	Emma	tRNA	3740	3810	5.6e-18	+	.	Name=trnI-GAU;ID=trnI
-NC_002785.1	Emma	tRNA	9852	9920	3.1e-14	+	.	Name=trnR-UCG;ID=trnR
-NC_002785.1	Emma	tRNA	5147	5219	1.8e-23	-	.	Name=trnN-GUU;ID=trnN
-NC_002785.1	Emma	tRNA	6901	6974	1.4e-20	-	.	Name=trnS2-UGA;ID=trnS2
-NC_002785.1	Emma	tRNA	14889	14958	8.8e-20	-	.	Name=trnP-UGG;ID=trnP
-NC_002785.1	Emma	tRNA	11724	11794	2.2e-21	+	.	Name=trnL1-UAG;ID=trnL1
-NC_002785.1	Emma	tRNA	1036	1103	2.1e-16	+	.	Name=trnV-UAC;ID=trnV
-NC_002785.1	Emma	tRNA	5221	5287	1.6e-17	-	.	Name=trnC-GCA;ID=trnC
-NC_002785.1	Emma	tRNA	3822	3892	1.4e-21	-	.	Name=trnQ-UUG;ID=trnQ
-NC_002785.1	Emma	tRNA	5074	5142	1.7e-17	-	.	Name=trnA-UGC;ID=trnA
-NC_002785.1	Emma	tRNA	11659	11723	1.2e-17	+	.	Name=trnS1-GCU;ID=trnS1;Note=tRNA completed by post-transcriptional addition of 2 As
-NC_002785.1	Emma	tRNA	3892	3960	1.5e-22	+	.	Name=trnM-CAU;ID=trnM
-NC_002785.1	Emma	rRNA	1104	2683	0.0	+	.	Name=16srna;ID=16srna
-NC_002785.1	Emma	rRNA	70	1035	3.6e-294	+	.	Name=12srna;ID=12srna
-NC_002785.1	Emma	gene	2767	3739	4.9e-183	+	.	Name=ND1;ID=ND1.gene
-NC_002785.1	Emma	gene	7963	8646	2.7e-117	+	.	Name=ATP6;ID=ATP6.gene
-NC_002785.1	Emma	gene	13622	14761	3.3e-223	+	.	Name=CYTB;ID=CYTB.gene
-NC_002785.1	Emma	gene	3961	4999	1.1e-157	+	.	Name=ND2;ID=ND2.gene
-NC_002785.1	Emma	gene	7805	7972	6.2e-23	+	.	Name=ATP8;ID=ATP8.gene
-NC_002785.1	Emma	gene	5359	6909	0.0	+	.	Name=COX1;ID=COX1.gene
-NC_002785.1	Emma	gene	7048	7735	1.8e-129	+	.	Name=COX2;ID=COX2.gene
-NC_002785.1	Emma	gene	14969	15493	3.5e-73	-	.	Name=ND6;ID=ND6.gene
-NC_002785.1	Emma	gene	11795	13612	0.0	+	.	Name=ND5;ID=ND5.gene
-NC_002785.1	Emma	CDS	9499	9671	3.1e-33	+	.	Name=ND3;ID=ND3.CDS.1;Note=CDS contains a frameshift where one nucleotide is skipped
-NC_002785.1	Emma	CDS	9673	9850	3.1e-33	+	.	Name=ND3;ID=ND3.CDS.2;Note=CDS contains a frameshift where one nucleotide is skipped
-NC_002785.1	Emma	gene	9499	9850	3.1e-33	+	.	Name=ND3;ID=ND3.gene
-NC_002785.1	Emma	gene	10211	11587	5.1e-230	+	.	Name=ND4;ID=ND4.gene
-NC_002785.1	Emma	gene	9921	10217	1.1e-47	+	.	Name=ND4L;ID=ND4L.gene
-NC_002785.1	Emma	gene	8646	9429	4.1e-161	+	.	Name=COX3;ID=COX3.gene
-NC_002785.1	Emma	mRNA	2767	3739	4.9e-183	+	0	Name=ND1;ID=ND1.mRNA;Note=5' incomplete
-NC_002785.1	Emma	mRNA	7963	8646	2.7e-117	+	0	Name=ATP6;ID=ATP6.mRNA;Note=5' incomplete;Note=3' incomplete
-NC_002785.1	Emma	mRNA	13622	14763	3.3e-223	+	0	Name=CYTB;ID=CYTB.mRNA;Note=5' incomplete
-NC_002785.1	Emma	mRNA	3961	4999	1.1e-157	+	0	Name=ND2;ID=ND2.mRNA
-NC_002785.1	Emma	mRNA	7804	7972	6.2e-23	+	0	Name=ATP8;ID=ATP8.mRNA;Note=3' incomplete
-NC_002785.1	Emma	mRNA	5359	6909	0.0	+	0	Name=COX1;ID=COX1.mRNA;Note=5' incomplete;Note=3' incomplete
-NC_002785.1	Emma	mRNA	7047	7735	1.8e-129	+	0	Name=COX2;ID=COX2.mRNA
-NC_002785.1	Emma	mRNA	11795	13612	0.0	+	0	Name=ND5;ID=ND5.mRNA;Note=3' incomplete
-NC_002785.1	Emma	mRNA	9499	9851	3.1e-33	+	0	Name=ND3;ID=ND3.mRNA
-NC_002785.1	Emma	mRNA	10211	11588	5.1e-230	+	0	Name=ND4;ID=ND4.mRNA;Note=5' incomplete
-NC_002785.1	Emma	mRNA	9921	10217	1.1e-47	+	0	Name=ND4L;ID=ND4L.mRNA;Note=3' incomplete
-NC_002785.1	Emma	mRNA	8646	9429	4.1e-161	+	0	Name=COX3;ID=COX3.mRNA;Note=5' incomplete
-NC_002785.1	Emma	mRNA	14969	15493	3.5e-73	-	0	Name=ND6;ID=ND6.mRNA;Note=3' incomplete
+NC_002081.1	Emma	CDS	2834	3805	1.6e-186	+	0	Name=ND1;ID=ND1.CDS
+NC_002081.1	Emma	CDS	8075	8758	1.8e-116	+	0	Name=ATP6;ID=ATP6.CDS
+NC_002081.1	Emma	CDS	14344	15484	5.7e-228	+	0	Name=CYTB;ID=CYTB.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+NC_002081.1	Emma	CDS	4017	5061	1.0e-168	+	0	Name=ND2;ID=ND2.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+NC_002081.1	Emma	CDS	7917	8084	1.1e-28	+	0	Name=ATP8;ID=ATP8.CDS
+NC_002081.1	Emma	CDS	5443	6993	0.0	+	0	Name=COX1;ID=COX1.CDS
+NC_002081.1	Emma	CDS	7151	7841	3.0e-144	+	0	Name=COX2;ID=COX2.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+NC_002081.1	Emma	CDS	13749	14270	1.3e-80	-	0	Name=ND6;ID=ND6.CDS
+NC_002081.1	Emma	CDS	11914	13752	0.0	+	0	Name=ND5;ID=ND5.CDS
+NC_002081.1	Emma	CDS	9613	9961	5.5e-65	+	0	Name=ND3;ID=ND3.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+NC_002081.1	Emma	CDS	10321	11701	5.0e-245	+	0	Name=ND4;ID=ND4.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+NC_002081.1	Emma	CDS	10031	10327	1.7e-48	+	0	Name=ND4L;ID=ND4L.CDS
+NC_002081.1	Emma	CDS	8758	9542	1.0e-169	+	0	Name=COX3;ID=COX3.CDS;Note=putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+NC_002081.1	Emma	tRNA	7070	7137	7.0e-17	+	.	Name=trnD-GUC;ID=trnD
+NC_002081.1	Emma	tRNA	5375	5441	4.3e-22	-	.	Name=trnY-GUA;ID=trnY
+NC_002081.1	Emma	tRNA	5062	5131	1.5e-24	+	.	Name=trnW-UCA;ID=trnW
+NC_002081.1	Emma	tRNA	15485	15555	2.9e-22	+	.	Name=trnT-UGU;ID=trnT
+NC_002081.1	Emma	tRNA	9543	9612	2.9e-18	+	.	Name=trnG-UCC;ID=trnG
+NC_002081.1	Emma	tRNA	2760	2833	1.3e-26	+	.	Name=trnL2-UAA;ID=trnL2
+NC_002081.1	Emma	tRNA	14271	14339	3.2e-23	-	.	Name=trnE-UUC;ID=trnE
+NC_002081.1	Emma	tRNA	7842	7915	1.6e-21	+	.	Name=trnK-UUU;ID=trnK
+NC_002081.1	Emma	tRNA	1	68	2.4e-17	+	.	Name=trnF-GAA;ID=trnF
+NC_002081.1	Emma	tRNA	11702	11770	8.8e-21	+	.	Name=trnH-GUG;ID=trnH
+NC_002081.1	Emma	tRNA	3808	3878	9.1e-24	+	.	Name=trnI-GAU;ID=trnI
+NC_002081.1	Emma	tRNA	9962	10030	4.3e-14	+	.	Name=trnR-UCG;ID=trnR
+NC_002081.1	Emma	tRNA	5204	5276	1.7e-26	-	.	Name=trnN-GUU;ID=trnN
+NC_002081.1	Emma	tRNA	6996	7066	4.9e-26	-	.	Name=trnS2-UGA;ID=trnS2
+NC_002081.1	Emma	tRNA	15630	15699	3.7e-24	-	.	Name=trnP-UGG;ID=trnP
+NC_002081.1	Emma	tRNA	11841	11913	2.6e-26	+	.	Name=trnL1-UAG;ID=trnL1
+NC_002081.1	Emma	tRNA	1019	1090	6.1e-18	+	.	Name=trnV-UAC;ID=trnV
+NC_002081.1	Emma	tRNA	5309	5374	4.3e-17	-	.	Name=trnC-GCA;ID=trnC
+NC_002081.1	Emma	tRNA	3878	3948	1.5e-23	-	.	Name=trnQ-UUG;ID=trnQ
+NC_002081.1	Emma	tRNA	5133	5201	1.3e-19	-	.	Name=trnA-UGC;ID=trnA
+NC_002081.1	Emma	tRNA	11771	11838	3.6e-17	+	.	Name=trnS1-GCU;ID=trnS1
+NC_002081.1	Emma	tRNA	3948	4016	2.4e-22	+	.	Name=trnM-CAU;ID=trnM
+NC_002081.1	Emma	rRNA	1091	2759	0.0	+	.	Name=16srna;ID=16srna
+NC_002081.1	Emma	rRNA	69	1018	1.8e-302	+	.	Name=12srna;ID=12srna
+NC_002081.1	Emma	gene	2834	3805	1.6e-186	+	.	Name=ND1;ID=ND1.gene
+NC_002081.1	Emma	gene	8075	8758	1.8e-116	+	.	Name=ATP6;ID=ATP6.gene
+NC_002081.1	Emma	gene	14344	15484	5.7e-228	+	.	Name=CYTB;ID=CYTB.gene
+NC_002081.1	Emma	gene	4017	5061	1.0e-168	+	.	Name=ND2;ID=ND2.gene
+NC_002081.1	Emma	gene	7917	8084	1.1e-28	+	.	Name=ATP8;ID=ATP8.gene
+NC_002081.1	Emma	gene	5443	6993	0.0	+	.	Name=COX1;ID=COX1.gene
+NC_002081.1	Emma	gene	7151	7841	3.0e-144	+	.	Name=COX2;ID=COX2.gene
+NC_002081.1	Emma	gene	13749	14270	1.3e-80	-	.	Name=ND6;ID=ND6.gene
+NC_002081.1	Emma	gene	11914	13752	0.0	+	.	Name=ND5;ID=ND5.gene
+NC_002081.1	Emma	gene	9613	9961	5.5e-65	+	.	Name=ND3;ID=ND3.gene
+NC_002081.1	Emma	gene	10321	11701	5.0e-245	+	.	Name=ND4;ID=ND4.gene
+NC_002081.1	Emma	gene	10031	10327	1.7e-48	+	.	Name=ND4L;ID=ND4L.gene
+NC_002081.1	Emma	gene	8758	9542	1.0e-169	+	.	Name=COX3;ID=COX3.gene
+NC_002081.1	Emma	mRNA	2834	3807	1.6e-186	+	0	Name=ND1;ID=ND1.mRNA
+NC_002081.1	Emma	mRNA	8075	8758	1.8e-116	+	0	Name=ATP6;ID=ATP6.mRNA;Note=5' incomplete;Note=3' incomplete
+NC_002081.1	Emma	mRNA	14344	15484	5.7e-228	+	0	Name=CYTB;ID=CYTB.mRNA;Note=5' incomplete
+NC_002081.1	Emma	mRNA	4017	5061	1.0e-168	+	0	Name=ND2;ID=ND2.mRNA
+NC_002081.1	Emma	mRNA	7916	8084	1.1e-28	+	0	Name=ATP8;ID=ATP8.mRNA;Note=3' incomplete
+NC_002081.1	Emma	mRNA	5443	6993	0.0	+	0	Name=COX1;ID=COX1.mRNA;Note=5' incomplete;Note=3' incomplete
+NC_002081.1	Emma	mRNA	7151	7841	3.0e-144	+	0	Name=COX2;ID=COX2.mRNA;Note=5' incomplete
+NC_002081.1	Emma	mRNA	11914	13752	0.0	+	0	Name=ND5;ID=ND5.mRNA;Note=3' incomplete
+NC_002081.1	Emma	mRNA	9613	9961	5.5e-65	+	0	Name=ND3;ID=ND3.mRNA
+NC_002081.1	Emma	mRNA	10321	11701	5.0e-245	+	0	Name=ND4;ID=ND4.mRNA;Note=5' incomplete
+NC_002081.1	Emma	mRNA	10031	10327	1.7e-48	+	0	Name=ND4L;ID=ND4L.mRNA;Note=3' incomplete
+NC_002081.1	Emma	mRNA	8758	9542	1.0e-169	+	0	Name=COX3;ID=COX3.mRNA;Note=5' incomplete
+NC_002081.1	Emma	mRNA	13749	14270	1.3e-80	-	0	Name=ND6;ID=ND6.mRNA;Note=3' incomplete

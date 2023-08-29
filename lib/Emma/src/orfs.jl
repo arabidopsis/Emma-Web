@@ -4,7 +4,7 @@ const stopcodon = biore"(TAG)|(TAA)|(AGA)|(AGG)"d
 
 
 lengths = Dict{String, Int64}()
-open("/home/pavel/Emma/CDS_median_lengths.txt", "r") do infile
+open("lib/Emma/CDS_median_lengths.txt", "r") do infile
     for line in readlines(infile)
         names = split(line, "\t")
         lengths[first(names)] = parse(Int64, last(names))
