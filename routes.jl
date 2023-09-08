@@ -1,3 +1,4 @@
+# vscode-indent-size: 4
 using Genie, Genie.Router, Genie.Renderer.Html, Genie.Requests
 using FASTX
 using BioSequences
@@ -55,7 +56,6 @@ route("/", method = POST) do
     end
 
 
-    println(nthreads())
     try #First, check the input to see if it is a zip
       mkdir("genomes")
       global ARGS = ["--gff", "public/gffdir", "--gb", "public/gbdir"]
@@ -72,6 +72,7 @@ route("/", method = POST) do
       mkdir("public/gbdir")
       mkdir("public/fadir")
       main()
+      rm(filespayload(:yourfile).name)
 
       gff = ZipFile.Writer("public/gff.zip")
       for f in readdir("public/gffdir")
@@ -119,6 +120,7 @@ route("/", method = POST) do
       gbdownload = "result.gb"
       push!(ARGS, temp_path)
       main()
+      rm(filespayload(:yourfile).name)
 
       html(header *
       """<div class="card-container">

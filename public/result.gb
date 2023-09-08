@@ -1,187 +1,186 @@
->Feature NC_002785.1
-6978	7046	tRNA
+>Feature NC_002081.1
+7070	7137	tRNA
 			product	tRNA-Asp
-15493	14969	gene
+14270	13749	gene
 			gene	ND6
-15493	14969	CDS
+14270	13749	CDS
 			gene	ND6
 			product	NADH dehydrogenase subunit 6
 			transl_table	2
-15493	>14969	mRNA
+14270	>13749	mRNA
 			gene	ND6
 			product	NADH dehydrogenase subunit 6
 			note	3' incomplete
-7048	7735	gene
+7151	7841	gene
 			gene	COX2
-7048	7735	CDS
+7151	7841	CDS
 			gene	COX2
 			product	cytochrome c oxidase subunit II
 			transl_table	2
 			note	putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
-7047	7735	mRNA
+<7151	7841	mRNA
 			gene	COX2
 			product	cytochrome c oxidase subunit II
-5357	5288	tRNA
+			note	5' incomplete
+5441	5375	tRNA
 			product	tRNA-Tyr
-3961	4999	gene
+4017	5061	gene
 			gene	ND2
-3961	4999	CDS
+4017	5061	CDS
 			gene	ND2
 			product	NADH dehydrogenase subunit 2
 			transl_table	2
 			note	putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
-3961	4999	mRNA
+4017	5061	mRNA
 			gene	ND2
 			product	NADH dehydrogenase subunit 2
-5000	5073	tRNA
+5062	5131	tRNA
 			product	tRNA-Trp
-14764	14833	tRNA
+15485	15555	tRNA
 			product	tRNA-Thr
-9430	9498	tRNA
+9543	9612	tRNA
 			product	tRNA-Gly
-2684	2757	tRNA
+2760	2833	tRNA
 			product	tRNA-Leu
 			note	Anticodon: UAA
-15561	15494	tRNA
+14339	14271	tRNA
 			product	tRNA-Glu
-7736	7803	tRNA
+7842	7915	tRNA
 			product	tRNA-Lys
-1	69	tRNA
+1	68	tRNA
 			product	tRNA-Phe
-5359	6909	gene
+5443	6993	gene
 			gene	COX1
-5359	6909	CDS
+5443	6993	CDS
 			gene	COX1
 			product	cytochrome c oxidase subunit I
 			transl_table	2
-<5359	>6909	mRNA
+<5443	>6993	mRNA
 			gene	COX1
 			product	cytochrome c oxidase subunit I
 			note	5' incomplete, 3' incomplete
-11589	11658	tRNA
+11702	11770	tRNA
 			product	tRNA-His
-3740	3810	tRNA
+3808	3878	tRNA
 			product	tRNA-Ile
-70	1035	rRNA
+69	1018	rRNA
 			product	12S rRNA
-2767	3739	gene
+2834	3805	gene
 			gene	ND1
-2767	3739	CDS
+2834	3805	CDS
 			gene	ND1
 			product	NADH dehydrogenase subunit 1
 			transl_table	2
-			note	putative AAA stop codon is completed by the addition of 3' A residues to the mRNA
-<2767	3739	mRNA
+2834	3807	mRNA
 			gene	ND1
 			product	NADH dehydrogenase subunit 1
-			note	5' incomplete
-5219	5147	tRNA
+5276	5204	tRNA
 			product	tRNA-Asn
-9852	9920	tRNA
+9962	10030	tRNA
 			product	tRNA-Arg
-6974	6901	tRNA
+7066	6996	tRNA
 			product	tRNA-Ser
 			note	Anticodon: UGA
-8646	9429	gene
+8758	9542	gene
 			gene	COX3
-8646	9429	CDS
+8758	9542	CDS
 			gene	COX3
 			product	cytochrome c oxidase subunit III
 			transl_table	2
 			note	putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
-<8646	9429	mRNA
+<8758	9542	mRNA
 			gene	COX3
 			product	cytochrome c oxidase subunit III
 			note	5' incomplete
-11795	13612	gene
+11914	13752	gene
 			gene	ND5
-11795	13612	CDS
+11914	13752	CDS
 			gene	ND5
 			product	NADH dehydrogenase subunit 5
 			transl_table	2
-11795	>13612	mRNA
+11914	>13752	mRNA
 			gene	ND5
 			product	NADH dehydrogenase subunit 5
 			note	3' incomplete
-14958	14889	tRNA
+15699	15630	tRNA
 			product	tRNA-Pro
-10211	11587	gene
+10321	11701	gene
 			gene	ND4
-10211	11587	CDS
+10321	11701	CDS
 			gene	ND4
 			product	NADH dehydrogenase subunit 4
 			transl_table	2
-<10211	11588	mRNA
+			note	putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+<10321	11701	mRNA
 			gene	ND4
 			product	NADH dehydrogenase subunit 4
 			note	5' incomplete
-7963	8646	gene
+8075	8758	gene
 			gene	ATP6
-7963	8646	CDS
+8075	8758	CDS
 			gene	ATP6
 			product	ATP synthase F0 subunit 6
 			transl_table	2
-<7963	>8646	mRNA
+<8075	>8758	mRNA
 			gene	ATP6
 			product	ATP synthase F0 subunit 6
 			note	5' incomplete, 3' incomplete
-11724	11794	tRNA
+11841	11913	tRNA
 			product	tRNA-Leu
 			note	Anticodon: UAG
-1036	1103	tRNA
+1019	1090	tRNA
 			product	tRNA-Val
-9921	10217	gene
+10031	10327	gene
 			gene	ND4L
-9921	10217	CDS
+10031	10327	CDS
 			gene	ND4L
 			product	NADH dehydrogenase subunit 4L
 			transl_table	2
-9921	>10217	mRNA
+10031	>10327	mRNA
 			gene	ND4L
 			product	NADH dehydrogenase subunit 4L
 			note	3' incomplete
-5287	5221	tRNA
+5374	5309	tRNA
 			product	tRNA-Cys
-13622	14761	gene
+14344	15484	gene
 			gene	CYTB
-13622	14761	CDS
+14344	15484	CDS
 			gene	CYTB
 			product	cytochrome b
 			transl_table	2
-<13622	14763	mRNA
+			note	putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+<14344	15484	mRNA
 			gene	CYTB
 			product	cytochrome b
 			note	5' incomplete
-7805	7972	gene
+7917	8084	gene
 			gene	ATP8
-7805	7972	CDS
+7917	8084	CDS
 			gene	ATP8
 			product	ATP synthase F0 subunit 8
 			transl_table	2
-7804	>7972	mRNA
+7916	>8084	mRNA
 			gene	ATP8
 			product	ATP synthase F0 subunit 8
 			note	3' incomplete
-9499	9850	gene
+9613	9961	gene
 			gene	ND3
-9499	9671	CDS
-9673	9850
-			exception	ribosomal slippage
+9613	9961	CDS
 			gene	ND3
 			product	NADH dehydrogenase subunit 3
 			transl_table	2
-			note	CDS contains a frameshift where one nucleotide is skipped
-9499	9851	mRNA
+			note	putative TAA stop codon is completed by the addition of 3' A residues to the mRNA
+9613	9961	mRNA
 			gene	ND3
 			product	NADH dehydrogenase subunit 3
-3892	3822	tRNA
+3948	3878	tRNA
 			product	tRNA-Gln
-1104	2683	rRNA
+1091	2759	rRNA
 			product	16S rRNA
-5142	5074	tRNA
+5201	5133	tRNA
 			product	tRNA-Ala
-11659	11723	tRNA
+11771	11838	tRNA
 			product	tRNA-Ser
 			note	Anticodon: GCU
-3892	3960	tRNA
+3948	4016	tRNA
 			product	tRNA-Met
