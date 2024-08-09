@@ -3,8 +3,8 @@ const startcodon = biore"(ATT)|(ATC)|(ATA)|(ATG)|(GTG)|(TTG)"d
 const stopcodon = biore"(TAG)|(TAA)|(AGA)|(AGG)"d
 
 
-lengths = Dict{String, Int64}()
-open("lib/Emma/CDS_median_lengths.txt", "r") do infile
+lengths = Dict{String,Int64}()
+open(joinpath(DATA, "CDS_median_lengths.txt"), "r") do infile
     for line in readlines(infile)
         names = split(line, "\t")
         lengths[first(names)] = parse(Int64, last(names))
@@ -28,7 +28,7 @@ end
 
 function getcodons(seq::CircularSequence, pattern)
     positions = [Int32[] for f in 1:3]
-    codons = Dict{Int32, Codon}()
+    codons = Dict{Int32,Codon}()
     for m in eachmatch(pattern, seq.sequence[1:seq.length+2])
         n_certain(matched(m)) < 3 && continue
         i::Int32 = m.captured[1]
@@ -44,31 +44,37 @@ function getorfs!(writer::FASTA.Writer, id::AbstractString, genome::CircularSequ
         nextstop = 0
         for (s, start) in enumerate(frame)
             start < nextstop && continue
-            nextstopidx = searchsortedfirst(stops[f], start+1)
+            nextstopidx = searchsortedfirst(stops[f], start + 1)
             nextstop = first(stops[mod1(f - mod1(glength, 3), 3)]) #frame of next stop when wrapping depends on genome length
             if nextstopidx <= length(stops[f])
                 nextstop = stops[f][nextstopidx]
             end
             circulardistance(start, nextstop, glength) < minORF && continue
-            if nextstop < start; nextstop += glength; end
-            translation = BioSequences.translate(genome.sequence[start:(nextstop-1)], code = ncbi_trans_table[2])
-            translation[1] = AA_M
+            if nextstop < start
+                nextstop += glength
+            end
+            translation = BioSequences.translate(genome.sequence[start:(nextstop-1)], code=ncbi_trans_table[2])
+            if length(translation) > 0
+                translation[1] = AA_M
+            end
             write(writer, FASTA.Record(id * "*" * strand * "*" * string(start) * "-" * string(nextstop), translation))
         end
     end
 end
 
-function orfsearch(id::AbstractString, genome::CircularSequence, fstarts::Vector{Vector{Int32}}, fstops::Vector{Vector{Int32}},
+function orfsearch(uuid::UUID, id::AbstractString, genome::CircularSequence, fstarts::Vector{Vector{Int32}}, fstops::Vector{Vector{Int32}},
     rstarts::Vector{Vector{Int32}}, rstops::Vector{Vector{Int32}}, minORF::Int)
-    writer = open(FASTA.Writer, "tmp.orfs.fa")
+    writer = open(FASTA.Writer, "$(uuid).tmp.orfs.fa")
     getorfs!(writer, id, genome, '+', fstarts, fstops, minORF)
     getorfs!(writer, id, reverse_complement(genome), '-', rstarts, rstops, minORF)
     close(writer)
     hmmpath = joinpath(emmamodels, "cds", "all_cds.hmm")
-    cmd = `hmmsearch --domtblout tmp.domt $hmmpath tmp.orfs.fa`
-    outfile = "tmp.hmmsearch.out"
+    out = "$(uuid).tmp.orfs.fa"
+    ret = "$(uuid).tmp.domt"
+    cmd = `hmmsearch --domtblout $ret $hmmpath $out`
+    outfile = "$(uuid).tmp.hmmsearch.out"
     run(pipeline(cmd, stdout=outfile))
-    return "tmp.domt"
+    return ret
 end
 
 struct HMMmatch
@@ -115,12 +121,12 @@ function parse_domt(file::String, glength::Integer)
             orfstart = parse(Int32, ends[1])
             orfalifrom = parse(Int32, bits[18])
             orfalito = parse(Int32, bits[19])
-            ali_from = orfstart + 3*(orfalifrom-1)
-            ali_length = 3*(orfalito - orfalifrom + 1)
+            ali_from = orfstart + 3 * (orfalifrom - 1)
+            ali_length = 3 * (orfalito - orfalifrom + 1)
             if ali_from > glength
                 ali_from = mod1(ali_from, glength)
             end
-            
+
             # note that model coordinates are converted to nucleotide coordinates
             push!(matches, FeatureMatch(orf, bits[4], strand, 3 * parse(Int, bits[16]) - 2, 3 * parse(Int, bits[17]), ali_from, ali_length, evalue))
         end
@@ -133,43 +139,45 @@ end
 #    LongSequence{DNAAlphabet{2}}("GTG") => 0.0286169, LongSequence{DNAAlphabet{2}}("ATA") => 0.024437, LongSequence{DNAAlphabet{2}}("ATC") => 0.0189099)
 
 const target_encoding = Dict(LongSequence{DNAAlphabet{4}}("ATT") => 0.0047967167599361595, LongSequence{DNAAlphabet{4}}("TTG") => 0.0003434050417282311, LongSequence{DNAAlphabet{4}}("ATG") => 0.28243362577028663,
-LongSequence{DNAAlphabet{4}}("GTG") => 0.04468146133661947, LongSequence{DNAAlphabet{4}}("ATA") => 0.018433691898543245, LongSequence{DNAAlphabet{4}}("ATC") => 0.0014133204427584738)
+    LongSequence{DNAAlphabet{4}}("GTG") => 0.04468146133661947, LongSequence{DNAAlphabet{4}}("ATA") => 0.018433691898543245, LongSequence{DNAAlphabet{4}}("ATC") => 0.0014133204427584738)
 
 function fix_start_and_stop_codons!(hmm_matches, trns, starts, startcodons, stops, startcodon_model, glength)
 
     function is_possible_start(start, model_start, leftwindow, rightwindow, glength)
-        d = closestdistance(start, model_start, glength) 
+        d = closestdistance(start, model_start, glength)
         #must be in frame
         mod(d, 3) ≠ 0 && return false
-        if d > glength/2; d -= glength; end
+        if d > glength / 2
+            d -= glength
+        end
         d > leftwindow && return false
-        d < -rightwindow  && return false
+        d < -rightwindow && return false
         return true
     end
 
-    sort!(hmm_matches; by=x->x.target_from)
-    for (i,hmm_match) in enumerate(hmm_matches)
+    sort!(hmm_matches; by=x -> x.target_from)
+    for (i, hmm_match) in enumerate(hmm_matches)
         @debug hmm_match
         hmmstart = hmm_match.target_from
-        upstream_cds = hmm_matches[mod1(i-1, length(hmm_matches))]
+        upstream_cds = hmm_matches[mod1(i - 1, length(hmm_matches))]
         @debug "upstream_cds: $(upstream_cds.query)"
         #this works because if no trn gene is upstream of the CDS start, this will select the last trn gene in the genome, which is upstream of the first CDS
-        trnidx = searchsortedfirst(trns, hmmstart, lt=(t,x)->t.fm.target_from < x)
-        upstream_tRNA = trns[mod1(trnidx-1, length(trns))]
+        trnidx = searchsortedfirst(trns, hmmstart, lt=(t, x) -> t.fm.target_from < x)
+        upstream_tRNA = trns[mod1(trnidx - 1, length(trns))]
         @debug "upstream_tRNA: $(upstream_tRNA.fm.query)"
         inframe_stops = Int32[]
         for s in stops
-            append!(inframe_stops, filter(x->mod(circulardistance(x, hmmstart, glength),3) == 0, s))
+            append!(inframe_stops, filter(x -> mod(circulardistance(x, hmmstart, glength), 3) == 0, s))
         end
         sort!(inframe_stops)
         stop_idx = searchsortedfirst(inframe_stops, hmmstart)
-        upstream_stop = inframe_stops[mod1(stop_idx-1, length(inframe_stops))]
+        upstream_stop = inframe_stops[mod1(stop_idx - 1, length(inframe_stops))]
         distance_to_upstream_stop = circulardistance(upstream_stop, hmmstart, glength)
         @debug "$hmmstart, $distance_to_upstream_stop"
         #println(starts)
         possible_starts = Int32[]
         for s in starts
-            append!(possible_starts, filter(x->is_possible_start(x, hmmstart, distance_to_upstream_stop, 50, glength), s))
+            append!(possible_starts, filter(x -> is_possible_start(x, hmmstart, distance_to_upstream_stop, 50, glength), s))
         end
         if isempty(possible_starts)
             @warn "no starts for $hmm_match"
@@ -182,7 +190,7 @@ function fix_start_and_stop_codons!(hmm_matches, trns, starts, startcodons, stop
         @debug "dist to upstream tRNA: $dist_to_upstream_trn"
         #If distance is < 50, pick first inframe start of transcript
         if dist_to_upstream_trn < 10
-            for (i,ps) in enumerate(possible_starts)
+            for (i, ps) in enumerate(possible_starts)
                 relative_to_upstream_trn = closestdistance(upstream_trn_end, ps, glength)
                 if relative_to_upstream_trn < 0
                     filter!(x -> x != ps, possible_starts)
@@ -190,10 +198,10 @@ function fix_start_and_stop_codons!(hmm_matches, trns, starts, startcodons, stop
             end
             beststart = first(sort!(possible_starts))
             @debug "best start: $beststart"
-        #If no nearby upstream tRNA, use XGboost
+            #If no nearby upstream tRNA, use XGboost
         else
             model_inputs = zeros(Float64, length(possible_starts), 6)
-            for (i,ps) in enumerate(possible_starts)
+            for (i, ps) in enumerate(possible_starts)
                 #calculate model inputs :target_encoding, :relative_to_hmm, :phase_to_hmm,:relative_to_upstream_tRNA, :relative_to_upstream_CDS, :relative_to_upstream_stop
                 model_inputs[i, 1] = get(target_encoding, startcodons[ps], 0)
                 relative_to_hmm = closestdistance(hmmstart, ps, glength)
@@ -207,7 +215,7 @@ function fix_start_and_stop_codons!(hmm_matches, trns, starts, startcodons, stop
                 model_inputs[i, 5] = relative_to_upstream_cds
                 relative_to_upstream_stop = closestdistance(upstream_stop, ps, glength)
                 model_inputs[i, 6] = relative_to_upstream_stop
-                @debug(model_inputs[i,:])
+                @debug(model_inputs[i, :])
             end
             #predict with XGBoost model
             scores = XGBoost.predict(startcodon_model, model_inputs)
@@ -226,9 +234,9 @@ function fix_start_and_stop_codons!(hmm_matches, trns, starts, startcodons, stop
         end
         @debug "first stop: $next_stop"
         #modify HMM match
-        cds =  FeatureMatch(hmm_match.id, hmm_match.query, hmm_match.strand, 
-                hmm_match.model_from, hmm_match.model_to, beststart, circulardistance(beststart, next_stop, glength), hmm_match.evalue)
-        replace!(hmm_matches, hmm_match=>cds)
+        cds = FeatureMatch(hmm_match.id, hmm_match.query, hmm_match.strand,
+            hmm_match.model_from, hmm_match.model_to, beststart, circulardistance(beststart, next_stop, glength), hmm_match.evalue)
+        replace!(hmm_matches, hmm_match => cds)
     end
     return hmm_matches
 end

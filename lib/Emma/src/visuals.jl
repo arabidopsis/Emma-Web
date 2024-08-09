@@ -99,7 +99,7 @@ function drawgenome(svgfile::String, id::AbstractString, glength::Integer, gffs:
                         setline(0.4)
                         Luxor.line(O - (0, 3), O + (0, 0), action = :stroke)
                     end
-                 end
+                end
             )
 
     finish()

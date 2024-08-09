@@ -1,6 +1,7 @@
 
-products = Dict{String, String}()
-open("lib/Emma/gene2product.txt", "r") do infile
+products = Dict{String,String}()
+
+open(joinpath(DATA, "gene2product.txt"), "r") do infile
     for line in readlines(infile)
         names = split(line, "\t")
         products[first(names)] = last(names)
@@ -18,10 +19,10 @@ end
 function writeGB(id::AbstractString, gffs::Vector{GFF}, outfile_gb::String, glength::Integer)
     open(outfile_gb, "w") do out
         write(out, ">Feature $id\n")
-        sort!(gffs, by=x->parse.(Int, x.fstart))
+        sort!(gffs, by=x -> parse.(Int, x.fstart))
         gffs = group_features(gffs) #Ensures that features of common locus are written together
         for (name, vector) in gffs
-            sort!(vector, lt = feature_compare) #Ensures correct heirarchy in file
+            sort!(vector, lt=feature_compare) #Ensures correct heirarchy in file
             for gff in vector
                 gff.strand == '+' ? fstart = gff.fstart : fstart = gff.fend
                 gff.strand == '+' ? fend = gff.fend : fend = gff.fstart
@@ -30,10 +31,10 @@ function writeGB(id::AbstractString, gffs::Vector{GFF}, outfile_gb::String, glen
                     if "Note=CDS contains a frameshift where one nucleotide is skipped" in [m.match for m in attributes] #For special frameshift cases
                         write(out, join([fstart, fend, gff.ftype], '\t'), '\n')
                         cdsend = parse(Int64, fend)
-                        second_cds = vector[findfirst(x->x.fstart==string(cdsend+2),vector)]
+                        second_cds = vector[findfirst(x -> x.fstart == string(cdsend + 2), vector)]
                         write(out, join([second_cds.fstart, second_cds.fend], '\t'), '\n')
                         write(out, '\t'^3, "exception\tribosomal slippage\n")
-                        deleteat!(vector, findfirst(x->x==second_cds,vector))
+                        deleteat!(vector, findfirst(x -> x == second_cds, vector))
                     else
                         write(out, join([fstart, fend, gff.ftype], '\t'), '\n')
                     end
@@ -44,7 +45,7 @@ function writeGB(id::AbstractString, gffs::Vector{GFF}, outfile_gb::String, glen
                         note = join([last(split(m.match, '=')) for m in attributes], ", ") #Appends notes into single string
                         write(out, '\t'^3, "note\t$note", '\n')
                     end
-                
+
                 elseif gff.ftype == "tRNA"
                     anticodon = match(r"trn..-(\w+)", gff.attributes) #Matches trnS/L features to add anticodon note
                     write(out, join([fstart, fend, gff.ftype], '\t'), '\n')
@@ -52,15 +53,15 @@ function writeGB(id::AbstractString, gffs::Vector{GFF}, outfile_gb::String, glen
                     if anticodon != nothing
                         write(out, '\t'^3, "note\tAnticodon: $(anticodon.captures[1])", '\n')
                     end
-                
+
                 elseif gff.ftype == "rRNA"
                     write(out, join([fstart, fend, gff.ftype], '\t'), '\n')
                     write(out, '\t'^3, "product\t$(gene2products[name])", '\n')
-                
+
                 elseif gff.ftype == "gene"
                     write(out, join([fstart, fend, gff.ftype], '\t'), '\n')
                     write(out, '\t'^3, "gene\t$name", '\n')
-                
+
                 elseif gff.ftype == "mRNA"
                     note = nothing
                     if !isempty(attributes)
@@ -87,7 +88,7 @@ end
 #function write
 
 function group_features(gffs::Vector{GFF})
-    gff_dict = Dict{String, Vector{GFF}}()
+    gff_dict = Dict{String,Vector{GFF}}()
     for gff in gffs
         name = match(r"Name=(\w+)", gff.attributes).captures[1]
         if haskey(gff_dict, name)

@@ -34,12 +34,12 @@ function parse_rrn_alignments(file::String, glength::Integer)
     return rationalise_matches!(alignments, glength)
 end
 
-function rrnsearch()
+function rrnsearch(uuid::UUID)
     hmmpath = joinpath(emmamodels, "rrn", "all_rrn.hmm")
-    cmd = `nhmmer --tblout tmp.tbl $hmmpath tmp.extended.fa`
-    outfile = "tmp.nhmmer.out"
+    cmd = `nhmmer --tblout $(uuid).tmp.tbl $hmmpath $(uuid).tmp.extended.fa`
+    outfile = "$(uuid).tmp.nhmmer.out"
     run(pipeline(cmd, stdout=outfile))
-    return "tmp.tbl"
+    return "$(uuid).tmp.tbl"
 end
 
 function parse_tbl(file::String, glength::Integer)
