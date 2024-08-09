@@ -11,7 +11,7 @@ using GenomicAnnotations
 using ArgMacros
 using UUIDs
 
-export main
+export main, doone, writeGFF
 
 
 const DATA = joinpath(@__DIR__, "..")
@@ -204,7 +204,7 @@ function doone(infile::String, uuid::UUID)
     @info "found $(length(cds_matches)) protein-coding genes"
 
     gffs = getGFF(genome, rev_genome, cds_matches, trn_matches, rrns, glength)
-
+    cleanfiles(uuid)
     return id, gffs, genome
 end
 function main(infile::String; outfile_gff="", outfile_gb="", outfile_fa="", svgfile="", loglevel="Info")
