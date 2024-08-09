@@ -129,21 +129,23 @@ function parse_trn_alignments(file::String, glength::Integer)
     return trns
 end
 
-function cmsearch(uuid::UUID, modeldir::String, modelfile::String)
+function cmsearch(tempfile::TempFile, modeldir::String, modelfile::String)
     cmpath = joinpath(emmamodels, modeldir, modelfile)
-    cmd = `cmsearch $cmpath $(uuid).tmp.extended.fa`
-    outfile = "$(uuid).tmp.cmsearch.out"
+    name = filename(tempfile, "tmp.extended.fa")
+    cmd = `cmsearch $cmpath $name`
+    outfile = filename(tempfile, "tmp.cmsearch.out")
     run(pipeline(cmd, stdout=outfile))
     return outfile
 end
 
-function cmsearch(uuid::UUID, id::String, modeldir::String, tRNA::LongDNA{4})
-    writer = open(FASTA.Writer, "$(uuid).tmp.fa")
+function cmsearch(tempfile::TempFile, id::String, modeldir::String, tRNA::LongDNA{4})
+    name = filename(tempfile, "tmp.fa")
+    writer = open(FASTA.Writer, name)
     write(writer, FASTA.Record(id, tRNA))
     close(writer)
     cmpath = joinpath(emmamodels, modeldir, trn2model[id] * ".cm")
-    cmd = `cmsearch $cmpath $(uuid).tmp.fa`
-    outfile = "$(uuid).tmp.cmsearch.out"
+    cmd = `cmsearch $cmpath $name`
+    outfile = filename(tempfile, "tmp.cmsearch.out")
     run(pipeline(cmd, stdout=outfile))
     return outfile
 end

@@ -11,11 +11,22 @@ using GenomicAnnotations
 using ArgMacros
 using UUIDs
 
-export main, doone, writeGFF
+export main, doone, writeGFF, filename, TempFile
 
 
 const DATA = joinpath(@__DIR__, "..")
 const emmamodels = joinpath(DATA, "emma_vertebrate_models")
+struct TempFile
+    directory::String
+    uuid::UUID
+    function TempFile(directory::String=".")
+        new(directory, uuid4())
+    end
+end
+function filename(tf::TempFile, ext::String)
+    joinpath(tf.directory, "$(tf.uuid).$(ext)")
+end
+
 include("circularity.jl")
 include("feature.jl")
 include("orfs.jl")
@@ -74,7 +85,7 @@ end
 
 function trnF_start(GFFs, genome, glength)
     trnF_idx = findfirst(x -> occursin(r"trnF", x.attributes), GFFs)
-    if trnF_idx != nothing
+    if trnF_idx !== nothing
         trnF = GFFs[trnF_idx]
         offset = parse(Int32, trnF.fstart) - 1
         for gff in GFFs
@@ -103,16 +114,16 @@ function trnF_start(GFFs, genome, glength)
     end
 end
 
-function cleanfiles(uuid::UUID)
+function cleanfiles(tempfile::TempFile)
     for f in ["tmp.cmsearch.out", "tmp.extended.fa", "tmp.nhmmer.out", "tmp.tbl",
         "tmp.domt", "tmp.hmmsearch.out", "tmp.orfs.fa"]
-        rm("$(uuid).$(f)", force=true)
+        rm(filename(tempfile, f), force=true)
     end
 end
 
 
 
-function doone(infile::String, uuid::UUID)
+function doone(infile::String, tempfile::TempFile)
     @info "$infile"
 
 
@@ -127,12 +138,13 @@ function doone(infile::String, uuid::UUID)
 
     #extend genome
     extended_genome = genome[1:glength+100]
-    writer = open(FASTA.Writer, "$(uuid).tmp.extended.fa")
+    name = filename(tempfile, "tmp.extended.fa")
+    writer = open(FASTA.Writer, name)
     write(writer, FASTA.Record(id, extended_genome))
     close(writer)
 
     #find tRNAs
-    trn_matches = parse_trn_alignments(cmsearch(uuid, "trn", "all_trn.cm"), glength)
+    trn_matches = parse_trn_alignments(cmsearch(tempfile, "trn", "all_trn.cm"), glength)
     @debug trn_matches
     filter!(x -> x.fm.evalue < 1e-5, trn_matches)
     filter!(x -> x.fm.target_from <= glength, trn_matches)
@@ -146,7 +158,7 @@ function doone(infile::String, uuid::UUID)
     for (cma, trunc_end) in overlapped
         trnseq = cma.fm.strand == '+' ? genome.sequence[cma.fm.target_from:trunc_end] : rev_genome.sequence[cma.fm.target_from:trunc_end]
         trnseq_polyA = trnseq * dna"AAAAAAAAAA"
-        polyA_matches = parse_trn_alignments(cmsearch(uuid, cma.fm.query, "trn", trnseq_polyA), 0)
+        polyA_matches = parse_trn_alignments(cmsearch(tempfile, cma.fm.query, "trn", trnseq_polyA), 0)
         isempty(polyA_matches) && continue
         trn_match = polyA_matches[1]
         if trn_match.fm.evalue < cma.fm.evalue
@@ -166,7 +178,7 @@ function doone(infile::String, uuid::UUID)
 
     #find rRNAs
     #search for rrns using hmmsearch
-    rrns = parse_tbl(rrnsearch(uuid), glength)
+    rrns = parse_tbl(rrnsearch(tempfile), glength)
     @debug rrns
     #fix ends using flanking trn genes
     ftRNAs = filter(x -> x.fm.strand == '+', trn_matches)
@@ -188,7 +200,7 @@ function doone(infile::String, uuid::UUID)
     rstops = codonmatches(rev_genome, stopcodon)
     add_stops_at_tRNAs!(rstops, rtRNAs, glength)
 
-    cds_matches = parse_domt(orfsearch(uuid, id, genome, fstarts, fstops, rstarts, rstops, minORF), glength)
+    cds_matches = parse_domt(orfsearch(tempfile, id, genome, fstarts, fstops, rstarts, rstops, minORF), glength)
     @debug cds_matches
     #fix start & stop codons
     #load XGBoost model
@@ -204,14 +216,14 @@ function doone(infile::String, uuid::UUID)
     @info "found $(length(cds_matches)) protein-coding genes"
 
     gffs = getGFF(genome, rev_genome, cds_matches, trn_matches, rrns, glength)
-    cleanfiles(uuid)
+    cleanfiles(tempfile)
     return id, gffs, genome
 end
 function main(infile::String; outfile_gff="", outfile_gb="", outfile_fa="", svgfile="", loglevel="Info")
-    global_logger(ConsoleLogger(loglevel == "debug" ? Logging.Debug : Logging.Info))
+    global_logger(ConsoleLogger(loglevel == "debug" ? Logging.Debug : Logging.Info, meta_formatter=Logging.default_metafmt))
 
-    uuid = uuid4()
-    id, gffs, genome = doone(infile, uuid)
+    tempfile = TempFile(".")
+    id, gffs, genome = doone(infile, tempfile)
 
     glength = length(genome)
     CDSless = filter(x -> x.ftype != "CDS", gffs)

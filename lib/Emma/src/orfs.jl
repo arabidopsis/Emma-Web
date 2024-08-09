@@ -62,17 +62,18 @@ function getorfs!(writer::FASTA.Writer, id::AbstractString, genome::CircularSequ
     end
 end
 
-function orfsearch(uuid::UUID, id::AbstractString, genome::CircularSequence, fstarts::Vector{Vector{Int32}}, fstops::Vector{Vector{Int32}},
+function orfsearch(tempfile::TempFile, id::AbstractString, genome::CircularSequence, fstarts::Vector{Vector{Int32}}, fstops::Vector{Vector{Int32}},
     rstarts::Vector{Vector{Int32}}, rstops::Vector{Vector{Int32}}, minORF::Int)
-    writer = open(FASTA.Writer, "$(uuid).tmp.orfs.fa")
+    out = filename(tempfile, "tmp.orfs.fa")
+    writer = open(FASTA.Writer, out)
     getorfs!(writer, id, genome, '+', fstarts, fstops, minORF)
     getorfs!(writer, id, reverse_complement(genome), '-', rstarts, rstops, minORF)
     close(writer)
     hmmpath = joinpath(emmamodels, "cds", "all_cds.hmm")
-    out = "$(uuid).tmp.orfs.fa"
-    ret = "$(uuid).tmp.domt"
+
+    ret = filename(tempfile, "tmp.domt")
     cmd = `hmmsearch --domtblout $ret $hmmpath $out`
-    outfile = "$(uuid).tmp.hmmsearch.out"
+    outfile = filename(tempfile, "tmp.hmmsearch.out")
     run(pipeline(cmd, stdout=outfile))
     return ret
 end
