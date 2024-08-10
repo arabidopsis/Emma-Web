@@ -131,21 +131,21 @@ end
 
 function cmsearch(tempfile::TempFile, modeldir::String, modelfile::String)
     cmpath = joinpath(emmamodels, modeldir, modelfile)
-    name = filename(tempfile, "tmp.extended.fa")
+    name = tempfilename(tempfile, "tmp.extended.fa")
     cmd = `cmsearch $cmpath $name`
-    outfile = filename(tempfile, "tmp.cmsearch.out")
+    outfile = tempfilename(tempfile, "tmp.cmsearch.out")
     run(pipeline(cmd, stdout=outfile))
     return outfile
 end
 
 function cmsearch(tempfile::TempFile, id::String, modeldir::String, tRNA::LongDNA{4})
-    name = filename(tempfile, "tmp.fa")
+    name = tempfilename(tempfile, "tmp.fa")
     writer = open(FASTA.Writer, name)
     write(writer, FASTA.Record(id, tRNA))
     close(writer)
     cmpath = joinpath(emmamodels, modeldir, trn2model[id] * ".cm")
     cmd = `cmsearch $cmpath $name`
-    outfile = filename(tempfile, "tmp.cmsearch.out")
+    outfile = tempfilename(tempfile, "tmp.cmsearch.out")
     run(pipeline(cmd, stdout=outfile))
     return outfile
 end

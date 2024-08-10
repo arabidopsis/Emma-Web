@@ -1,4 +1,4 @@
-const model2rrn = Dict("16srna"=>"rrnL","12srna"=>"rrnS")
+const model2rrn = Dict("16srna" => "rrnL", "12srna" => "rrnS")
 
 function parse_rrn_alignments(file::String, glength::Integer)
     alignments = FeatureMatch[]
@@ -13,12 +13,12 @@ function parse_rrn_alignments(file::String, glength::Integer)
             readline(infile) #NC
             readline(infile) #CS
             qseqline = strip(readline(infile))
-            query = qseqline[1:(findfirst(" ",qseqline)[1]-1)]
+            query = qseqline[1:(findfirst(" ", qseqline)[1]-1)]
             qseqline = lstrip(qseqline[length(query)+1:end])
-            qseq = qseqline[(findfirst(" ",qseqline)[1]+1):(findlast(" ",qseqline)[1]-1)]
+            qseq = qseqline[(findfirst(" ", qseqline)[1]+1):(findlast(" ", qseqline)[1]-1)]
             readline(infile) #matches
             tseqline = strip(readline(infile))
-            target = tseqline[1:(findfirst(" ",tseqline)[1]-1)]
+            target = tseqline[1:(findfirst(" ", tseqline)[1]-1)]
             tstrand = bits[12][1]
             target_from = parse(Int, bits[10])
             tto = parse(Int, bits[11])
@@ -36,11 +36,11 @@ end
 
 function rrnsearch(tempfile::TempFile)
     hmmpath = joinpath(emmamodels, "rrn", "all_rrn.hmm")
-    extended = filename(tempfile, "tmp.extended.fa")
-    tbl = filename(tempfile, "tmp.tbl")
+    extended = tempfilename(tempfile, "tmp.extended.fa")
+    tbl = tempfilename(tempfile, "tmp.tbl")
     cmd = `nhmmer --tblout $tbl $hmmpath $extended`
 
-    outfile = filename(tempfile, "tmp.nhmmer.out")
+    outfile = tempfilename(tempfile, "tmp.nhmmer.out")
     run(pipeline(cmd, stdout=outfile))
     return tbl
 end
@@ -66,7 +66,7 @@ function parse_tbl(file::String, glength::Integer)
 end
 
 function find_closest_downstream_trn(target, trns, glength)
-    idx = argmin(abs.([closestdistance(target, trn.fm.target_from+trn.fm.target_length, glength) for trn in trns]))
+    idx = argmin(abs.([closestdistance(target, trn.fm.target_from + trn.fm.target_length, glength) for trn in trns]))
     closest_trn = trns[idx]
     return closest_trn
 end
@@ -78,8 +78,8 @@ function fix_rrn_ends!(rRNAs, ftrns, rtrns, glength)
         rrnstop = rrn.target_from + rrn.target_length - 1
         @debug "$rrnstart $rrnstop"
         changed = false
-        trnidx = searchsortedfirst(trns, rrnstart, lt=(t,x)->t.fm.target_from < x)
-        upstream_tRNA = trns[mod1(trnidx-1, length(trns))]
+        trnidx = searchsortedfirst(trns, rrnstart, lt=(t, x) -> t.fm.target_from < x)
+        upstream_tRNA = trns[mod1(trnidx - 1, length(trns))]
         @debug upstream_tRNA
         clockwise_dist = circulardistance(upstream_tRNA.fm.target_from + upstream_tRNA.fm.target_length, rrnstart, glength)
         anticlockwise_dist = circulardistance(rrnstart, upstream_tRNA.fm.target_from + upstream_tRNA.fm.target_length, glength)
@@ -88,7 +88,7 @@ function fix_rrn_ends!(rRNAs, ftrns, rtrns, glength)
             changed = true
         end
         @debug "$rrnstart $rrnstop $changed"
-        trnidx = searchsortedfirst(trns, rrnstop, lt=(t,x)->t.fm.target_from+t.fm.target_length < x)
+        trnidx = searchsortedfirst(trns, rrnstop, lt=(t, x) -> t.fm.target_from + t.fm.target_length < x)
         #downstream_tRNA = trns[mod1(trnidx, length(trns))]
         downstream_tRNA = find_closest_downstream_trn(rrnstop, trns, glength)
         @debug downstream_tRNA

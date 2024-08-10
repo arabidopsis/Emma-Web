@@ -11,7 +11,7 @@ using GenomicAnnotations
 using ArgMacros
 using UUIDs
 
-export main, doone, writeGFF, filename, TempFile
+export main, doone, writeGFF, tempfilename, TempFile, drawgenome
 
 
 const DATA = joinpath(@__DIR__, "..")
@@ -19,12 +19,20 @@ const emmamodels = joinpath(DATA, "emma_vertebrate_models")
 struct TempFile
     directory::String
     uuid::UUID
+    ext::Vector{String}
     function TempFile(directory::String=".")
-        new(directory, uuid4())
+        new(directory, uuid4(), [])
     end
 end
-function filename(tf::TempFile, ext::String)
+function tempfilename(tf::TempFile, ext::String)
+    !push(tf.ext, ext)
     joinpath(tf.directory, "$(tf.uuid).$(ext)")
+end
+
+function cleanfiles(tempfile::TempFile)
+    for f in tf.ext
+        rm(filename(tempfile, f), force=true)
+    end
 end
 
 include("circularity.jl")
@@ -114,12 +122,7 @@ function trnF_start(GFFs, genome, glength)
     end
 end
 
-function cleanfiles(tempfile::TempFile)
-    for f in ["tmp.cmsearch.out", "tmp.extended.fa", "tmp.nhmmer.out", "tmp.tbl",
-        "tmp.domt", "tmp.hmmsearch.out", "tmp.orfs.fa"]
-        rm(filename(tempfile, f), force=true)
-    end
-end
+
 
 
 
@@ -226,8 +229,8 @@ function main(infile::String; outfile_gff="", outfile_gb="", outfile_fa="", svgf
     id, gffs, genome = doone(infile, tempfile)
 
     glength = length(genome)
-    CDSless = filter(x -> x.ftype != "CDS", gffs)
-    mRNAless = filter(x -> x.ftype != "mRNA", CDSless)
+    # CDSless = filter(x -> x.ftype != "CDS", gffs)
+    mRNAless = filter(x -> x.ftype != "mRNA" && x.ftype != "CDS", gffs)
     if outfile_fa !== nothing
         gffs, shifted_genome = trnF_start(gffs, genome, glength)
         open(FASTA.Writer, outfile_fa) do w
