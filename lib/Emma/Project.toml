@@ -4,7 +4,7 @@ authors = ["Ian Small <ian.small@uwa.edu.au>"]
 version = "0.1.0"
 
 [deps]
-ArgMacros = "dbc42088-9de8-42a0-8ec8-2cd114e1ea3e"
+ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 BioSequences = "7e6ae17a-c86d-528c-b3b9-7f778a29fe59"
 FASTX = "c2308a5c-f048-11e8-3e8a-31650f418d12"
