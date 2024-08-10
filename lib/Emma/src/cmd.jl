@@ -93,7 +93,7 @@ function main(args::Vector{String}=ARGS)
         return accession * out
     end
     eargs = emma_args(args)
-    llevel = get(LOGLEVELS, eargs[:level], Logging.Warn)
+    llevel = get(LOGLEVELS, lowercase(eargs[:level]), Logging.Warn)
     global_logger(ConsoleLogger(stderr, llevel, meta_formatter=Logging.default_metafmt))
 
     fastafiles = eargs[:fastafiles]
