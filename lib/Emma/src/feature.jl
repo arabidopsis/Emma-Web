@@ -42,8 +42,8 @@ function rationalise_matches!(matches::Vector{FeatureMatch}, glength::Integer)
     #println(matches)
     length(matches) < 2 && return matches
     for i in matches, j in matches
-        ij = [i,j]
-        sort!(ij, lt=(x,y)->five2three(x,y,glength))
+        ij = [i, j]
+        sort!(ij, lt=(x, y) -> five2three(x, y, glength))
         i = first(ij)
         j = last(ij)
         i == j && continue
@@ -51,13 +51,13 @@ function rationalise_matches!(matches::Vector{FeatureMatch}, glength::Integer)
         # if not same gene and substantially overlap, only keep the best one
         if i.query ≠ j.query
             if i.query == "ATP6.protein" && j.query == "ATP8.protein"
-                println("\t$(i.query)\t$(j.query)\t",(circularoverlap(i, j, glength)),"\t$(i.target_from)\t$(j.target_from)")
+                println("\t$(i.query)\t$(j.query)\t", (circularoverlap(i, j, glength)), "\t$(i.target_from)\t$(j.target_from)")
             end
             if circularoverlap(i, j, glength) > 0.5 * min(i.target_length, j.target_length)
                 @debug i, j, circularoverlap(i, j, glength), 0.5 * min(i.target_length, j.target_length)
                 todelete = i.evalue > j.evalue ? i : j
-                deleteat!(matches, findfirst(x->x==todelete,matches))
-                return(rationalise_matches!(matches, glength))
+                deleteat!(matches, findfirst(x -> x == todelete, matches))
+                return (rationalise_matches!(matches, glength))
             else
                 continue
             end
@@ -69,10 +69,10 @@ function rationalise_matches!(matches::Vector{FeatureMatch}, glength::Integer)
         if mod(i.target_from, 3) == mod(j.target_from, 3) || i.query == "16srna" || i.query == "12srna"
             if circularin(j.target_from, i, glength) || (matchdistance - modeldistance)^2 < tolerance * modellength^2 # arbitrary tolerance
                 merged_match = merge_matches(i, j, glength)
-                deleteat!(matches, findfirst(x->x==i,matches))
-                deleteat!(matches, findfirst(x->x==j,matches))
+                deleteat!(matches, findfirst(x -> x == i, matches))
+                deleteat!(matches, findfirst(x -> x == j, matches))
                 push!(matches, merged_match)
-                return(rationalise_matches!(matches, glength))
+                return (rationalise_matches!(matches, glength))
             end
         end
     end
@@ -80,7 +80,7 @@ function rationalise_matches!(matches::Vector{FeatureMatch}, glength::Integer)
 end
 
 function group_duplicates(matches::Vector{FeatureMatch})
-    query_dict = Dict{String, Vector{FeatureMatch}}()
+    query_dict = Dict{String,Vector{FeatureMatch}}()
     for item in matches
         query_value = item.query
         if haskey(query_dict, query_value)
@@ -101,9 +101,9 @@ function frameshift_merge!(matches::Vector{FeatureMatch}, glength::Integer, geno
             for i in vector, j in vector
                 i == j && continue
                 i.strand ≠ j.strand && continue
-                ij = [i,j]
+                ij = [i, j]
                 #Ensures pairs are ordered 5' - 3'
-                sort!(ij, lt=(x,y)->five2three(x,y,glength))
+                sort!(ij, lt=(x, y) -> five2three(x, y, glength))
                 i = first(ij)
                 j = last(ij)
                 modeldistance = j.model_from - i.model_to
@@ -118,9 +118,9 @@ function frameshift_merge!(matches::Vector{FeatureMatch}, glength::Integer, geno
                     merged_seq = i.strand == '+' ? genome.sequence[merge_start:merge_end] : reverse_complement(genome).sequence[merge_start:merge_end]
                     sequence_match = match(r".TT.CT.AGTAGC", String(merged_seq))
                     if sequence_match != nothing
-                        position = sequence_match.offset+5
-                        deleteat!(matches, findfirst(x->x==i,matches))
-                        deleteat!(matches, findfirst(x->x==j,matches))
+                        position = sequence_match.offset + 5
+                        deleteat!(matches, findfirst(x -> x == i, matches))
+                        deleteat!(matches, findfirst(x -> x == j, matches))
                         filter!(x -> x != i, vector)
                         filter!(x -> x != j, vector)
                         @warn "frameshift detected at nt $position for $(i.query)"

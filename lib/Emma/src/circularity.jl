@@ -35,7 +35,7 @@ end
 
 function closestdistance(x::Integer, y::Integer, c::Integer)
     clockwisedistance = circulardistance(x, y, c)
-    return clockwisedistance < c/2 ? clockwisedistance : clockwisedistance - c
+    return clockwisedistance < c / 2 ? clockwisedistance : clockwisedistance - c
 end
 
 function circularin(x::Integer, start::Integer, length::Integer, c::Integer)
