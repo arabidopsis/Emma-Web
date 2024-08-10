@@ -14,8 +14,6 @@ function mainone(infile::String; gff::MayBeString=nothing, gb::MayBeString=nothi
     if rotate
         gffs, genome = trnF_start(gffs, genome)
     end
-    glength = length(genome)
-    # CDSless = filter(x -> x.ftype != "CDS", gffs)
 
     if fa !== nothing
         open(FASTA.Writer, fa) do w
@@ -25,18 +23,16 @@ function mainone(infile::String; gff::MayBeString=nothing, gb::MayBeString=nothi
     if gff !== nothing
         writeGFF(id, gffs, gff)
     else
-        for gff in gffs
-            println(join([id, gff.source, gff.ftype, gff.fstart, gff.fend, gff.score, gff.strand, gff.phase, gff.attributes], "\t"))
-        end
+        writeGFF(id, gffs, stdout)
     end
     if gb !== nothing
-        writeGB(id, gffs, gb, glength)
+        writeGB(id, gffs, gb)
     end
     if svg !== nothing
+        glength = length(genome)
         mRNAless = filter(x -> x.ftype != "mRNA" && x.ftype != "CDS", gffs)
         drawgenome(svg, id, glength, mRNAless)
     end
-    # cleanfiles(uuid)
 end
 
 function emma_args(args::Vector{String}=ARGS)
@@ -64,18 +60,19 @@ function emma_args(args::Vector{String}=ARGS)
         help = "output GB file"
         "--tempdir", "-t"
         arg_type = String
-        help = "tempdir for temporary files"
+        help = "directory to use for temporary files [default is current directory]"
         "fastafiles"
         arg_type = String
         nargs = '+'
         action = :store_arg
-        help = "fasta files to process (or directory of files)"
+        help = "fasta files to process"
     end
 
     emma_args.epilog = """
     If there are multiple FASTA files then (--gff|--fa|--svg|--gb)
     can refer to a directory in which case the respective files will be
-    placed there under the original filename (with new extension)
+    placed there under the original filename (with new extension). Otherwise
+    the values will be used as a suffix.
     """
     parse_args(args, emma_args; as_symbols=true)
 end
