@@ -162,7 +162,7 @@ function doone_x(infile::String, tempfile::TempFile)
     @debug cds_matches
     #fix start & stop codons
     #load XGBoost model
-    startcodon_model = Booster(DMatrix[], model_file=joinpath(emmamodels, "xgb.model"))
+    startcodon_model = Booster(DMatrix[], model_file=joinpath(DATA, "xgb.model"))
     fhmms = filter(x -> x.strand == '+', cds_matches)
     rhmms = filter(x -> x.strand == '-', cds_matches)
     fix_start_and_stop_codons!(fhmms, ftRNAs, fstarts, fstartcodons, fstops, startcodon_model, glength)
