@@ -24,15 +24,19 @@ struct TempFile
         new(directory, uuid4(), [])
     end
 end
-function tempfilename(tf::TempFile, ext::String)
-    !push(tf.ext, ext)
-    joinpath(tf.directory, "$(tf.uuid).$(ext)")
+function tempfilename(tempfile::TempFile, ext::String)
+    push!(tempfile.ext, ext)
+    joinpath(tempfile.directory, "$(tempfile.uuid).$(ext)")
 end
 
 function cleanfiles(tempfile::TempFile)
-    for f in tf.ext
-        rm(tempfilename(tempfile, f), force=true)
+    while length(tempfile.ext) > 0
+        ext = pop!(tempfile.ext)
+        # don't add to tempfile.ext with tempfilename!!
+        path = joinpath(tempfile.directory, "$(tempfile.uuid).$(ext)")
+        rm(path, force=true)
     end
+
 end
 
 include("circularity.jl")
@@ -126,7 +130,7 @@ end
 
 
 
-function doone(infile::String, tempfile::TempFile)
+function doone_x(infile::String, tempfile::TempFile)
     @info "$infile"
 
 
@@ -219,15 +223,22 @@ function doone(infile::String, tempfile::TempFile)
     @info "found $(length(cds_matches)) protein-coding genes"
 
     gffs = getGFF(genome, rev_genome, cds_matches, trn_matches, rrns, glength)
-    cleanfiles(tempfile)
     return id, gffs, genome
 end
+
+function doone(infile::String, tempfile::TempFile)
+    try
+        return doone_x(infile, tempfile)
+    finally
+        cleanfiles(tempfile)
+    end
+end
+
 function main(infile::String; outfile_gff="", outfile_gb="", outfile_fa="", svgfile="", loglevel="Info")
     global_logger(ConsoleLogger(loglevel == "debug" ? Logging.Debug : Logging.Info, meta_formatter=Logging.default_metafmt))
 
     tempfile = TempFile(".")
     id, gffs, genome = doone(infile, tempfile)
-
     glength = length(genome)
     # CDSless = filter(x -> x.ftype != "CDS", gffs)
     mRNAless = filter(x -> x.ftype != "mRNA" && x.ftype != "CDS", gffs)

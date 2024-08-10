@@ -65,42 +65,50 @@ function drawfeature(feature::GFF, glength::Integer)
 end
 
 function drawgenome(svgfile::String, id::AbstractString, glength::Integer, gffs::Vector{GFF})
-    Drawing(600,600,svgfile)
-    origin()
-    background("white")
-    setline(0.5)
-    setcolor("black")
-    Luxor.circle(gcentre, gradius, action = :stroke)
-    fontsize(12)
-    fontface("Helvetica")
-    Luxor.text(id, Point(0, -20), halign=:center, valign=:center)
-    Luxor.text(string(glength) * " bp", halign=:center, valign=:center)
-    Luxor.text("Annotated by Emma", Point(0, 20), halign=:center, valign=:center)
-    fontface("Helvetica Oblique")
-    for gff in gffs
-        drawfeature(gff, glength)
+    svg = drawgenome(id, glength, gffs)
+    open(svgfile, "w") do out
+        write(out, svg)
     end
+end
 
-    #draw circular bp map for full length of genome
-    _counter() = (a = -1; () -> a += 1)
-    counter = _counter()
-        fontsize(6)
-        arrow(O +  (0, 0), 140, 0, 2π,
-            arrowheadlength=0,
-            decoration=range(0, 1, length=glength),
-            decorate = () -> begin
-                    d = counter()
-                    if d % 1000 == 0
-                        Luxor.text(string(d), O + (0, -20), halign=:center)
-                        setline(0.6)
-                        Luxor.line(O - (0, 10), O + (0, 0), action = :stroke)
-                    end
-                    if d % 200 == 0
-                        setline(0.4)
-                        Luxor.line(O - (0, 3), O + (0, 0), action = :stroke)
-                    end
-                end
-            )
+function drawgenome(id::AbstractString, glength::Integer, gffs::Vector{GFF})::String
+    @savesvg begin
+        origin()
+        background("white")
+        setline(0.5)
+        setcolor("black")
+        Luxor.circle(gcentre, gradius, action = :stroke)
+        fontsize(12)
+        fontface("Helvetica")
+        Luxor.text(id, Point(0, -20), halign=:center, valign=:center)
+        Luxor.text(string(glength) * " bp", halign=:center, valign=:center)
+        Luxor.text("Annotated by Emma", Point(0, 20), halign=:center, valign=:center)
+        fontface("Helvetica Oblique")
+        for gff in gffs
+            drawfeature(gff, glength)
+        end
 
-    finish()
+        #draw circular bp map for full length of genome
+        _counter() = (a = -1; () -> a += 1)
+        counter = _counter()
+            fontsize(6)
+            arrow(O +  (0, 0), 140, 0, 2π,
+                arrowheadlength=0,
+                decoration=range(0, 1, length=glength),
+                decorate = () -> begin
+                        d = counter()
+                        if d % 1000 == 0
+                            Luxor.text(string(d), O + (0, -20), halign=:center)
+                            setline(0.6)
+                            Luxor.line(O - (0, 10), O + (0, 0), action = :stroke)
+                        end
+                        if d % 200 == 0
+                            setline(0.4)
+                            Luxor.line(O - (0, 3), O + (0, 0), action = :stroke)
+                        end
+                    end
+                )
+
+        finish()
+    end 600 600
 end

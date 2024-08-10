@@ -76,7 +76,7 @@ function writeGB(id::AbstractString, gffs::Vector{GFF}, outfile_gb::String, glen
                     write(out, join([fstart, fend, gff.ftype], '\t'), '\n')
                     write(out, '\t'^3, "gene\t$name", '\n')
                     write(out, '\t'^3, "product\t$(gene2products[name])", '\n')
-                    if note != nothing
+                    if note !== nothing
                         write(out, '\t'^3, "note\t$note", '\n')
                     end
                 end
