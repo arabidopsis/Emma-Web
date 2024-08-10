@@ -31,7 +31,7 @@ end
 
 function cleanfiles(tempfile::TempFile)
     for f in tf.ext
-        rm(filename(tempfile, f), force=true)
+        rm(tempfilename(tempfile, f), force=true)
     end
 end
 
@@ -141,7 +141,7 @@ function doone(infile::String, tempfile::TempFile)
 
     #extend genome
     extended_genome = genome[1:glength+100]
-    name = filename(tempfile, "tmp.extended.fa")
+    name = tempfilename(tempfile, "tmp.extended.fa")
     writer = open(FASTA.Writer, name)
     write(writer, FASTA.Record(id, extended_genome))
     close(writer)
