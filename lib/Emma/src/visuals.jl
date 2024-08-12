@@ -110,7 +110,6 @@ function drawgenome(id::AbstractString, glength::Integer, gffs::Vector{GFF})::St
         )
     end 600 600
     # viewBox is enough
-    svg = replace(svg, "width=\"600\" height=\"600\"" => ""; count=1)
-    #Luxor._reset_all_drawings()
-    svg
+    replace(svg, "width=\"600\" height=\"600\"" => ""; count=1)
+
 end
